@@ -12,21 +12,27 @@ var sendmail = require('sendmail')({
 });
 
 app.get('/', function(req, res) {
-	res.send("Hellow world");
+	res.send("Hello world");
 });
 
 app.post('/email/', function(req, res) {
-	var recipient = req.query.to;
-	var body = req.body;
+	var recipient = req.query.to || "";
+	var body = JSON.parse(preq.body);
+	var msg = "";
+	if (body.hasOwnProperty('msg')) {
+		msg = body.msg;
+	}
 	sendmail({
-	    from: 'no-reply@pfff.com',
+	    from: 'anaonymous@pfff.com',
 	    to: recipient,
-	    subject: '',
-	    html: '',
+	    subject: "Concerned member",
+	    html: msg,
 	  }, function(err, reply) {
 	    console.log(err && err.stack);
 	    console.dir(reply);
 	});
 });
 
-app.listen(8080);
+app.listen(8080, function() {
+	console.log("Listening on port 8080");
+});

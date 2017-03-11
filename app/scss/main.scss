@@ -1,6 +1,5 @@
 @import 'normalize';
 @import 'typeography';
-
 $red: #EC0928;
 $yellow: #E6AA46;
 
@@ -16,7 +15,6 @@ input {
 }
 
 body {
-  
   &.fixed-nav {
     header {
       position: fixed;
@@ -44,7 +42,7 @@ header {
   border-bottom: solid black 1px;
   z-index: 9999;
   background: #FFFFFF;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
   top: -100px;
   img {
     max-height: 100%;
