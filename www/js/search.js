@@ -12,7 +12,7 @@ var search_holders = function(share_name) {
 			}
 		}
 	}
-	for (ofst of GSK_ofst_holders) {
+	for (ofst of GSK_inst_holders) {
 		if (ofst.hasOwnProperty("name")) {
 			if (share_name == ofst.name.toLowerCase()) {
 				return true;
@@ -33,7 +33,7 @@ var search_holders = function(share_name) {
 			}
 		}
 	}
-	for (ofst of PFE_ofst_holders) {
+	for (ofst of PFE_inst_holders) {
 		if (ofst.hasOwnProperty("name")) {
 			if (share_name == ofst.name.toLowerCase()) {
 				return true;
