@@ -8,46 +8,45 @@ var search_holders = function(share_name) {
 	share_name = share_name.toLowerCase()
 	for (ofst of GSK_etf_holders) {
 		if (ofst.hasOwnProperty("name")) {
-			if (share_name == ofst.name.toLowerCase()) {
-				return true;
+			if (ofst.name.toLowerCase().includes(share_name)) {
+				arr.push(ofst.name.toLowerCase());
 			}
 		}
 	}
 	for (ofst of GSK_inst_holders) {
 		if (ofst.hasOwnProperty("name")) {
-			if (share_name == ofst.name.toLowerCase()) {
-				return true;
+			if (ofst.name.toLowerCase().includes(share_name)) {
+				arr.push(ofst.name.toLowerCase());
 			}
 		}
 	}
 	for (ofst of GSK_mfund_holders) {
 		if (ofst.hasOwnProperty("name")) {
-			if (share_name == ofst.name.toLowerCase()) {
-				return true;
+			if (ofst.name.toLowerCase().includes(share_name)) {
+				arr.push(ofst.name.toLowerCase());
 			}
 		}
 	}
 	for (ofst of PFE_etf_holders) {
 		if (ofst.hasOwnProperty("name")) {
-			if (share_name == ofst.name.toLowerCase()) {
-				return true;
+			if (ofst.name.toLowerCase().includes(share_name)) {
+				arr.push(ofst.name.toLowerCase());
 			}
 		}
 	}
 	for (ofst of PFE_inst_holders) {
 		if (ofst.hasOwnProperty("name")) {
-			if (share_name == ofst.name.toLowerCase()) {
-				return true;
+			if (ofst.name.toLowerCase().includes(share_name)) {
+				arr.push(ofst.name.toLowerCase());
 			}
 		}
 	}
 	for (ofst of PFE_mfund_holders) {
 		if (ofst.hasOwnProperty("name")) {
-			if (share_name == ofst.name.toLowerCase()) {
-				return true;
+			if (ofst.name.toLowerCase().includes(share_name)) {
+				arr.push(ofst.name.toLowerCase());
 			}
 		}
 	}
-
-	return false;
+	return arr;
 }

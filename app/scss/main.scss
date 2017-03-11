@@ -2,7 +2,6 @@
 @import 'typeography';
 
 @import 'utils';
-
 $red: #EC0928;
 $yellow: #E6AA46;
 
@@ -18,7 +17,6 @@ input {
 }
 
 body {
-
   // font-family: 'Open Sans', sans-serif;
   font-family: 'museo-sans-rounded',sans-serif;
   // font-family: "proxima-soft",sans-serif;
@@ -38,7 +36,7 @@ h4,
 h5 {
   // font-family: 'rooney-sans',sans-serif;
   // font-family: 'museo-sans-display',sans-serif;
-  font-family: "proxima-soft",sans-serif;
+  font-family: 'proxima-soft',sans-serif;
   font-weight: 700;
 }
 
@@ -164,9 +162,8 @@ section {
 
 .steps {
   margin-top: 40px;
-  font-family: "proxima-soft",sans-serif;
+  font-family: 'proxima-soft',sans-serif;
   font-weight: 700;
-
 }
 
 .box {
@@ -190,7 +187,7 @@ section {
       line-height: 1;
       position: absolute;
       left: -12px;
-      top: -36px
+      top: -36px;
     }
   }
 }
