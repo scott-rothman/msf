@@ -25,7 +25,8 @@
     "gulp-watch": "^4.3.9",
     "gulp-wrap": "^0.13.0",
     "jshint": "^2.9.4",
-    "normalize.css": "^5.0.0"
+    "normalize.css": "^5.0.0",
+    "browser-sync": "^2.18.0"
   },
   "author": "",
   "license": "ISC",
