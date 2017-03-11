@@ -1,5 +1,8 @@
 @import 'normalize';
 @import 'typeography';
+
+@import 'utils';
+
 $red: #EC0928;
 $yellow: #E6AA46;
 
@@ -15,6 +18,10 @@ input {
 }
 
 body {
+
+  // font-family: 'Open Sans', sans-serif;
+  font-family: 'museo-sans-rounded',sans-serif;
+  // font-family: "proxima-soft",sans-serif;
   &.fixed-nav {
     padding-top: 100px;
     header {
@@ -22,6 +29,17 @@ body {
       top: 0;
     }
   }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  // font-family: 'rooney-sans',sans-serif;
+  // font-family: 'museo-sans-display',sans-serif;
+  font-family: "proxima-soft",sans-serif;
+  font-weight: 700;
 }
 
 .wrapper {
@@ -134,16 +152,21 @@ section {
   background: $red;
   padding-top: 40px;
   padding-bottom: 40px;
+  @extend .boxshadow-3;
 }
 
 .response__no__info {
   background: $yellow;
   padding-top: 40px;
   padding-bottom: 40px;
+  @extend .boxshadow-3;
 }
 
 .steps {
   margin-top: 40px;
+  font-family: "proxima-soft",sans-serif;
+  font-weight: 700;
+
 }
 
 .box {
