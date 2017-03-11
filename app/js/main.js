@@ -5,7 +5,9 @@ window.onload = function() {
 
 var init = function() {
 	var form = document.querySelector('.intro__form');
-	var search_field = document.querySelector('.intro__form__term')
+	var search_field = document.querySelector('.intro__form__term');
+  var header = document.querySelector('header');
+  var body = document.querySelector('body');
   var match = false;
 	form.addEventListener('submit', function(e) {
     e.preventDefault();
@@ -14,7 +16,14 @@ var init = function() {
     console.log('Searched for: '+search_term);
     console.log('Match found: '+match);
     navToResponse(match);
-	});	
+	});
+  window.addEventListener('scroll', _.throttle(function() {
+    if ($(window).scrollTop() > 100) {
+      body.classList.add('fixed-nav');
+    } else {
+      body.classList.remove('fixed-nav');
+    }
+  }, 50));
 }
 
 var navToStart = function() {
