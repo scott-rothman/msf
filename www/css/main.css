@@ -535,8 +535,6 @@ section.active {
 .response__no.active {
   display: block;
 }
-<<<<<<< HEAD
-=======
 .response__yes h2,
 .response__no h2 {
   font-size: 10rem;
@@ -556,6 +554,10 @@ section.active {
   cursor: pointer;
   font-weight: bold;
   max-width: 600px;
+}
+.response__yes p.checked,
+.response__no p.checked {
+  cursor: initial;
 }
 
 .response__yes__info {
@@ -582,4 +584,3 @@ section.active {
   margin-right: 10px;
   border-radius: 5px;
 }
->>>>>>> ae92340124bb83dd4699369daf2ab4a2db8db79b

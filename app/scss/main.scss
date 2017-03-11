@@ -97,7 +97,7 @@ section {
   &.active {
     display: block;
   }
-}
+
   & h2 {
     font-size: 10rem;
     padding: 0;
@@ -114,6 +114,9 @@ section {
     cursor: pointer;
     font-weight: bold;
     max-width: 600px;
+    &.checked {
+      cursor: initial;
+    }
   }
 }
 
