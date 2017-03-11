@@ -4,6 +4,7 @@
  * @return  true if match; otherwise false
  */
 var search_holders = function(share_name) {
+	arr = [];
 	share_name = share_name.toLowerCase()
 	for (ofst of GSK_etf_holders) {
 		if (ofst.hasOwnProperty("name")) {
