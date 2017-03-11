@@ -16,7 +16,8 @@ input {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  // font-family: 'Open Sans', sans-serif;
+  font-family: "museo-sans-rounded",sans-serif;
   &.fixed-nav {
     header {
       position: fixed;
@@ -30,7 +31,8 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'rooney-sans',sans-serif;
+  // font-family: 'rooney-sans',sans-serif;
+  font-family: "museo-sans-display",sans-serif;
 }
 
 .wrapper {
