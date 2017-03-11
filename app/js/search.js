@@ -4,44 +4,45 @@
  * @return  true if match; otherwise false
  */
 var search_holders = function(share_name) {
+	share_name = share_name.toLowerCase()
 	for (inst in GSK_etf_holders) {
 		if (inst.hasOwnProperty("name")) {
-			if (share_name == inst.name) {
+			if (share_name == inst.name.toLowerCase()) {
 				return true;
 			}
 		}
 	}
 	for (inst in GSK_inst_holders) {
 		if (inst.hasOwnProperty("name")) {
-			if (share_name == inst.name) {
+			if (share_name == inst.name.toLowerCase()) {
 				return true;
 			}
 		}
 	}
 	for (inst in GSK_mfund_holders) {
 		if (inst.hasOwnProperty("name")) {
-			if (share_name == inst.name) {
+			if (share_name == inst.name.toLowerCase()) {
 				return true;
 			}
 		}
 	}
 	for (inst in PFE_etf_holders) {
 		if (inst.hasOwnProperty("name")) {
-			if (share_name == inst.name) {
+			if (share_name == inst.name.toLowerCase()) {
 				return true;
 			}
 		}
 	}
 	for (inst in PFE_inst_holders) {
 		if (inst.hasOwnProperty("name")) {
-			if (share_name == inst.name) {
+			if (share_name == inst.name.toLowerCase()) {
 				return true;
 			}
 		}
 	}
 	for (inst in PFE_mfund_holders) {
 		if (inst.hasOwnProperty("name")) {
-			if (share_name == inst.name) {
+			if (share_name == inst.name.toLowerCase()) {
 				return true;
 			}
 		}
