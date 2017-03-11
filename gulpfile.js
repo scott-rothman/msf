@@ -54,5 +54,5 @@ gulp.task('watch', ['comb','copy-code'], function () {
     gulp.watch('./app/**/*.js', ['copy-code']);
     gulp.watch('./app/*.html', ['copy-code']);
     gulp.watch('./app/img/**/*', ['copy']);
-    //gulp.watch('./www/**/*.html').on('change', browserSync.reload);
+    gulp.watch('./www/**/*.html').on('change', browserSync.reload);
 });
