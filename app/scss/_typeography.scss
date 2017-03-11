@@ -4,9 +4,21 @@ h1 {
   margin: 0 0 20px 0;
 }
 
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
 p {
   font-size: 1.5rem;
   line-height: 1.5;
   margin: 0 auto 20px auto;
   max-width: 800px;
+}
+
+.upper {
+  text-transform: uppercase;
 }
