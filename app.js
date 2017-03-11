@@ -1,4 +1,6 @@
 var express  = require('express');
+var app = express();
+
 var sendmail = require('sendmail')({
   logger: {
     debug: console.log,
@@ -22,3 +24,5 @@ app.post('/email/', function(req, res) {
 	    console.dir(reply);
 	});
 });
+
+app.listen(8080);
