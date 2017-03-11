@@ -8,7 +8,13 @@ var init = function() {
 	var search_field = document.querySelector('.intro__form__term');
   var header = document.querySelector('header');
   var body = document.querySelector('body');
+  var intro = document.querySelector('.intro');
+  var window_height = $(window).height();
+  var header_height = $('header').height();
+  var intro_height = window_height - 100;
   var match = false;
+  intro.style.height = intro_height+'px';
+
 	form.addEventListener('submit', function(e) {
     e.preventDefault();
 		search_term = search_field.value.toLowerCase();
@@ -18,7 +24,7 @@ var init = function() {
     navToResponse(match);
 	});
   window.addEventListener('scroll', _.throttle(function() {
-    if ($(window).scrollTop() > 100) {
+    if ($(window).scrollTop() > 120) {
       body.classList.add('fixed-nav');
     } else {
       body.classList.remove('fixed-nav');
