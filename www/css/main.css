@@ -468,8 +468,13 @@ input {
   box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 body {
   font-family: 'museo-sans-rounded',sans-serif;
+=======
+body.fixed-nav {
+  padding-top: 100px;
+>>>>>>> e066b513608c907dddd2a0526b3bdee52391b181
 }
 body.fixed-nav header {
   position: fixed;
@@ -574,8 +579,20 @@ section.active {
 .response__no h2 {
   font-size: 10rem;
   padding: 0;
-  margin: 0;
+  margin: 0 auto 20px auto;
   color: #FFFFFF;
+  width: 80%;
+  position: relative;
+}
+.response__yes h2:after,
+.response__no h2:after {
+  content: ' ';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #000000;
 }
 .response__yes h3,
 .response__no h3 {
@@ -617,7 +634,22 @@ section.active {
   display: inline-block;
   height: 20px;
   width: 20px;
-  background: grey;
+  background: #F0F0F0;
   margin-right: 10px;
   border-radius: 5px;
+  position: relative;
+}
+
+.checked {
+  text-decoration: line-through;
+}
+.checked .box:before {
+  content: '\2713';
+  color: green;
+  display: block;
+  font-size: 3em;
+  line-height: 1;
+  position: absolute;
+  left: -12px;
+  top: -36px;
 }
