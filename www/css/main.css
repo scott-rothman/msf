@@ -569,6 +569,8 @@ section.active {
 .response__no.active {
   display: block;
 }
+<<<<<<< HEAD
+=======
 .response__yes h2,
 .response__no h2 {
   font-size: 10rem;
@@ -614,3 +616,4 @@ section.active {
   margin-right: 10px;
   border-radius: 5px;
 }
+>>>>>>> ae92340124bb83dd4699369daf2ab4a2db8db79b
