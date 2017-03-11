@@ -17,7 +17,8 @@ input {
 
 body {
   // font-family: 'Open Sans', sans-serif;
-  font-family: "museo-sans-rounded",sans-serif;
+  font-family: 'museo-sans-rounded',sans-serif;
+  // font-family: "proxima-soft",sans-serif;
   &.fixed-nav {
     header {
       position: fixed;
@@ -32,7 +33,9 @@ h3,
 h4,
 h5 {
   // font-family: 'rooney-sans',sans-serif;
-  font-family: "museo-sans-display",sans-serif;
+  // font-family: 'museo-sans-display',sans-serif;
+  font-family: "proxima-soft",sans-serif;
+  font-weight: 700;
 }
 
 .wrapper {
@@ -146,6 +149,9 @@ section {
 
 .steps {
   margin-top: 40px;
+  font-family: "proxima-soft",sans-serif;
+  font-weight: 700;
+
 }
 
 .box {
