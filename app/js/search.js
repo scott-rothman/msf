@@ -1,48 +1,48 @@
 /**
- * Function takes in fund mf/inst name and searches in all arrau to see if we have a match
- * @params  share_name  pass lower case string of mutual fund from search box
+ * Function takes of fund mf/ofst name and searches of all arrau to see if we have a match
+ * @params  share_name  pass lower case strofg of mutual fund from search box
  * @return  true if match; otherwise false
  */
 var search_holders = function(share_name) {
 	share_name = share_name.toLowerCase()
-	for (inst in GSK_etf_holders) {
-		if (inst.hasOwnProperty("name")) {
-			if (share_name == inst.name.toLowerCase()) {
+	for (ofst of GSK_etf_holders) {
+		if (ofst.hasOwnProperty("name")) {
+			if (share_name == ofst.name.toLowerCase()) {
 				return true;
 			}
 		}
 	}
-	for (inst in GSK_inst_holders) {
-		if (inst.hasOwnProperty("name")) {
-			if (share_name == inst.name.toLowerCase()) {
+	for (ofst of GSK_ofst_holders) {
+		if (ofst.hasOwnProperty("name")) {
+			if (share_name == ofst.name.toLowerCase()) {
 				return true;
 			}
 		}
 	}
-	for (inst in GSK_mfund_holders) {
-		if (inst.hasOwnProperty("name")) {
-			if (share_name == inst.name.toLowerCase()) {
+	for (ofst of GSK_mfund_holders) {
+		if (ofst.hasOwnProperty("name")) {
+			if (share_name == ofst.name.toLowerCase()) {
 				return true;
 			}
 		}
 	}
-	for (inst in PFE_etf_holders) {
-		if (inst.hasOwnProperty("name")) {
-			if (share_name == inst.name.toLowerCase()) {
+	for (ofst of PFE_etf_holders) {
+		if (ofst.hasOwnProperty("name")) {
+			if (share_name == ofst.name.toLowerCase()) {
 				return true;
 			}
 		}
 	}
-	for (inst in PFE_inst_holders) {
-		if (inst.hasOwnProperty("name")) {
-			if (share_name == inst.name.toLowerCase()) {
+	for (ofst of PFE_ofst_holders) {
+		if (ofst.hasOwnProperty("name")) {
+			if (share_name == ofst.name.toLowerCase()) {
 				return true;
 			}
 		}
 	}
-	for (inst in PFE_mfund_holders) {
-		if (inst.hasOwnProperty("name")) {
-			if (share_name == inst.name.toLowerCase()) {
+	for (ofst of PFE_mfund_holders) {
+		if (ofst.hasOwnProperty("name")) {
+			if (share_name == ofst.name.toLowerCase()) {
 				return true;
 			}
 		}
