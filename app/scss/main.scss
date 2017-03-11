@@ -4,6 +4,7 @@
 body,
 div,
 section,
+header,
 form,
 p,
 ul,
@@ -19,6 +20,7 @@ body {
 }
 
 header {
+  padding: 10px 0 10px 0;
   text-align: center;
   height: 20vh;
   display: flex;
@@ -38,8 +40,6 @@ section {
     display: block;
   }
 }
-
-
 
 .intro {
   text-align: center;

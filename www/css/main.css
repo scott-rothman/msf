@@ -425,6 +425,7 @@ p {
 body,
 div,
 section,
+header,
 form,
 p,
 ul,
@@ -440,6 +441,7 @@ body {
 }
 
 header {
+  padding: 10px 0 10px 0;
   text-align: center;
   height: 20vh;
   display: -webkit-box;
