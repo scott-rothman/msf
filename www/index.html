@@ -62,14 +62,14 @@
 	     js.src = "//connect.facebook.net/en_US/sdk.js";
 	     fjs.parentNode.insertBefore(js, fjs);
 	   }(document, 'script', 'facebook-jssdk'));
-	  function sendMessage() {
+	  function sendMessage(msg) {
 	  	FB.login(function(){
 		  // Note: The call will only work if you accept the permission request
-		  FB.api('/me/feed', 'post', {message: 'Hello, world!'});
+		  FB.api('/me/feed', 'post', {message: msg});
 		}, {scope: 'publish_actions'});
 	  }
 	</script>
-	<button onclick="sendMessage()">Login with Facebook</button>
+	<button onclick="sendMessage('Hello world')">Login with Facebook</button>
 	<script src="/js/lodash.min.js"></script>
 	<script src="/js/data.js"></script>
 	<script src="/js/search.js"></script>

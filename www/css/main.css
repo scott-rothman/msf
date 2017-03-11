@@ -499,7 +499,6 @@ section.active {
   box-shadow: none;
   background: #F1F1F1;
 }
-<<<<<<< Updated upstream
 
 .response__yes,
 .response__no {
@@ -509,5 +508,3 @@ section.active {
 .response__no.active {
   display: block;
 }
-=======
->>>>>>> Stashed changes

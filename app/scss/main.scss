@@ -69,7 +69,8 @@ section {
   }
 }
 
-.response__yes, .response__no {
+.response__yes,
+.response__no {
   display: none;
   &.active {
     display: block;
