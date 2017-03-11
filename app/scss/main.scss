@@ -55,9 +55,16 @@ section {
     &[type='text'] {
       padding-left: 20px;
       width: 80%;
+      border: 0;
+      appearance: none;
+      background: #F1F1F1;
     }
-    &[type='button'] {
+    &[type='submit'] {
       width: 19%;
+      appearance: none;
+      border: 0;
+      box-shadow: none;
+      background: #F1F1F1;
     }
   }
 }

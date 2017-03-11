@@ -484,7 +484,18 @@ section.active {
 .intro__form input[type='text'] {
   padding-left: 20px;
   width: 80%;
+  border: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: #F1F1F1;
 }
-.intro__form input[type='button'] {
+.intro__form input[type='submit'] {
   width: 19%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  box-shadow: none;
+  background: #F1F1F1;
 }
