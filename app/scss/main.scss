@@ -105,6 +105,18 @@ section {
   }
 }
 
+.intro__form__results {
+  width: 100%;
+  & > div {
+    height: 60px;
+    line-height: 60px; 
+    text-align: left;
+    cursor: pointer;
+    font-size: 2rem;
+    padding-left: 25px;
+  }
+}
+
 .response__yes,
 .response__no {
   display: none;

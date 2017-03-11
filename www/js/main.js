@@ -12,16 +12,27 @@ var init = function() {
   var window_height = $(window).height();
   var header_height = $('header').height();
   var intro_height = window_height - 100;
-  var match = false;
+  var matches;
+  var possible_matches = '';
+  var $possible_matches;
   intro.style.height = intro_height+'px';
 
-	form.addEventListener('submit', function(e) {
-    e.preventDefault();
+	search_field.addEventListener('keypress', function(e) {
+    possible_matches = '';
 		search_term = search_field.value.toLowerCase();
-    match = search_holders(search_term);
+    matches = search_holders(search_term);
+    matches = _.uniqBy(matches);
+    console.log(matches);
     console.log('Searched for: '+search_term);
-    console.log('Match found: '+match);
-    navToResponse(match);
+    if (search_term.length > 4) {
+      _.each(matches, function(value) {
+        possible_matches += '<div class="match">'+value+'</div>';
+      })
+    }
+    $possible_matches = $(possible_matches);
+    $('.intro__form__results').html($possible_matches);
+    // console.log('Match found: '+matches);
+    //navToResponse(match);
 	});
   window.addEventListener('scroll', _.throttle(function() {
     if ($(window).scrollTop() > 120) {
