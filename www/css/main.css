@@ -524,7 +524,7 @@ header img {
 
 section {
   display: none;
-  padding: 140px 20px 20px 20px;
+  padding: 100px 20px 20px 20px;
   height: 100vh;
   position: relative;
 }
@@ -533,13 +533,14 @@ section.active {
 }
 
 .intro {
+  padding-top: 50px;
   text-align: center;
 }
 
 .intro__form {
   width: 100%;
   position: absolute;
-  bottom: 20vh;
+  bottom: 40vh;
 }
 .intro__form input {
   height: 100px;
@@ -566,6 +567,11 @@ section.active {
 
 .intro__form__results {
   width: 100%;
+  position: absolute;
+  left: 0;
+  top: 100px;
+  max-height: 300px;
+  overflow: scroll;
 }
 .intro__form__results > div {
   height: 60px;

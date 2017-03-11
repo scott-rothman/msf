@@ -9,30 +9,42 @@ var init = function() {
   var header = document.querySelector('header');
   var body = document.querySelector('body');
   var intro = document.querySelector('.intro');
+  var match_holder = document.querySelector('.intro__form__results');
   var window_height = $(window).height();
   var header_height = $('header').height();
   var intro_height = window_height - 100;
   var matches;
+  var match = '';
   var possible_matches = '';
   var $possible_matches;
   intro.style.height = intro_height+'px';
 
+  match_holder.addEventListener('click', function(e) {
+    if (e.target.classList.contains('match')) {
+      match = e.target.textContent;
+      navToResponse(true, match);
+    }
+  });
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    navToResponse(false);
+  });
 	search_field.addEventListener('keypress', function(e) {
     possible_matches = '';
 		search_term = search_field.value.toLowerCase();
     matches = search_holders(search_term);
     matches = _.uniqBy(matches);
-    console.log(matches);
-    console.log('Searched for: '+search_term);
-    if (search_term.length > 4) {
+    if (search_term.length > 3) {
       _.each(matches, function(value) {
         possible_matches += '<div class="match">'+value+'</div>';
       })
+    } else {
+      $('.intro__form__results').html('');
     }
     $possible_matches = $(possible_matches);
     $('.intro__form__results').html($possible_matches);
     // console.log('Match found: '+matches);
-    //navToResponse(match);
+    //
 	});
   window.addEventListener('scroll', _.throttle(function() {
     if ($(window).scrollTop() > 120) {
@@ -52,7 +64,7 @@ var navToStart = function() {
   intro.classList.add('active');
 }
 
-var navToResponse = function(result) {
+var navToResponse = function(result, match) {
   var response_section = document.querySelector('.response');
   var response_yes = document.querySelector('.response__yes');
   var response_no = document.querySelector('.response__no');
