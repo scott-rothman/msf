@@ -11,6 +11,10 @@ var sendmail = require('sendmail')({
   silent: false
 });
 
+app.get('/', function(req, res) {
+	res.send("Hellow world");
+});
+
 app.post('/email/', function(req, res) {
 	var recipient = req.query.to;
 	var body = req.body;
