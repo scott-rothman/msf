@@ -1,6 +1,6 @@
 @import 'normalize';
 @import 'typeography';
-
+@import 'utils';
 $red: #EC0928;
 $yellow: #E6AA46;
 
@@ -16,13 +16,21 @@ input {
 }
 
 body {
-  
+  font-family: 'Open Sans', sans-serif;
   &.fixed-nav {
     header {
       position: fixed;
       top: 0;
     }
   }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'rooney-sans',sans-serif;
 }
 
 .wrapper {
@@ -44,7 +52,7 @@ header {
   border-bottom: solid black 1px;
   z-index: 9999;
   background: #FFFFFF;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
   top: -100px;
   img {
     max-height: 100%;
@@ -90,7 +98,8 @@ section {
   }
 }
 
-.response__yes, .response__no {
+.response__yes,
+.response__no {
   display: none;
   padding: 60px 20px;
   &.active {
@@ -119,12 +128,14 @@ section {
   background: $red;
   padding-top: 40px;
   padding-bottom: 40px;
+  @extend .boxshadow-3;
 }
 
 .response__no__info {
   background: $yellow;
   padding-top: 40px;
   padding-bottom: 40px;
+  @extend .boxshadow-3;
 }
 
 .steps {
