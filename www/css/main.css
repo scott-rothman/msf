@@ -802,8 +802,7 @@ section.active {
   z-index: 99999;
 }
 
-.modal,
-.success {
+.modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -817,17 +816,22 @@ section.active {
   opacity: 1;
   -webkit-transition: opacity 0.5s;
           transition: opacity 0.5s;
+  z-index: 100000;
 }
-.modal.hidden,
-.success.hidden {
+.modal.hidden {
   opacity: 0;
 }
 
-.modal {
-  z-index: 100000;
-}
-
 .success {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 400px;
+  height: 300px;
+  margin: 0;
+  padding: 0;
   z-index: 99999;
 }
 
