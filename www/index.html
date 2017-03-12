@@ -5,6 +5,8 @@
 	<link rel="stylesheet" href="/css/main.css">
   <!-- Typekit Font -->
   <script src="https://use.typekit.net/ymo8kbt.js"></script>
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <!-- Google Font -->
   <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
@@ -36,7 +38,7 @@
 			</div>
 		</section>
 		<section class="response">
-			<div class="response__yes">
+			<div class="response__yes wow fadeInDown">
 				<img src="/img/yes.png" alt="">
 				<!-- <div class="response__yes__info">
 					<h3 class="upper">Am I a shareholder?</h3>
@@ -50,7 +52,7 @@
 					<p class="modal-open" data-modal="c"><i class="box"></i>Tell your friends</p>
 				</div>
 			</div>
-			<div class="response__no">
+			<div class="response__no wow fadeInDown">
 				<img src="/img/no.png" alt="">
 				<!-- <div class="response__no__info">
 					<h3 class="upper">Am I a shareholder?</h3>
@@ -67,11 +69,11 @@
 		</section>
 		<section class="conclusion">
 			<h1>THANK YOU!</h1>
-			<p>We really appreciate you getting involved to help us in our mission to deliver emergency aid to people affected by armed conflict, epidemics, natural disasters and exclusion from healthcare. MSF offers assistance to people based on need, irrespective of race, religion, gender or political affiliation.</p>
-			<p class="with-button">If you have other funds: <button>Start Over</button></p>
-			<p class="with-button">If you want updates: <button>Sign Up</button></p>
-			<p class="extra-space">While we believe there is more to be gained by you pushing for change from the inside, we do know that money talks - even the threat of pulling your money from the funds and/or companies.</p>
-			<p class="with-button">For alternative investment opportunities: <button>Search Here</button></p>
+			<p class="wow fadeIn">We really appreciate you getting involved to help us in our mission to deliver emergency aid to people affected by armed conflict, epidemics, natural disasters and exclusion from healthcare. MSF offers assistance to people based on need, irrespective of race, religion, gender or political affiliation.</p>
+			<p class="with-button wow fadeInLeft">If you have other funds: <button><a href="#">Start Over</a></button></p>
+			<p class="with-button wow fadeInRight">If you want updates: <button>Sign Up</button></p>
+			<p class="extra-space wow fadeIn">While we believe there is more to be gained by you pushing for change from the inside, we do know that money talks - even the threat of pulling your money from the funds and/or companies.</p>
+			<p class="with-button wow fadeInLeft">For alternative investment opportunities: <button>Search Here</button></p>
 		</section>
 	</div>
 	<div class="modal-wrapper">
@@ -180,6 +182,8 @@ Sincerely,
 	<script src="/js/lodash.min.js"></script>
 	<script src="/js/data.js"></script>
 	<script src="/js/search.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+	<script>new WOW().init();</script>
 	<script src="/js/main.js"></script>
 </body>
 </html>
