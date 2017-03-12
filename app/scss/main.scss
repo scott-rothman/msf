@@ -331,7 +331,8 @@ section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  .left, .right {
+  .left,
+  .right {
     flex: 0 0 50%;
     align-content: center;
     justify-content: center;
@@ -343,7 +344,10 @@ section {
     text-align: center;
     padding-top: 60px;
   }
-  a, a:visited, a:active, a:hover {
+  a,
+  a:visited,
+  a:active,
+  a:hover {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
