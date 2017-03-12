@@ -892,7 +892,7 @@ button.end {
 }
 
 .modal-b {
-  height: 850px;
+  height: auto !important;
 }
 .modal-b h4 {
   margin-bottom: 10px;
