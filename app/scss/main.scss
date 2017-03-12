@@ -113,17 +113,31 @@ section {
 .intro__wrapper {
   display: flex;
   flex-direction: column;
+  &.hidden {
+    p {
+      opacity: 0;
+    }
+  }
+  p {
+    transition: opacity .5s;
+    opacity: 1;
+  }
 }
 .form-label {
   display: block;
   font-weight: bold;
-  margin: 1em 0 5px;
+  margin: 60px 0 5px 0;
   text-align: left;
   padding-left: 4px;
 }
 .intro__form {
   width: 100%;
   position: relative;
+  top: 0;
+  transition: top .5s ease-in-out;
+  &.active {
+    top: -400px;
+  }
   input {
     height: 100px;
     font-size: 3rem;
@@ -134,11 +148,11 @@ section {
       border: 3px solid $red;
       appearance: none;
       background: $white;
-      box-shadow: 0 8px 15px rgba(#4B4848, 0.1);
+      
 
       &:focus {
         outline: none;
-        box-shadow: 0 9px 20px rgba(#4B4848, 0.3);
+        
       }
     }
     &[type='submit'] {
@@ -146,7 +160,7 @@ section {
       appearance: none;
       border: 0;
       box-shadow: none;
-      box-shadow: 0 8px 15px rgba(#4B4848, 0.1);
+      
       background: $red;
       color: $white;
       &:focus {
@@ -159,9 +173,9 @@ section {
 .intro__form__results {
   width: 80%;
   position: absolute;
-  left: 0;
-  top: 100px;
-  max-height: 250px;
+  left: 4px;
+  top: 205px;
+  max-height: 350px;
   overflow-y: scroll;
   overflow-x: hidden;
   & > div {
@@ -227,7 +241,7 @@ section {
   background: $red;
   padding-top: 40px;
   padding-bottom: 40px;
-  @extend .boxshadow-3;
+  // @extend .boxshadow-3;
   border-radius: 8px;
 }
 
@@ -235,7 +249,7 @@ section {
   background: $yellow;
   padding-top: 40px;
   padding-bottom: 40px;
-  @extend .boxshadow-3;
+  // @extend .boxshadow-3;
   border-radius: 8px;
 }
 
@@ -272,7 +286,8 @@ section {
 }
 
 .modal-wrapper,
-.modal {
+.modal,
+.success {
   display: none;
   &.active {
     display: block;
@@ -301,14 +316,33 @@ section {
   background: #FFFFFF;
   border-radius: 5px;
   padding: 50px;
+  opacity: 1;
+  transition: opacity .5s;
+  z-index: 100000;
+  &.hidden {
+    opacity: 0;
+  }
 }
-
+.success {
+  position: absolute;
+  top: 50%;
+  left: 50%:
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+  z-index: 99999;
+}
 .modal-b {
+  height: 850px;
   h4 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
   h5 {
     margin-bottom: 10px;
+    margin-top: 0;
   }
   p {
     font-size: 1rem;
@@ -340,7 +374,7 @@ section {
   textarea {
     width: 100%;
     border: solid 1px $grey;
-    height: 100px;
+    height: 275px;
     padding: 10px;
     margin-bottom: 10px;
   }

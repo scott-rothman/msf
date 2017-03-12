@@ -17,16 +17,19 @@
 		<div class="wrapper">
 		<section class="intro active">
 			<div class="intro__wrapper">
-				<h1>Drop The Price!</h1>
+				<h1>#DROPTHEPRICE</h1>
 				<p>
 					We’re calling on GlaxoSmithKline and Pfizer to drop the price of the lifesaving pneumonia vaccine to $5 per child in crisis-affected populations and for all developing countries.
 				</p>
 				<p>
 					Most people don’t know that through their 401K retirement savings plan or by investing in mutual funds directly that they likely have money and influence in these Big Pharmaceutical companies. <a href="#" class="read-more">(Read More)</a>
 				</p>
-				<p class="form-label">Enter the mutual funds or ETFs that you are invested in or are thinking of investing in to see if they include Big Pharma:</p>
-				<form action="#" class="intro__form">					
-					<input type="text" placeholder="" class="intro__form__term">
+				<p>
+					Using the tool below you can see if your money is invested in Big Pharma and what you can do with that information.
+				</p>
+				<form action="#" class="intro__form">
+					<p class="form-label">Enter a mutual fund or ETF:</p>					
+					<input type="text" placeholder="Vanguard Total Stock Mkt Idx" class="intro__form__term">
 					<input type="submit" value="Search">
 					<div class="intro__form__results"></div>
 				</form>
@@ -99,14 +102,14 @@
 				<div class="bottom">
 					<p>These companies work for YOU!</p>
 					<p>Let them know that you want them to drop the price of the life saving pneumonia vaccine to $5 per child in crisis-affected populations and for all developing countries</p>
-					<button class="close-modal">Continue</button>
+					<button class="modal-close">Continue</button>
 				</div>
 			</div>
 		</div>
 		<div class="modal modal-b">
 			<div class="modal__header">Take Action! <i class="close-x"></i></div>
 			<h4>Tell your fund manager</h4>
-			<h5>A reall quick lesson the influence you have with the money you invest:</h5>
+			<h5>A really quick lesson the influence you have with the money you invest:</h5>
 			<p>When you invest your money through mutual funds or ETFs you delegate the voting authority on the shares of the underlying companies in the fund to the fund managers</p>
 			<p>So tell your fund manager that you want to drop the price.</p>
 			<form action="">
@@ -115,14 +118,26 @@
 				<label for="email">E-Mail</label>
 				<input type="email" id="email">
 				<label for="message">Message</label>
-				<textarea type="text" id="message"></textarea>
-				<input type="submit" value="Send" class="close-modal">
+				<textarea type="text" id="message">Dear [Fund Manager Name],
+
+I am invested in [Fund Name] and it has come to my attention that GlaxoSmithKline and Pfizer are included in the investment portfolio. 
+
+I am aligned with the goals of AFAIRSHOT.ORG and want to see both companies reduce the price of the life-saving pneumonia vaccine to $5 per child in crisis-affected populations and for all developing countries.
+
+As you hold my voting authority for these companies through my investment in your fund, I want you to represent my interests at the upcoming annual shareholder meetings for both companies.
+
+Please confirm you’ve received this email and the steps you will take to have our voices heard at the shareholder meetings.
+
+Sincerely,
+</textarea>
+				<input type="submit" value="Send" class="modal-close">
 			</form>
 		</div>
 		<div class="modal modal-c">
-			<div class="modal__header">Take Action! <i class="close-x close-modal"></i></div>
+			<div class="modal__header">Take Action! <i class="close-x modal-close"></i></div>
 			<h4>Tell your friends</h4>
 		</div>
+		<div class="success"><img src="/img/nice.png" alt=""></div>
 	</div>
 	<script src="/js/jquery.min.js"></script>
 	<script>
