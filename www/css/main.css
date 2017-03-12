@@ -412,7 +412,7 @@ th {
 h1 {
   text-align: center;
   font-size: 3rem;
-  margin: 0 0 20px 0;
+  margin: 0 0 30px 0;
 }
 
 h2 {
@@ -663,15 +663,9 @@ section.active {
 .intro__form__results {
   width: 80%;
   position: absolute;
-<<<<<<< HEAD
-  left: 0;
-  top: 100px;
-  max-height: 250px;
-=======
   left: 4px;
   top: 205px;
   max-height: 350px;
->>>>>>> 2c6ef8a2310cf691541c8c308f0ac11f8dfcf762
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -693,7 +687,7 @@ section.active {
 .response__yes,
 .response__no {
   display: none;
-  padding: 60px 20px;
+  padding: 40px 20px 0 20px;
 }
 .response__yes.active,
 .response__no.active {
@@ -748,6 +742,28 @@ section.active {
   border-radius: 8px;
 }
 
+button.end {
+  border: 0;
+  color: #FFFFFF;
+  background: #EC0928;
+  padding: 15px 40px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  display: block;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  clear: both;
+}
+
+.response__yes__steps {
+  width: 850px;
+  margin: 40px auto 0 auto;
+}
+.response__yes__steps p {
+  width: 50%;
+  float: left;
+}
+
 .response__no__info {
   background: #E6AA46;
   padding-top: 40px;
@@ -759,6 +775,9 @@ section.active {
   margin-top: 40px;
   font-family: 'proxima-soft',sans-serif;
   font-weight: 700;
+}
+.steps p:last-of-type {
+  margin-bottom: 0;
 }
 
 .box {
@@ -783,6 +802,32 @@ section.active {
   position: absolute;
   left: -12px;
   top: -36px;
+}
+
+.conclusion button {
+  border: 0;
+  color: #FFFFFF;
+  background: #EC0928;
+  padding: 15px 40px;
+  font-size: 1.5rem;
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  clear: both;
+}
+
+.conclusion p.with-button {
+  width: 800px;
+  height: 100px;
+  position: relative;
+}
+.conclusion p.with-button button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.conclusion p.extra-space {
+  margin-bottom: 60px;
 }
 
 .modal-wrapper,
@@ -890,6 +935,61 @@ section.active {
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
+}
+
+.modal-c {
+  height: 470px;
+}
+.modal-c h4 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.modal-c h5 {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.modal-c p {
+  font-size: 1.25rem;
+  margin-bottom: 40px;
+  max-width: 600px;
+  text-align: center;
+}
+.modal-c a,
+.modal-c a:visited,
+.modal-c a:active,
+.modal-c a:hover {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #000000;
+  display: block;
+  margin: 20px auto 0 auto;
+  line-height: 25px;
+  display: block;
+  font-size: 1.5rem;
+  width: 295px;
+}
+.modal-c a img,
+.modal-c a:visited img,
+.modal-c a:active img,
+.modal-c a:hover img {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: 6px;
+  margin-right: 10px;
+}
+.modal-c button {
+  border: 0;
+  color: #FFFFFF;
+  background: #EC0928;
+  padding: 15px 40px;
+  margin: 10px auto;
+  font-size: 1.5rem;
+  display: block;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  clear: both;
 }
 
 .modal__header {

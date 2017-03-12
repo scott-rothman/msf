@@ -196,7 +196,7 @@ section {
 .response__yes,
 .response__no {
   display: none;
-  padding: 60px 20px;
+  padding: 40px 20px 0 20px;
   &.active {
     display: block;
   }
@@ -244,6 +244,25 @@ section {
   // @extend .boxshadow-3;
   border-radius: 8px;
 }
+button.end {
+  border: 0;
+  color: #FFFFFF;
+  background: $red;
+  padding: 15px 40px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  display: block;
+  transform: translateY(30px);
+  clear: both;
+}
+.response__yes__steps {
+  width: 850px;
+  margin: 40px auto 0 auto;
+  & p {
+    width: 50%;
+    float: left;
+  }
+}
 
 .response__no__info {
   background: $yellow;
@@ -257,6 +276,9 @@ section {
   margin-top: 40px;
   font-family: 'proxima-soft',sans-serif;
   font-weight: 700;
+  & p:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .box {
@@ -282,6 +304,31 @@ section {
       left: -12px;
       top: -36px;
     }
+  }
+}
+
+.conclusion {
+  button {
+    border: 0;
+    color: #FFFFFF;
+    background: $red;
+    padding: 15px 40px;
+    font-size: 1.5rem;
+    transform: translateY(-15px);
+    clear: both;
+  }
+  p.with-button {
+    width: 800px;
+    height: 100px;
+    position: relative;
+    & button {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+  p.extra-space {
+    margin-bottom: 60px;
   }
 }
 
@@ -384,7 +431,56 @@ section {
     margin-bottom: 5px;
   }
 }
-
+.modal-c {
+  height: 470px;
+  h4 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  h5 {
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+  p {
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+    max-width: 600px;
+    text-align: center;
+  }
+  a,
+  a:visited,
+  a:active,
+  a:hover {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000000;
+    display: block;
+    margin: 20px auto 0 auto;
+    line-height: 25px;
+    display: block;
+    font-size: 1.5rem;
+    width: 295px;
+    & img {
+      width: 25px;
+      height: 25px;
+      position: relative;;
+      top: 6px;
+      margin-right: 10px;
+    }
+  }
+  button {
+    border: 0;
+    color: #FFFFFF;
+    background: $red;
+    padding: 15px 40px;
+    margin: 10px auto;
+    font-size: 1.5rem;
+    display: block;
+    transform: translateY(30px);
+    clear: both;
+  }
+}
 .modal__header {
   position: absolute;
   top: -1px;

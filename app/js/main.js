@@ -13,6 +13,7 @@ var init = function() {
   var modal_openers = document.querySelectorAll('.modal-open');
   var modal_closers = document.querySelectorAll('.modal-close')
   var intro_text = document.querySelector('.intro__wrapper');
+  var end_button = document.querySelector('.end');
   var name_holder = document.querySelector('#name');
   var window_height = $(window).height();
   var header_height = $('header').height();
@@ -61,6 +62,9 @@ var init = function() {
     // console.log('Match found: '+matches);
     //
 	});
+  end_button.addEventListener('click', function() {
+    navToEnd();
+  });
   name_holder.addEventListener('blur', function() {
     $('#message').append(name_holder.value);
   });
@@ -137,4 +141,13 @@ var navToResponse = function(result, match) {
   scrollPoint = responseRect.top - bodyRect.top;
   console.log('Scroll to: '+responseRect.top);
   $('html,body').animate({scrollTop: scrollPoint}, 1000);
+}
+
+var navToEnd = function() {
+  var end_section = document.querySelector('.conclusion');
+  end_section.classList.add('active');
+  var bodyRect = document.body.getBoundingClientRect();
+  var conclusionRect = end_section.getBoundingClientRect();
+  var scrollPoint = conclusionRect.top - bodyRect.top;
+  $('html,body').animate({scrollTop: scrollPoint}, 1000); 
 }
