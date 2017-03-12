@@ -10,6 +10,7 @@ var init = function() {
   var body = document.querySelector('body');
   var intro = document.querySelector('.intro');
   var match_holder = document.querySelector('.intro__form__results');
+  var modal_openers = document.querySelectorAll('.modal-open');
   var window_height = $(window).height();
   var header_height = $('header').height();
   var intro_height = window_height - 100;
@@ -46,6 +47,20 @@ var init = function() {
     // console.log('Match found: '+matches);
     //
 	});
+  _.each(modal_openers, function(modal_opener) {
+    modal_opener.addEventListener('click', function(e) {
+      var modal_to_open = '.modal-'+e.target.dataset.modal;
+      document.querySelector('.modal-wrapper').classList.add('active');
+      document.querySelector(modal_to_open).classList.add('active');  
+    }); 
+
+  });
+  window.addEventListener('click', function(e) {
+    if(e.target.classList.contains('modal-wrapper')) {
+      document.querySelector('.modal-wrapper').classList.remove('active');
+      document.querySelector('.modal.active').classList.remove('active');
+    }
+  });
   window.addEventListener('scroll', _.throttle(function() {
     if ($(window).scrollTop() > 120) {
       body.classList.add('fixed-nav');
