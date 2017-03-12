@@ -641,7 +641,7 @@ section.active {
 .intro__form__results {
   width: 80%;
   position: absolute;
-  left: 4px;
+  left: 0;
   top: 100px;
   max-height: 250px;
   overflow-y: scroll;
