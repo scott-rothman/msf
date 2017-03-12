@@ -386,7 +386,8 @@ button.end {
   z-index: 99999;
 }
 .modal-b {
-  height: 850px;
+  // height: 850px;
+  height: auto !important;
   h4 {
     margin-bottom: 10px;
     margin-top: 10px;
