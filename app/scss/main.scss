@@ -306,6 +306,7 @@ button.end {
 }
 
 .conclusion {
+  padding-top: 150px;
   button {
     border: 0;
     color: #FFFFFF;
@@ -314,6 +315,7 @@ button.end {
     font-size: 1.5rem;
     transform: translateY(-15px);
     clear: both;
+    width: 225px;
   }
   p.with-button {
     width: 800px;
@@ -327,6 +329,10 @@ button.end {
   }
   p.extra-space {
     margin-bottom: 60px;
+  }
+  & .thanks-img {
+    margin: 0 auto 40px auto;
+    display: block;
   }
 }
 

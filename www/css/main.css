@@ -803,6 +803,9 @@ button.end {
   top: -36px;
 }
 
+.conclusion {
+  padding-top: 150px;
+}
 .conclusion button {
   border: 0;
   color: #FFFFFF;
@@ -812,8 +815,8 @@ button.end {
   -webkit-transform: translateY(-15px);
           transform: translateY(-15px);
   clear: both;
+  width: 225px;
 }
-
 .conclusion p.with-button {
   width: 800px;
   height: 100px;
@@ -824,9 +827,12 @@ button.end {
   top: 0;
   right: 0;
 }
-
 .conclusion p.extra-space {
   margin-bottom: 60px;
+}
+.conclusion .thanks-img {
+  margin: 0 auto 40px auto;
+  display: block;
 }
 
 .modal-wrapper,
