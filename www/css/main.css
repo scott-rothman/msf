@@ -423,6 +423,18 @@ h3 {
   text-align: center;
 }
 
+h4 {
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
 p {
   font-size: 1.5rem;
   line-height: 1.5;
@@ -783,6 +795,21 @@ section.active {
   width: 75%;
   background: #FFFFFF;
   border-radius: 5px;
+  padding: 50px;
+}
+
+.modal-b h4 {
+  margin-bottom: 20px;
+}
+
+.modal-b h5 {
+  margin-bottom: 10px;
+}
+
+.modal-b p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  max-width: 600px;
 }
 
 .modal__header {
@@ -798,4 +825,65 @@ section.active {
   color: #FFFFFF;
   font-size: 1.25rem;
   text-align: center;
+}
+
+.modal__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.modal__content .left,
+.modal__content .right {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 50%;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding-top: 20px;
+}
+.modal__content .bottom {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 100%;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  text-align: center;
+  padding-top: 60px;
+}
+.modal__content a,
+.modal__content a:visited,
+.modal__content a:active,
+.modal__content a:hover {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #000000;
+  display: block;
+  margin-top: 20px;
+  line-height: 25px;
+}
+.modal__content a img,
+.modal__content a:visited img,
+.modal__content a:active img,
+.modal__content a:hover img {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: 6px;
+  margin-right: 10px;
 }

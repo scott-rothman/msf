@@ -295,6 +295,21 @@ section {
   width: 75%;
   background: #FFFFFF;
   border-radius: 5px;
+  padding: 50px;
+}
+
+.modal-b {
+  h4 {
+    margin-bottom: 20px;
+  }
+  h5 {
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    max-width: 600px;
+  }
 }
 
 .modal__header {
@@ -310,4 +325,38 @@ section {
   color: #FFFFFF;
   font-size: 1.25rem;
   text-align: center;
+}
+
+.modal__content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .left, .right {
+    flex: 0 0 50%;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .bottom {
+    flex: 0 0 100%;
+    text-align: center;
+    padding-top: 60px;
+  }
+  a, a:visited, a:active, a:hover {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000000;
+    display: block;
+    margin-top: 20px;
+    line-height: 25px;
+    & img {
+      width: 25px;
+      height: 25px;
+      position: relative;;
+      top: 6px;
+      margin-right: 10px;
+    }
+  }
 }

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="33px" viewBox="0 0 30 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-down</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="RESPONSE-SCREEN---YES-Copy" transform="translate(-486.000000, -507.000000)" fill="#000000">
+            <g id="Page-1" transform="translate(335.000000, 463.000000)">
+                <g id="Ok-so-now-what-+-arrow">
+                    <path d="M180.632501,63.3870891 C180.100642,62.798954 179.186775,62.7477784 178.591137,63.2733413 L167.445714,73.1101116 L167.445714,45.4283124 C167.445714,44.6396394 166.798498,44 165.999988,44 C165.2017,44 164.554262,44.6394202 164.554262,45.4283124 L164.554262,73.1101116 L153.40884,63.2734509 C152.813534,62.747888 151.899557,62.7991731 151.367475,63.3871986 C150.835727,63.9755529 150.887083,64.8785216 151.482499,65.4039749 L163.592035,76.0913329 C164.278294,76.6972206 165.138919,77 165.999877,77 C166.860502,77 167.72125,76.6972206 168.407731,76.0916617 L180.517267,65.4039749 C181.112894,64.8781929 181.16436,63.9752241 180.632501,63.3870891 Z" id="arrow-down"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
