@@ -571,7 +571,6 @@ section.active {
 
 .intro {
   padding-top: 50px;
-  text-align: center;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -584,6 +583,12 @@ section.active {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
           justify-content: center;
+}
+.intro .read-more {
+  color: #EC0928;
+  font-weight: bold;
+  font-size: 0.8em;
+  text-decoration: none;
 }
 
 .intro__wrapper {
@@ -598,10 +603,17 @@ section.active {
           flex-direction: column;
 }
 
+.form-label {
+  display: block;
+  font-weight: bold;
+  margin: 1em 0 5px;
+  text-align: left;
+  padding-left: 4px;
+}
+
 .intro__form {
   width: 100%;
   position: relative;
-  margin-top: 40px;
 }
 .intro__form input {
   height: 100px;
@@ -643,7 +655,7 @@ section.active {
   position: absolute;
   left: 4px;
   top: 100px;
-  max-height: 300px;
+  max-height: 250px;
   overflow-y: scroll;
   overflow-x: hidden;
 }
