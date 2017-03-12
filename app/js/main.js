@@ -15,6 +15,8 @@ var init = function() {
   var intro_text = document.querySelector('.intro__wrapper');
   var end_button = document.querySelector('.end');
   var name_holder = document.querySelector('#name');
+  var email_holder = document.querySelector('#email');
+  var back_to_top = document.querySelector('.btt');
   var window_height = $(window).height();
   var header_height = $('header').height();
   var intro_height = window_height - 100;
@@ -22,12 +24,16 @@ var init = function() {
   var match = '';
   var possible_matches = '';
   var $possible_matches;
+  window.msf = [];
   intro.style.height = intro_height+'px';
 
   match_holder.addEventListener('click', function(e) {
     if (e.target.classList.contains('match')) {
       match = e.target.textContent;
       navToResponse(true, match);
+      window.msf.match = match;
+      var message = 'To Whom it May Concern,\r\rI am invested in '+ window.msf.match + ' and it has come to my attention that GlaxoSmithKline and Pfizer are included in the investment portfolio. I am aligned with the goals of AFAIRSHOT.ORG and want to see both companies reduce the price of the life-saving pneumonia vaccine to $5 per child in crisis-affected populations and for all developing countries.\r\rAs you hold my voting authority for these companies through my investment in your fund, I want you to represent my interests at the upcoming annual shareholder meetings for both companies.\r\rPlease confirm you’ve received this email and the steps you will take to have our voices heard at the shareholder meetings.\r\rSincerely,';
+      $('#message').html(message);
       window.setTimeout(function() {
         form.classList.remove('active');
         intro_text.classList.remove('hidden');
@@ -62,11 +68,18 @@ var init = function() {
     // console.log('Match found: '+matches);
     //
 	});
-  end_button.addEventListener('click', function() {
+  end_button.addEventListener('click', function(e) {
+    e.preventDefault();
     navToEnd();
   });
+  back_to_top.addEventListener('click', function(e) {
+    e.preventDefault();
+    navToStart();
+  })
   name_holder.addEventListener('blur', function() {
-    $('#message').append(name_holder.value);
+    var name = document.querySelector('#name').value;
+    var message = 'To Whom it May Concern,\r\rI am invested in '+ window.msf.match + ' and it has come to my attention that GlaxoSmithKline and Pfizer are included in the investment portfolio. I am aligned with the goals of AFAIRSHOT.ORG and want to see both companies reduce the price of the life-saving pneumonia vaccine to $5 per child in crisis-affected populations and for all developing countries.\r\rAs you hold my voting authority for these companies through my investment in your fund, I want you to represent my interests at the upcoming annual shareholder meetings for both companies.\r\rPlease confirm you’ve received this email and the steps you will take to have our voices heard at the shareholder meetings.\r\rSincerely, \r'+name;
+    $('#message').html(message);
   });
   _.each(modal_openers, function(modal_opener) {
     modal_opener.addEventListener('click', function(e) {
@@ -111,12 +124,15 @@ var init = function() {
 }
 
 var navToStart = function() {
-  var sections = document.querySelectorAll('section');
-  var intro = document.querySelector('.intro');
-  _.each(sections, function(section) {
-    section.classList.remove('active');
-  });
-  intro.classList.add('active');
+  $('html,body').animate({scrollTop: 0}, 1000);
+  window.setTimeout(function() {
+    var sections = document.querySelectorAll('section');
+    var intro = document.querySelector('.intro');
+    _.each(sections, function(section) {
+      section.classList.remove('active');
+    });
+    intro.classList.add('active');
+  }, 1000);
 }
 
 var navToResponse = function(result, match) {
