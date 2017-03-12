@@ -24,6 +24,8 @@ var init = function() {
     if (e.target.classList.contains('match')) {
       match = e.target.textContent;
       navToResponse(true, match);
+      $('.intro__form__results').html('');
+      search_field.value = '';
     }
   });
   form.addEventListener('submit', function(e) {
@@ -49,6 +51,7 @@ var init = function() {
 	});
   _.each(modal_openers, function(modal_opener) {
     modal_opener.addEventListener('click', function(e) {
+      e.target.classList.add('checked')
       var modal_to_open = '.modal-'+e.target.dataset.modal;
       document.querySelector('.modal-wrapper').classList.add('active');
       document.querySelector(modal_to_open).classList.add('active');  
