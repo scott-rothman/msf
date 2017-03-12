@@ -28,7 +28,7 @@
 				</p>
 				<hr>
 				<p>
-					<strong>Using this search tool below, you can look up your individual mutual funds and ETFs to see if your money is invested in Big Pharma and how you can follow up with that information.</strong>
+					<strong>Using this search tool below you can check if your money is invested in Big Pharma and how you can follow up with that information. Search for your individual mutual funds and ETFs or assets listed in your retirement account.</strong>
 				</p>
 				<form action="#" class="intro__form">
 					<p class="form-label">Enter a mutual fund or ETF:</p>					
@@ -157,28 +157,7 @@ Sincerely,
 	</div>
 	<script src="/js/jquery.min.js"></script>
 	<script>
-	  window.fbAsyncInit = function() {
-	    FB.init({
-	      appId      : '419745495028974',
-	      xfbml      : true,
-	      version    : 'v2.8'
-	    });
-	    FB.AppEvents.logPageView();
-	  };
-
-	  (function(d, s, id){
-	     var js, fjs = d.getElementsByTagName(s)[0];
-	     if (d.getElementById(id)) {return;}
-	     js = d.createElement(s); js.id = id;
-	     js.src = "//connect.facebook.net/en_US/sdk.js";
-	     fjs.parentNode.insertBefore(js, fjs);
-	   }(document, 'script', 'facebook-jssdk'));
-	  function sendMessage(msg) {
-	  	FB.login(function(){
-		  // Note: The call will only work if you accept the permission request
-		  FB.api('/me/feed', 'post', {message: msg});
-		}, {scope: 'publish_actions'});
-	  }
+	 
 	</script>
 	<!-- <button onclick="sendMessage('Scott Rothman can you read me?')">Login with Facebook</button> -->
 	<script src="/js/lodash.min.js"></script>
