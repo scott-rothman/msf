@@ -589,6 +589,7 @@ section.active {
 .intro__form {
   width: 100%;
   position: relative;
+  margin-top: 40px;
 }
 .intro__form input {
   height: 100px;
@@ -631,7 +632,8 @@ section.active {
   left: 4px;
   top: 100px;
   max-height: 300px;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 .intro__form__results > div {
   height: 60px;
