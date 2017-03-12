@@ -119,7 +119,7 @@ section {
     }
   }
   p {
-    transition: opacity .5s;
+    transition: opacity 0.5s;
     opacity: 1;
   }
 }
@@ -134,7 +134,7 @@ section {
   width: 100%;
   position: relative;
   top: 0;
-  transition: top .5s ease-in-out;
+  transition: top 0.5s ease-in-out;
   &.active {
     top: -400px;
   }
@@ -148,11 +148,10 @@ section {
       border: 3px solid $red;
       appearance: none;
       background: $white;
-      
+
 
       &:focus {
         outline: none;
-        
       }
     }
     &[type='submit'] {
@@ -160,7 +159,6 @@ section {
       appearance: none;
       border: 0;
       box-shadow: none;
-      
       background: $red;
       color: $white;
       &:focus {
@@ -317,7 +315,7 @@ section {
   border-radius: 5px;
   padding: 50px;
   opacity: 1;
-  transition: opacity .5s;
+  transition: opacity 0.5s;
   z-index: 100000;
   &.hidden {
     opacity: 0;
