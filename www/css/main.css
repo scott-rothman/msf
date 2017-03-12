@@ -663,9 +663,15 @@ section.active {
 .intro__form__results {
   width: 80%;
   position: absolute;
+<<<<<<< HEAD
+  left: 0;
+  top: 100px;
+  max-height: 250px;
+=======
   left: 4px;
   top: 205px;
   max-height: 350px;
+>>>>>>> 2c6ef8a2310cf691541c8c308f0ac11f8dfcf762
   overflow-y: scroll;
   overflow-x: hidden;
 }
