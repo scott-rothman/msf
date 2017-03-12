@@ -32,7 +32,7 @@
 				</p>
 				<form action="#" class="intro__form">
 					<p class="form-label">Enter a mutual fund or ETF:</p>					
-					<input type="text" placeholder="Vanguard Total Stock Mkt Idx" class="intro__form__term">
+					<input type="text" class="intro__form__term">
 					<input type="submit" value="Search">
 					<div class="intro__form__results"></div>
 				</form>
@@ -119,10 +119,14 @@
 				Both Pfizer and GSK have their annual shareholder meetings coming up in Q2 (late April and May respectively). Let’s have our voices heard in this forum. Use the email template below to let your fund manager know how they can best represent your interests when it comes to your values and your money.
 			</p>
 			<form action="">
-				<label for="name">Name</label>
-				<input type="text" id="name">
-				<label for="email">E-Mail</label>
-				<input type="email" id="email">
+				<div class="name-wrapper">
+					<label for="name">Name</label>
+					<input type="text" id="name">
+				</div>
+				<div class="email-wrapper">
+					<label for="email">E-Mail</label>
+					<input type="email" id="email">
+				</div>
 				<label for="message">Message</label>
 				<textarea type="text" id="message">Dear [Fund Manager Name],
 

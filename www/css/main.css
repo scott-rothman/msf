@@ -892,7 +892,7 @@ button.end {
 }
 
 .modal-b {
-  height: auto !important;
+  height: 850px;
 }
 .modal-b h4 {
   margin-bottom: 10px;
@@ -911,6 +911,14 @@ button.end {
   max-width: 600px;
   margin: 0 auto;
 }
+.modal-b .name-wrapper,
+.modal-b .email-wrapper {
+  width: 293px;
+  display: inline-block;
+}
+.modal-b .name-wrapper {
+  margin-right: 10px;
+}
 .modal-b input {
   width: 100%;
   border: solid 1px #9C9C9C;
@@ -926,13 +934,13 @@ button.end {
   font-size: 1.5rem;
   width: auto;
   height: auto;
-  margin: 10px auto 0 auto;
+  margin: 25px auto 0 auto;
   display: block;
 }
 .modal-b textarea {
   width: 100%;
   border: solid 1px #9C9C9C;
-  height: 275px;
+  height: 250px;
   padding: 10px;
   margin-bottom: 10px;
 }
@@ -1079,4 +1087,8 @@ button.end {
   position: relative;
   top: 6px;
   margin-right: 10px;
+}
+
+.modal-a .bottom button {
+  margin-top: 40px;
 }
