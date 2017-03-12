@@ -34,11 +34,12 @@
 		</section>
 		<section class="response">
 			<div class="response__yes">
-				<div class="response__yes__info">
+				<img src="/img/yes.png" alt="">
+				<!-- <div class="response__yes__info">
 					<h3 class="upper">Am I a shareholder?</h3>
 					<h2>YES</h2>
 					<h3>Ok, so now what can I do?</h3>
-				</div>
+				</div> -->
 				<div class="response__yes__steps steps">
 					<p class="checked"><i class="box"></i>Check your investments.</p>
 					<p class="modal-open" data-modal="a"><i class="box"></i>Tell the companies to drop the price.</p>
@@ -47,11 +48,12 @@
 				</div>
 			</div>
 			<div class="response__no">
-				<div class="response__no__info">
+				<img src="/img/no.png" alt="">
+				<!-- <div class="response__no__info">
 					<h3 class="upper">Am I a shareholder?</h3>
 					<h2>NO</h2>
 					<h3>Ok, so now what can I do?</h3>
-				</div>
+				</div> -->
 				<div class="response__no__steps steps">
 					<p class="checked"><i class="box"></i>Check your investments.</p>
 					<p class="modal-open" data-modal="a"><i class="box"></i>Tell the companies to drop the prices</p>
@@ -97,6 +99,7 @@
 				<div class="bottom">
 					<p>These companies work for YOU!</p>
 					<p>Let them know that you want them to drop the price of the life saving pneumonia vaccine to $5 per child in crisis-affected populations and for all developing countries</p>
+					<button class="close-modal">Continue</button>
 				</div>
 			</div>
 		</div>
@@ -112,11 +115,12 @@
 				<label for="email">E-Mail</label>
 				<input type="email" id="email">
 				<label for="message">Message</label>
-				<input type="text" id="message">
+				<textarea type="text" id="message"></textarea>
+				<input type="submit" value="Send" class="close-modal">
 			</form>
 		</div>
 		<div class="modal modal-c">
-			<div class="modal__header">Take Action! <i class="close-x"></i></div>
+			<div class="modal__header">Take Action! <i class="close-x close-modal"></i></div>
 			<h4>Tell your friends</h4>
 		</div>
 	</div>

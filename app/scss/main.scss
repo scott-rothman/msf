@@ -5,6 +5,7 @@
 $red: #EC0928;
 $yellow: #E6AA46;
 $white: #FFFFFF;
+$grey: #9C9C9C;
 body,
 div,
 section,
@@ -12,7 +13,8 @@ header,
 form,
 p,
 ul,
-input {
+input,
+textarea {
   box-sizing: border-box;
 }
 
@@ -184,7 +186,10 @@ section {
   &.active {
     display: block;
   }
-
+  & img {
+    display: block;
+    margin: 0 auto;
+  }
   & h2 {
     font-size: 10rem;
     padding: 0;
@@ -244,7 +249,7 @@ section {
   display: inline-block;
   height: 20px;
   width: 20px;
-  background: #F0F0F0;
+  background: $grey;
   margin-right: 10px;
   border-radius: 5px;
   position: relative;
@@ -291,8 +296,8 @@ section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 75%;
-  width: 75%;
+  height: 720px;
+  width: 800px;
   background: #FFFFFF;
   border-radius: 5px;
   padding: 50px;
@@ -309,6 +314,40 @@ section {
     font-size: 1rem;
     margin-bottom: 10px;
     max-width: 600px;
+  }
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  input {
+    width: 100%;
+    border: solid 1px $grey;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 10px;
+    &[type='submit'] {
+      border: 0;
+      color: #FFFFFF;
+      background: $red;
+      padding: 15px 40px;
+      font-size: 1.5rem;
+      width: auto;
+      height: auto;
+      margin: 10px auto 0 auto;
+      display: block;
+    }
+  }
+  textarea {
+    width: 100%;
+    border: solid 1px $grey;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
   }
 }
 
@@ -331,7 +370,8 @@ section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  .left, .right {
+  .left,
+  .right {
     flex: 0 0 50%;
     align-content: center;
     justify-content: center;
@@ -342,8 +382,19 @@ section {
     flex: 0 0 100%;
     text-align: center;
     padding-top: 60px;
+    button {
+      border: 0;
+      color: #FFFFFF;
+      background: $red;
+      padding: 15px 40px;
+      margin-top: 10px;
+      font-size: 1.5rem;
+    }
   }
-  a, a:visited, a:active, a:hover {
+  a,
+  a:visited,
+  a:active,
+  a:hover {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
