@@ -181,7 +181,7 @@ section {
     line-height: 60px;
     text-align: left;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1rem;
     padding-left: 25px;
     transition: all 0.2s ease;
     &:hover {
@@ -406,7 +406,8 @@ button.end {
     max-width: 600px;
     margin: 0 auto;
   }
-  .name-wrapper, .email-wrapper {
+  .name-wrapper,
+  .email-wrapper {
     width: 293px;
     display: inline-block;
   }
@@ -414,7 +415,6 @@ button.end {
     margin-right: 10px;
   }
   input {
-
     width: 100%;
     border: solid 1px $grey;
     height: 50px;
@@ -560,6 +560,6 @@ button.end {
   .bottom {
     button {
       margin-top: 40px;
-    }  
-  } 
+    }
+  }
 }

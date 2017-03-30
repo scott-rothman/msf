@@ -48,5 +48,12 @@ var search_holders = function(share_name) {
 			}
 		}
 	}
+	for (ofst of all_funds) {
+		if (ofst.hasOwnProperty("name")) {
+			if (ofst.name.toLowerCase().includes(share_name)) {
+				arr.push(ofst.name);
+			}
+		}
+	}
 	return arr;
 }
