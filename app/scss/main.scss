@@ -406,7 +406,8 @@ button.end {
     max-width: 600px;
     margin: 0 auto;
   }
-  .name-wrapper, .email-wrapper {
+  .name-wrapper,
+  .email-wrapper {
     width: 293px;
     display: inline-block;
   }
@@ -414,7 +415,6 @@ button.end {
     margin-right: 10px;
   }
   input {
-
     width: 100%;
     border: solid 1px $grey;
     height: 50px;
@@ -560,6 +560,23 @@ button.end {
   .bottom {
     button {
       margin-top: 40px;
-    }  
-  } 
+    }
+  }
+}
+
+// read more 
+.intro__wrapper.hidden h2 {
+ opacity: 0;
+}
+.read-more-text {
+  display: inline-block;
+  height: 0;
+  overflow: hidden;
+  transition: opacity 2s;
+  opacity: 0;
+}
+
+.read-more-text.fade-in {
+  height: auto;
+  opacity: 1;
 }

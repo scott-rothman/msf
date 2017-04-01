@@ -21,18 +21,34 @@
 			<div class="intro__wrapper">
 				<h1>#DROPTHEPRICE</h1>
 				<p>
-					We’re calling on GlaxoSmithKline and Pfizer to drop the price of the lifesaving pneumonia vaccine to $5 per child in crisis-affected populations and for all developing countries.
+					We’re calling on GlaxoSmithKline and Pfizer to drop the price of the lifesaving pneumonia vaccine to $5 per child (for all three doses) in all developing countries.
 				</p>
 				<p>
-					Most people don’t know that through their 401K retirement savings plan or by investing in mutual funds directly that they likely have money and influence in these Big Pharmaceutical companies. <a href="#" class="read-more">(Read More)</a>
+					Most people don’t know that through their (401K) retirement savings plan or through direct investment in mutual funds that they likely have money and influence in these Big Pharmaceutical companies.
+					<a href="#"  class="read-more" id="read-more">(Read More)</a>
 				</p>
+					<div id="read-more-text" class="read-more-text">
+						<p>
+							It is an under-reported fact that pneumococcal disease kills more children under five than any other disease. Nearly one million children die from it each year. <a href="#">[1]</a>
+						</p>
+						<p>
+							For the past two years, Doctors Without Borders has been campaigning, gathering the support of hundreds of thousands of people from around the world to encourage Pfizer and GSK to reduce the price of the vaccine. Thanks to public pressure, at the end of last year Pfizer and GSK finally announced that they would reduce the price of the vaccine for humanitarian organisations like us. We now need your help to lower the price of the vaccine in all developing countries. We know we can be heard, and the fight is not over. 
+						</p>
+						<h2>
+							How can you help?
+						</h2>
+						<p>
+							You might not know it but through your retirement savings plan or your investment in mutual funds you might have money in Pfizer and GSK and can use this power to demand change.  
+						</p>
+					</div>
 				<hr>
 				<p>
 					<strong>Using this search tool below you can check if your money is invested in Big Pharma and how you can follow up with that information. Search for your individual mutual funds and ETFs or assets listed in your retirement account.</strong>
 				</p>
+
 				<form action="#" class="intro__form">
-					<p class="form-label">Enter a mutual fund or ETF:</p>					
-					<input type="text" class="intro__form__term">
+					<p class="form-label">Enter the mutual funds or ETFs that you are invested in:</p>
+					<input type="text" class="intro__form__term" placeholder="Vanguard 500 Index Inv">
 					<input type="submit" value="Search">
 					<div class="intro__form__results"></div>
 				</form>
@@ -47,10 +63,10 @@
 					<h3>Ok, so now what can I do?</h3>
 				</div> -->
 				<div class="response__yes__steps steps">
-					<p class="checked"><i class="box"></i>Check your investments.</p>
+					<p class="checked"><i class="box"></i>See if your money is invested in Pfizer or GlaxoSmithKline.</p>
 					<p class="modal-open" data-modal="a"><i class="box"></i>Tell the companies to drop the price.</p>
-					<p class="modal-open" data-modal="b"><i class="box"></i>Contact your fund manager</p>
-					<p class="modal-open" data-modal="c"><i class="box"></i>Tell your friends</p>
+					<p class="modal-open" data-modal="b"><i class="box"></i>Tell your fund managers to represent your interests</p>
+					<p class="modal-open" data-modal="c"><i class="box"></i>Tell your friends!</p>
 				</div>
 			</div>
 			<div class="response__no wow fadeInDown">
@@ -61,7 +77,7 @@
 					<h3>Ok, so now what can I do?</h3>
 				</div> -->
 				<div class="response__no__steps steps">
-					<p class="checked"><i class="box"></i>Check your investments.</p>
+					<p class="checked"><i class="box"></i>See if your money is invested in Big Pharma.</p>
 					<p class="modal-open" data-modal="a"><i class="box"></i>Tell the companies to drop the prices</p>
 					<p class="modal-open" data-modal="c"><i class="box"></i>Tell your friends</p>
 				</div>
@@ -161,14 +177,19 @@ Sincerely,
 	</div>
 	<script src="/js/jquery.min.js"></script>
 	<script>
-	 
+ 			var read_more_text = document.querySelector('#read-more-text');
+ 			var read_more = document.querySelector('#read-more');
+ 			
+ 			// read_more.addEventListener('click', function(event) {
+ 			// 	event.preventDefault();
+ 			//   console.log('clicked', read_more_text)
+ 			//   read_more_text.classList.add("fade-in");
+ 			// });
 	</script>
 	<!-- <button onclick="sendMessage('Scott Rothman can you read me?')">Login with Facebook</button> -->
 	<script src="/js/lodash.min.js"></script>
 	<script src="/js/data.js"></script>
 	<script src="/js/search.js"></script>
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
-	<script>new WOW().init();</script> -->
 	<script src="/js/main.js"></script>
 </body>
 </html>
