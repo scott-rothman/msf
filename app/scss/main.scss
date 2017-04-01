@@ -19,9 +19,7 @@ textarea {
 }
 
 body {
-  // font-family: 'Open Sans', sans-serif;
-  font-family: 'museo-sans-rounded',sans-serif;
-  // font-family: "proxima-soft",sans-serif;
+  font-family: 'proxima-nova',sans-serif;
   &.fixed-nav {
     padding-top: 100px;
     header {
@@ -36,9 +34,6 @@ h2,
 h3,
 h4,
 h5 {
-  // font-family: 'rooney-sans',sans-serif;
-  // font-family: 'museo-sans-display',sans-serif;
-  // font-family: 'proxima-soft',sans-serif;
   font-weight: 700;
 }
 
@@ -139,8 +134,8 @@ section {
     top: -400px;
   }
   input {
-    height: 100px;
-    font-size: 3rem;
+    height: 80px;
+    font-size: 2.5rem;
     transition: all 0.4s ease;
     &[type='text'] {
       padding-left: 20px;
@@ -203,10 +198,10 @@ section {
     margin: 0 auto;
   }
   & h2 {
-    font-size: 10rem;
+    font-size: 8rem;
     padding: 0;
     margin: 0 auto 20px auto;
-    color: #FFFFFF;
+    // color: #FFFFFF;
     width: 80%;
     position: relative;
     &:after {
@@ -220,7 +215,8 @@ section {
     }
   }
   & h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: normal;
     padding: 0;
     margin: 0;
     color: #000000;
@@ -236,10 +232,9 @@ section {
 }
 
 .response__yes__info {
-  background: $red;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  // @extend .boxshadow-3;
+  border: 3px solid $red;
+  // border: 3px solid #000000;
+  padding: 40px;
   border-radius: 8px;
 }
 button.end {
@@ -247,33 +242,37 @@ button.end {
   color: #FFFFFF;
   background: $red;
   padding: 15px 40px;
-  margin: 0 auto;
+  margin: 0 auto 2em;
   font-size: 1.5rem;
   display: block;
   transform: translateY(30px);
   clear: both;
 }
 .response__yes__steps {
-  width: 850px;
+  max-width: 800px;
   margin: 40px auto 0 auto;
+
   & p {
-    width: 50%;
-    float: left;
+    // width: 50%;
+    // float: left;
   }
 }
 
 .response__no__info {
-  background: $yellow;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  // @extend .boxshadow-3;
+  border: 3px solid $yellow;
+  padding: 2em;
   border-radius: 8px;
 }
 
 .steps {
   margin-top: 40px;
-  font-family: 'proxima-soft',sans-serif;
-  font-weight: 700;
+  font-family: 'proxima-nova',sans-serif;
+  font-weight: bold;
+  & h3 {
+    font-weight: bold;
+    color: $red;
+    margin-bottom: 1em;
+  }
   & p:last-of-type {
     margin-bottom: 0;
   }
@@ -307,6 +306,9 @@ button.end {
 
 .conclusion {
   padding-top: 150px;
+  img {
+    max-width: 100%;
+  }
   button {
     border: 0;
     color: #FFFFFF;
@@ -320,8 +322,11 @@ button.end {
   p.with-button {
     width: 800px;
     height: 100px;
+    padding-right: 260px;
+    font-weight: bold;
     position: relative;
     & button {
+      font-weight: normal;
       position: absolute;
       top: 0;
       right: 0;
@@ -388,7 +393,7 @@ button.end {
 
 
 .modal-b {
-  height: 850px;
+  height: 800px;
   h4 {
     margin-bottom: 10px;
     margin-top: 10px;
@@ -409,10 +414,11 @@ button.end {
   .name-wrapper,
   .email-wrapper {
     width: 293px;
-    display: inline-block;
+    display: none;
   }
   .name-wrapper {
     margin-right: 10px;
+    float: left;
   }
   input {
     width: 100%;
@@ -564,9 +570,9 @@ button.end {
   }
 }
 
-// read more 
+// read more link style (this can be done differently)
 .intro__wrapper.hidden h2 {
- opacity: 0;
+  opacity: 0;
 }
 .read-more-text {
   display: inline-block;
@@ -574,6 +580,12 @@ button.end {
   overflow: hidden;
   transition: opacity 2s;
   opacity: 0;
+  a {
+    color: $red;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-decoration: none;
+  }
 }
 
 .read-more-text.fade-in {
