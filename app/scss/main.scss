@@ -176,9 +176,10 @@ section {
     line-height: 60px;
     text-align: left;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1rem;
     padding-left: 25px;
     transition: all 0.2s ease;
+    text-transform: capitalize;
     &:hover {
       background-color: $red;
       color: #FFFFFF;
@@ -186,7 +187,9 @@ section {
   }
 }
 
-.response__yes,
+.response__gsk,
+.response__pfe,
+.response__both,
 .response__no {
   display: none;
   padding: 40px 20px 0 20px;
@@ -572,14 +575,14 @@ button.end {
 
 // read more link style (this can be done differently)
 .intro__wrapper.hidden h2 {
-  opacity: 0;
+  // opacity: 0;
 }
 .read-more-text {
   display: inline-block;
-  height: 0;
+  // height: 0;
   overflow: hidden;
-  transition: opacity 2s;
-  opacity: 0;
+  // transition: opacity 2s;
+  // opacity: 0;
   a {
     color: $red;
     font-weight: bold;
