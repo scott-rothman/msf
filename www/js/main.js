@@ -69,9 +69,9 @@ var init = function() {
       } else if (matches_gsk.length >= 1) {
         navToResponse('gsk', match);
       } else if (matches_all.length >= 1) {
-        navToResponse('neither', match);
+        navToResponse(false, match);
       } else {
-        navToResponse(false, match); 
+        navToResponse('neither', match); 
       }
       
       window.msf.match = match;
