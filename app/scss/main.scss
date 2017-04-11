@@ -190,7 +190,8 @@ section {
 .response__gsk,
 .response__pfe,
 .response__both,
-.response__no {
+.response__no,
+.response__unknown {
   display: none;
   padding: 40px 20px 0 20px;
   &.active {
@@ -261,7 +262,7 @@ button.end {
   }
 }
 
-.response__no__info {
+.response__no__info, .response__unknown__info {
   border: 3px solid $yellow;
   padding: 2em;
   border-radius: 8px;

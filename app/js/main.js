@@ -218,6 +218,7 @@ var navToResponse = function(result, match) {
   var response_gsk = document.querySelector('.response__gsk');
   var response_pfe = document.querySelector('.response__pfe');
   var response_no = document.querySelector('.response__no');
+  var response_unknown = document.querySelector('.response__unknown');
   var response_containers = document.querySelectorAll('.response > div');
   var bodyRect;
   var responseRect;
@@ -226,19 +227,20 @@ var navToResponse = function(result, match) {
     response.classList.remove('active');
   })
   response_section.classList.add('active');
-  if (result !== false) {
+  
     if (result === 'both') {
       response_both.classList.add('active');
     } else if (result === 'gsk') {
       response_gsk.classList.add('active');  
     } else if (result === 'pfe') {
       response_pfe.classList.add('active');  
+    } else if (result === 'neither') {
+      response_no.classList.add('active');  
+    } else {
+      response_unknown.classList.add('active');
     }
-    console.log('Show yes');
-  } else {
-    response_no.classList.add('active');
-    console.log('Show no');
-  }
+      
+  
   bodyRect = document.body.getBoundingClientRect();
   responseRect = response_section.getBoundingClientRect();
   scrollPoint = responseRect.top - bodyRect.top;

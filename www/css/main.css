@@ -687,27 +687,31 @@ section.active {
 .response__gsk,
 .response__pfe,
 .response__both,
-.response__no {
+.response__no,
+.response__unknown {
   display: none;
   padding: 40px 20px 0 20px;
 }
 .response__gsk.active,
 .response__pfe.active,
 .response__both.active,
-.response__no.active {
+.response__no.active,
+.response__unknown.active {
   display: block;
 }
 .response__gsk img,
 .response__pfe img,
 .response__both img,
-.response__no img {
+.response__no img,
+.response__unknown img {
   display: block;
   margin: 0 auto;
 }
 .response__gsk h2,
 .response__pfe h2,
 .response__both h2,
-.response__no h2 {
+.response__no h2,
+.response__unknown h2 {
   font-size: 8rem;
   padding: 0;
   margin: 0 auto 20px auto;
@@ -717,7 +721,8 @@ section.active {
 .response__gsk h2:after,
 .response__pfe h2:after,
 .response__both h2:after,
-.response__no h2:after {
+.response__no h2:after,
+.response__unknown h2:after {
   content: ' ';
   position: absolute;
   bottom: 0;
@@ -729,7 +734,8 @@ section.active {
 .response__gsk h3,
 .response__pfe h3,
 .response__both h3,
-.response__no h3 {
+.response__no h3,
+.response__unknown h3 {
   font-size: 1.5rem;
   font-weight: normal;
   padding: 0;
@@ -739,7 +745,8 @@ section.active {
 .response__gsk p,
 .response__pfe p,
 .response__both p,
-.response__no p {
+.response__no p,
+.response__unknown p {
   cursor: pointer;
   font-weight: bold;
   max-width: 600px;
@@ -747,7 +754,8 @@ section.active {
 .response__gsk p.checked,
 .response__pfe p.checked,
 .response__both p.checked,
-.response__no p.checked {
+.response__no p.checked,
+.response__unknown p.checked {
   cursor: initial;
 }
 
@@ -775,7 +783,8 @@ button.end {
   margin: 40px auto 0 auto;
 }
 
-.response__no__info {
+.response__no__info,
+.response__unknown__info {
   border: 3px solid #E6AA46;
   padding: 2em;
   border-radius: 8px;
