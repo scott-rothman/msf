@@ -59,8 +59,8 @@ var init = function() {
       match = e.target.textContent;
       matches_pfe = search_match_pfe(match);
       matches_gsk = search_match_gsk(match);
+      matches_all = search_match_all(match);
       matches_pfe = _.uniqBy(matches_pfe);
-      matches_all = search_holders(match);
       matches_gsk = _.uniqBy(matches_gsk);
       if (matches_pfe.length >= 1 && matches_gsk.length >= 1) {
         navToResponse('both', match);  
@@ -69,9 +69,9 @@ var init = function() {
       } else if (matches_gsk.length >= 1) {
         navToResponse('gsk', match);
       } else if (matches_all.length >= 1) {
-        navToResponse(false, match);
+        navToResponse('neither', match);
       } else {
-        navToResponse('neither', match); 
+        navToResponse(false, match); 
       }
       
       window.msf.match = match;
@@ -91,7 +91,7 @@ var init = function() {
       match = search_field.value;
       matches_pfe = search_match_pfe(match);
       matches_gsk = search_match_gsk(match);
-      matches_all = search_holders(match);
+      matches_all = search_match_all(match);
       matches_pfe = _.uniqBy(matches_pfe);
       matches_gsk = _.uniqBy(matches_gsk);
       if (match.length === 0) {
