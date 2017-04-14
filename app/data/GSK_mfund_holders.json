@@ -1,78 +1,97 @@
 [
   {
     "name": "T. Rowe Price International Value Equity Fund",
-    "shares": 5566772
+    "shares": 5566772,
+    "mfund_ticker": "TRIGX"
   },
   {
     "name": "Fidelity® Series Growth & Income",
-    "shares": 3507600
+    "shares": 3507600,
+    "mfund_ticker": "FGLGX"
   },
   {
     "name": "Vanguard Windsor™ II Inv",
-    "shares": 2591100
+    "shares": 2591100,
+    "mfund_ticker": "VWNFX"
   },
   {
     "name": "Fidelity® Growth & Income",
-    "shares": 2425922
+    "shares": 2425922,
+    "mfund_ticker": "FGRIX"
   },
   {
     "name": "Fidelity® Balanced",
-    "shares": 1905600
+    "shares": 1905600,
+    "mfund_ticker": "FBALX"
   },
   {
     "name": "T. Rowe Price Overseas Stock",
-    "shares": 2117513
+    "shares": 2117513,
+    "mfund_ticker": "TROSX"
   },
   {
     "name": "Fidelity® Select Pharmaceuticals Port",
-    "shares": 2289900
+    "shares": 2289900,
+    "mfund_ticker": "FPHAX"
   },
   {
     "name": "Fidelity® Mega Cap Stock",
-    "shares": 1311900
+    "shares": 1311900,
+    "mfund_ticker": "FGRTX"
   },
   {
     "name": "Fidelity® Puritan®",
-    "shares": 1160400
+    "shares": 1160400,
+    "mfund_ticker": "FPURX"
   },
   {
     "name": "Fidelity Advisor® Capital Development O",
-    "shares": 1000100
+    "shares": 1000100,
+    "mfund_ticker": "FDETX"
   },
   {
     "name": "American Beacon Lg Cap Value Inst",
-    "shares": 847134
+    "shares": 847134,
+    "mfund_ticker": "AADEX"
   },
   {
     "name": "Fidelity® Large Cap Stock",
-    "shares": 931711
+    "shares": 931711,
+    "mfund_ticker": "FLCSX"
   },
   {
     "name": "Strategic Advisers® Core",
-    "shares": 1500000
+    "shares": 1500000,
+    "mfund_ticker": "FPCIX"
   },
   {
     "name": "GMO International Equity III",
-    "shares": 7371419
+    "shares": 7371419,
+    "mfund_ticker": "GMOIX"
   },
   {
     "name": "AST Hotchkis & Wiley Large-Cap Value",
-    "shares": 577300
+    "shares": 577300,
+    "mfund_ticker": "AST_LARG_C"
   },
   {
     "name": "Vanguard PRIMECAP Inv",
-    "shares": 575000
+    "shares": 575000,
+    "mfund_ticker": "VPMCX"
   },
   {
     "name": "DFA International Core Equity I",
-    "shares": 560985
+    "shares": 560985,
+    "mfund_ticker": "DFIEX"
   },
   {
     "name": "Buffalo Flexible Income",
-    "shares": 19255000
+    "shares": 19255000,
+    "mfund_ticker": "BUFBX"
   },
   {
     "name": "Pioneer Equity Income A",
-    "shares": 18124465
+    "shares": 18124465,
+    "mfund_ticker": "PEQIX"
   }
-] 
+]
