@@ -6,6 +6,7 @@ $red: #EC0928;
 $yellow: #E6AA46;
 $white: #FFFFFF;
 $grey: #9C9C9C;
+.content {
 body,
 div,
 section,
@@ -35,6 +36,15 @@ h3,
 h4,
 h5 {
   font-weight: 700;
+}
+
+.content-inner {
+  padding-top: 0 !important;
+  max-width: 1200px !important;
+}
+
+#content-wrapper {
+  display: block !important
 }
 
 .wrapper {
@@ -108,7 +118,8 @@ section {
 .intro__wrapper {
   display: flex;
   flex-direction: column;
-  &.hidden {
+  background: ('/img/intro_bg.png')
+  &.hidden_text {
     p {
       opacity: 0;
     }
@@ -202,7 +213,7 @@ section {
     margin: 0 auto;
   }
   & h2 {
-    font-size: 8rem;
+    font-size: 3rem;
     padding: 0;
     margin: 0 auto 20px auto;
     // color: #FFFFFF;
@@ -229,6 +240,7 @@ section {
     cursor: pointer;
     font-weight: bold;
     max-width: 600px;
+    text-decoration: underline;
     &.checked {
       cursor: initial;
     }
@@ -239,7 +251,7 @@ section {
   border: 3px solid $red;
   // border: 3px solid #000000;
   padding: 40px;
-  border-radius: 8px;
+  border-radius: 0px;
 }
 button.end {
   border: 0;
@@ -262,11 +274,10 @@ button.end {
   }
 }
 
-.response__no__info,
-.response__unknown__info {
+.response__no__info, .response__unknown__info {
   border: 3px solid $yellow;
   padding: 2em;
-  border-radius: 8px;
+  border-radius: 0px;
 }
 
 .steps {
@@ -294,7 +305,7 @@ button.end {
 }
 
 .checked {
-  text-decoration: line-through;
+  //text-decoration: line-through;
   & .box {
     &:before {
       content: '\2713';
@@ -383,6 +394,9 @@ button.end {
   &.hidden {
     opacity: 0;
   }
+  a {
+    text-decoration: underline;
+  }
 }
 .success {
   position: absolute;
@@ -400,8 +414,8 @@ button.end {
 .modal-b {
   height: 800px;
   h4 {
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
   }
   h5 {
     margin-bottom: 10px;
@@ -459,8 +473,8 @@ button.end {
 .modal-c {
   height: 470px;
   h4 {
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 20px !important;
+    margin-top: 20px !important ;
   }
   h5 {
     margin-bottom: 10px;
@@ -596,4 +610,6 @@ button.end {
 .read-more-text.fade-in {
   height: auto;
   opacity: 1;
+}
+
 }

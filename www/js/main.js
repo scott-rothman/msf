@@ -79,7 +79,7 @@ var init = function() {
       $('#message').html(message);
       window.setTimeout(function() {
         form.classList.remove('active');
-        intro_text.classList.remove('hidden');
+        intro_text.classList.remove('hidden_text');
         $('.intro__form__results').html('');
         search_field.value = '';  
       }, 1000);
@@ -113,14 +113,14 @@ var init = function() {
       $('#message').html(message);
       window.setTimeout(function() {
         form.classList.remove('active');
-        intro_text.classList.remove('hidden');
+        intro_text.classList.remove('hidden_text');
         $('.intro__form__results').html('');
         search_field.value = '';  
       }, 1000);
   });
   search_field.addEventListener('click', function(e) {
     form.classList.add('active');
-    intro_text.classList.add('hidden');
+    intro_text.classList.add('hidden_text');
   });
 	search_field.addEventListener('keypress', function(e) {
     possible_matches = '';
@@ -165,12 +165,12 @@ var init = function() {
       e.preventDefault();
       document.querySelector('.modal.active').classList.add('hidden');
       if (e.target.dataset.block !== '1') {
-        document.querySelector('.success').classList.add('active');
+        //document.querySelector('.success').classList.add('active');
         window.setTimeout(function() {
           document.querySelector('.modal.active').classList.remove('active');
         },500)
         window.setTimeout(function() {
-          document.querySelector('.success').classList.remove('active');
+          //document.querySelector('.success').classList.remove('active');
           document.querySelector('.modal-wrapper').classList.remove('active');
         },2000)
       } else {
@@ -182,13 +182,13 @@ var init = function() {
   
   window.addEventListener('click', function(e) {
     if(e.target.classList.contains('modal-wrapper')) {
-      document.querySelector('.success').classList.remove('active');
+      //document.querySelector('.success').classList.remove('active');
       document.querySelector('.modal-wrapper').classList.remove('active');
       document.querySelector('.modal.active').classList.remove('active');
     }
     if(e.target.tagName.toLowerCase() === 'body') {
       form.classList.remove('active');
-      intro_text.classList.remove('hidden');
+      intro_text.classList.remove('hidden_text');
     }
   });
   window.addEventListener('scroll', _.throttle(function() {
