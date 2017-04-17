@@ -511,7 +511,6 @@ p {
 
 .content .wrapper {
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
   padding: 0;
 }
@@ -571,6 +570,9 @@ p {
   padding: 100px 20px 20px 20px;
   height: 100vh;
   position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .content section.active {
   display: block;
@@ -590,6 +592,12 @@ p {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  background: url('/img/intro_bg.png') no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #FFFFFF;
 }
 .content .intro .read-more {
   color: #EC0928;
@@ -608,6 +616,9 @@ p {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
 .content .intro__wrapper.hidden_text p {
   opacity: 0;
@@ -759,6 +770,7 @@ p {
   cursor: pointer;
   font-weight: bold;
   max-width: 600px;
+  text-decoration: underline;
 }
 .content .response__gsk p.checked,
 .content .response__pfe p.checked,
@@ -823,9 +835,6 @@ p {
   position: relative;
 }
 
-.content .checked {
-  text-decoration: line-through;
-}
 .content .checked .box:before {
   content: '\2713';
   color: green;
@@ -916,6 +925,9 @@ p {
 }
 .content .modal.hidden {
   opacity: 0;
+}
+.content .modal a {
+  text-decoration: underline;
 }
 
 .content .success {
