@@ -118,10 +118,10 @@ var init = function() {
         search_field.value = '';  
       }, 1000);
   });
-  search_field.addEventListener('click', function(e) {
-    form.classList.add('active');
-    intro_text.classList.add('hidden_text');
-  });
+  // search_field.addEventListener('click', function(e) {
+  //   form.classList.add('active');
+  //   intro_text.classList.add('hidden_text');
+  // });
 	search_field.addEventListener('keypress', function(e) {
     possible_matches = '';
 		search_term = search_field.value.toLowerCase();
