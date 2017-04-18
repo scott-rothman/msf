@@ -46,97 +46,97 @@ const GSK_mfund_holders = [
   {
     "name": "T. Rowe Price International Value Equity Fund",
     "shares": 5566772,
-    "mfund_ticker": "TRIGX"
+    "ticker": "TRIGX"
   },
   {
     "name": "Fidelity® Series Growth & Income",
     "shares": 3507600,
-    "mfund_ticker": "FGLGX"
+    "ticker": "FGLGX"
   },
   {
     "name": "Vanguard Windsor™ II Inv",
     "shares": 2591100,
-    "mfund_ticker": "VWNFX"
+    "ticker": "VWNFX"
   },
   {
     "name": "Fidelity® Growth & Income",
     "shares": 2425922,
-    "mfund_ticker": "FGRIX"
+    "ticker": "FGRIX"
   },
   {
     "name": "Fidelity® Balanced",
     "shares": 1905600,
-    "mfund_ticker": "FBALX"
+    "ticker": "FBALX"
   },
   {
     "name": "T. Rowe Price Overseas Stock",
     "shares": 2117513,
-    "mfund_ticker": "TROSX"
+    "ticker": "TROSX"
   },
   {
     "name": "Fidelity® Select Pharmaceuticals Port",
     "shares": 2289900,
-    "mfund_ticker": "FPHAX"
+    "ticker": "FPHAX"
   },
   {
     "name": "Fidelity® Mega Cap Stock",
     "shares": 1311900,
-    "mfund_ticker": "FGRTX"
+    "ticker": "FGRTX"
   },
   {
     "name": "Fidelity® Puritan®",
     "shares": 1160400,
-    "mfund_ticker": "FPURX"
+    "ticker": "FPURX"
   },
   {
     "name": "Fidelity Advisor® Capital Development O",
     "shares": 1000100,
-    "mfund_ticker": "FDETX"
+    "ticker": "FDETX"
   },
   {
     "name": "American Beacon Lg Cap Value Inst",
     "shares": 847134,
-    "mfund_ticker": "AADEX"
+    "ticker": "AADEX"
   },
   {
     "name": "Fidelity® Large Cap Stock",
     "shares": 931711,
-    "mfund_ticker": "FLCSX"
+    "ticker": "FLCSX"
   },
   {
     "name": "Strategic Advisers® Core",
     "shares": 1500000,
-    "mfund_ticker": "FPCIX"
+    "ticker": "FPCIX"
   },
   {
     "name": "GMO International Equity III",
     "shares": 7371419,
-    "mfund_ticker": "GMOIX"
+    "ticker": "GMOIX"
   },
   {
     "name": "AST Hotchkis & Wiley Large-Cap Value",
     "shares": 577300,
-    "mfund_ticker": "AST_LARG_C"
+    "ticker": "AST_LARG_C"
   },
   {
     "name": "Vanguard PRIMECAP Inv",
     "shares": 575000,
-    "mfund_ticker": "VPMCX"
+    "ticker": "VPMCX"
   },
   {
     "name": "DFA International Core Equity I",
     "shares": 560985,
-    "mfund_ticker": "DFIEX"
+    "ticker": "DFIEX"
   },
   {
     "name": "Buffalo Flexible Income",
     "shares": 19255000,
-    "mfund_ticker": "BUFBX"
+    "ticker": "BUFBX"
   },
   {
     "name": "Pioneer Equity Income A",
     "shares": 18124465,
-    "mfund_ticker": "PEQIX"
+    "ticker": "PEQIX"
   }
 ]
 
@@ -489,122 +489,122 @@ const PFE_mfund_holders =
   {
     "name": "Vanguard Total Stock Mkt Idx",
     "shares": 124631591,
-    "mfund_ticker": "VTSMX"
+    "ticker": "VTSMX"
   },
   {
     "name": "Vanguard 500 Index Inv",
     "shares": 83955077,
-    "mfund_ticker": "VFINX"
+    "ticker": "VFINX"
   },
   {
     "name": "SPDR® S&P 500 ETF",
     "shares": 63588106,
-    "mfund_ticker": "SPY"
+    "ticker": "SPY"
   },
   {
     "name": "Vanguard Institutional Index I",
     "shares": 67298960,
-    "mfund_ticker": "VINIX"
+    "ticker": "VINIX"
   },
   {
     "name": "Vanguard Windsor™ II Inv",
     "shares": 13803613,
-    "mfund_ticker": "VWNFX"
+    "ticker": "VWNFX"
   },
   {
     "name": "Health Care Select Sector SPDR® ETF",
     "shares": 30997152,
-    "mfund_ticker": "XLV"
+    "ticker": "XLV"
   },
   {
     "name": "Fidelity Spartan® 500 Index Inv",
     "shares": 33483965,
-    "mfund_ticker": "FUSEX"
+    "ticker": "FUSEX"
   },
   {
     "name": "Vanguard Value Index Inv",
     "shares": 26676056,
-    "mfund_ticker": "VIVAX"
+    "ticker": "VIVAX"
   },
   {
     "name": "MFS Value A",
     "shares": 25333570,
-    "mfund_ticker": "MEIAX"
+    "ticker": "MEIAX"
   },
   {
     "name": "Franklin Income A",
     "shares": 23000000,
-    "mfund_ticker": "FKINX"
+    "ticker": "FKINX"
   },
   {
     "name": "BlackRock Equity Dividend Inv B",
     "shares": 21052907,
-    "mfund_ticker": "MBDVX"
+    "ticker": "MBDVX"
   },
   {
     "name": "Vanguard Wellington™ Inv",
     "shares": 30749316,
-    "mfund_ticker": "VWELX"
+    "ticker": "VWELX"
   },
   {
     "name": "iShares Russell 1000 Value",
     "shares": 17636202,
-    "mfund_ticker": "IWD"
+    "ticker": "IWD"
   },
   {
     "name": "CREF Stock R1",
     "shares": 19853251,
-    "mfund_ticker": "QCSTRX"
+    "ticker": "QCSTRX"
   },
   {
     "name": "VA CollegeAmerica Inc Fund of Amer 529E",
     "shares": 9150100,
-    "mfund_ticker": "CMLEX"
+    "ticker": "CMLEX"
   },
   {
     "name": "Vanguard Wellesley Income",
     "shares": 17670247,
-    "mfund_ticker": "VWINX"
+    "ticker": "VWINX"
   },
   {
     "name": "Vanguard High Dividend Yield ETF",
     "shares": 15906455,
-    "mfund_ticker": "VYM"
+    "ticker": "VYM"
   },
   {
     "name": "Vanguard Equity-Income Inv",
     "shares": 15498502,
-    "mfund_ticker": "VEIPX"
+    "ticker": "VEIPX"
   },
   {
     "name": "VA CollegeAmerica WA Mutual 529B",
     "shares": 15264000,
-    "mfund_ticker": "CWMBX"
+    "ticker": "CWMBX"
   },
   {
     "name": "T. Rowe Price Value",
     "shares": 18330865,
-    "mfund_ticker": "TRVLX"
+    "ticker": "TRVLX"
   },
   {
     "name": "Fidelity VIP Contrafund Inv",
     "shares": 1596100,
-    "mfund_ticker": "VPCAX"
+    "ticker": "VPCAX"
   },
   {
     "name": "American Beacon Lg Cap Value Inst",
     "shares": 3542612,
-    "mfund_ticker": "AADEX"
+    "ticker": "AADEX"
   },
   {
     "name": "Strategic Advisers® Core",
     "shares": 1695000,
-    "mfund_ticker": "FPCIX"
+    "ticker": "FPCIX"
   },
   {
     "name": "Buffalo Flexible Income",
     "shares": 8769600,
-    "mfund_ticker": "BUFBX"
+    "ticker": "BUFBX"
   }
 ]
 
