@@ -1,20 +1,42 @@
 [
   {
+    "ticker": "FVD",
+    "name": "First Trust Value Line Dividend Index Fund",
+    "shares": 12
+  },
+  {
+    "ticker": "FVL",
+    "name": "First Trust Value Line 100 Exchange-Traded Fund",
+    "shares": 557
+  },
+  {
+    "ticker": "ESGG",
+    "name": "FlexShares STOXX® Global ESG Impact Index Fund",
+    "shares": 1
+  },
+  {
+    "ticker": "IXJ",
+    "name": "iShares Global Healthcare ETF",
+    "shares": 1729544
+  },
+  {
+    "ticker": "JHMD",
+    "name": "John Hancock Multifactor Developed International ETF",
+    "shares": 12788
+  },
+  {
+    "ticker": "OEUR",
+    "name": "O'Shares FTSE Europe Quality Dividend ETF",
+    "shares": 42012
+  },
+  {
+    "ticker": "SCHF",
+    "name": "Schwab International Equity ETF",
+    "shares": 2265793
+  },
+  {
     "ticker": "PPH",
     "name": "VanEck Vectors Pharmaceutical ETF",
-    "category": "Health & Biotech Equities",
-    "expense_ratio": 0.35
-  },
-  {
-    "ticker": "ADRU",
-    "name": "BLDRS Europe Select ADR Index Fund",
-    "category": "Europe Equities",
-    "expense_ratio": 0.3
-  },
-  {
-    "ticker": "ADRD",
-    "name": "BLDRS Developed Markets 100 ADR Index Fund",
-    "category": "Foreign Large Cap Equities",
-    "expense_ratio": 0.3
+    "shares": 343820
   }
 ]
