@@ -57,13 +57,29 @@ var init = function() {
   match_holder.addEventListener('click', function(e) {
     if (e.target.classList.contains('match')) {
       match = e.target.textContent;
-      navToResponse(true, match);
+      matches_pfe = search_match_pfe(match);
+      matches_gsk = search_match_gsk(match);
+      matches_all = search_match_all(match);
+      matches_pfe = _.uniqBy(matches_pfe);
+      matches_gsk = _.uniqBy(matches_gsk);
+      if (matches_pfe.length >= 1 && matches_gsk.length >= 1) {
+        navToResponse('both', match);  
+      } else if (matches_pfe.length >= 1) {
+        navToResponse('pfe', match);
+      } else if (matches_gsk.length >= 1) {
+        navToResponse('gsk', match);
+      } else if (matches_all.length >= 1) {
+        navToResponse('neither', match);
+      } else {
+        navToResponse(false, match); 
+      }
+      
       window.msf.match = match;
       var message = 'To Whom it May Concern,\r\rI am invested in '+ window.msf.match + ' and it has come to my attention that GlaxoSmithKline and Pfizer are included in the investment portfolio. I am aligned with the goals of AFAIRSHOT.ORG and want to see both companies reduce the price of the life-saving pneumonia vaccine to $5 per child in crisis-affected populations and for all developing countries.\r\rAs you hold my voting authority for these companies through my investment in your fund, I want you to represent my interests at the upcoming annual shareholder meetings for both companies.\r\rPlease confirm you’ve received this email and the steps you will take to have our voices heard at the shareholder meetings.\r\rSincerely,';
       $('#message').html(message);
       window.setTimeout(function() {
         form.classList.remove('active');
-        intro_text.classList.remove('hidden');
+        intro_text.classList.remove('hidden_text');
         $('.intro__form__results').html('');
         search_field.value = '';  
       }, 1000);
@@ -72,11 +88,39 @@ var init = function() {
   });
   form.addEventListener('submit', function(e) {
     e.preventDefault();
-    navToResponse(false);
+      match = search_field.value;
+      matches_pfe = search_match_pfe(match);
+      matches_gsk = search_match_gsk(match);
+      matches_all = search_match_all(match);
+      matches_pfe = _.uniqBy(matches_pfe);
+      matches_gsk = _.uniqBy(matches_gsk);
+      if (match.length === 0) {
+        navToResponse(false, match);
+      } else if (matches_pfe.length >= 1 && matches_gsk.length >= 1) {
+        navToResponse('both', match);  
+      } else if (matches_pfe.length >= 1) {
+        navToResponse('pfe', match);
+      } else if (matches_gsk.length >= 1) {
+        navToResponse('gsk', match);
+      } else if (matches_all.length >= 1) {
+        navToResponse('neither', match);
+      } else {
+        navToResponse(false, match); 
+      }
+      
+      window.msf.match = match;
+      var message = 'To Whom it May Concern,\r\rI am invested in '+ window.msf.match + ' and it has come to my attention that GlaxoSmithKline and Pfizer are included in the investment portfolio. I am aligned with the goals of AFAIRSHOT.ORG and want to see both companies reduce the price of the life-saving pneumonia vaccine to $5 per child in crisis-affected populations and for all developing countries.\r\rAs you hold my voting authority for these companies through my investment in your fund, I want you to represent my interests at the upcoming annual shareholder meetings for both companies.\r\rPlease confirm you’ve received this email and the steps you will take to have our voices heard at the shareholder meetings.\r\rSincerely,';
+      $('#message').html(message);
+      window.setTimeout(function() {
+        form.classList.remove('active');
+        intro_text.classList.remove('hidden_text');
+        $('.intro__form__results').html('');
+        search_field.value = '';  
+      }, 1000);
   });
   search_field.addEventListener('click', function(e) {
     form.classList.add('active');
-    intro_text.classList.add('hidden');
+    intro_text.classList.add('hidden_text');
   });
 	search_field.addEventListener('keypress', function(e) {
     possible_matches = '';
@@ -120,26 +164,31 @@ var init = function() {
     modal_closer.addEventListener('click', function(e) {
       e.preventDefault();
       document.querySelector('.modal.active').classList.add('hidden');
-      document.querySelector('.success').classList.add('active');
-      window.setTimeout(function() {
+      if (e.target.dataset.block !== '1') {
+        //document.querySelector('.success').classList.add('active');
+        window.setTimeout(function() {
+          document.querySelector('.modal.active').classList.remove('active');
+        },500)
+        window.setTimeout(function() {
+          //document.querySelector('.success').classList.remove('active');
+          document.querySelector('.modal-wrapper').classList.remove('active');
+        },2000)
+      } else {
         document.querySelector('.modal.active').classList.remove('active');
-      },500)
-      window.setTimeout(function() {
-        document.querySelector('.success').classList.remove('active');
         document.querySelector('.modal-wrapper').classList.remove('active');
-      },2000)
+      }  
     })
   })
   
   window.addEventListener('click', function(e) {
     if(e.target.classList.contains('modal-wrapper')) {
-      document.querySelector('.success').classList.remove('active');
+      //document.querySelector('.success').classList.remove('active');
       document.querySelector('.modal-wrapper').classList.remove('active');
       document.querySelector('.modal.active').classList.remove('active');
     }
     if(e.target.tagName.toLowerCase() === 'body') {
       form.classList.remove('active');
-      intro_text.classList.remove('hidden');
+      intro_text.classList.remove('hidden_text');
     }
   });
   window.addEventListener('scroll', _.throttle(function() {
@@ -165,21 +214,33 @@ var navToStart = function() {
 
 var navToResponse = function(result, match) {
   var response_section = document.querySelector('.response');
-  var response_yes = document.querySelector('.response__yes');
+  var response_both = document.querySelector('.response__both');
+  var response_gsk = document.querySelector('.response__gsk');
+  var response_pfe = document.querySelector('.response__pfe');
   var response_no = document.querySelector('.response__no');
+  var response_unknown = document.querySelector('.response__unknown');
+  var response_containers = document.querySelectorAll('.response > div');
   var bodyRect;
   var responseRect;
   var scrollPoint = 0;
+  _.each(response_containers, function(response){
+    response.classList.remove('active');
+  })
   response_section.classList.add('active');
-  if (result === true) {
-    response_yes.classList.add('active');
-    response_no.classList.remove('active');
-    console.log('Show yes');
-  } else {
-    response_no.classList.add('active');
-    response_yes.classList.remove('active');
-    console.log('Show no');
-  }
+  
+    if (result === 'both') {
+      response_both.classList.add('active');
+    } else if (result === 'gsk') {
+      response_gsk.classList.add('active');  
+    } else if (result === 'pfe') {
+      response_pfe.classList.add('active');  
+    } else if (result === 'neither') {
+      response_no.classList.add('active');  
+    } else {
+      response_unknown.classList.add('active');
+    }
+      
+  
   bodyRect = document.body.getBoundingClientRect();
   responseRect = response_section.getBoundingClientRect();
   scrollPoint = responseRect.top - bodyRect.top;

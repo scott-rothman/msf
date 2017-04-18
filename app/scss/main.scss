@@ -6,6 +6,7 @@ $red: #EC0928;
 $yellow: #E6AA46;
 $white: #FFFFFF;
 $grey: #9C9C9C;
+.content {
 body,
 div,
 section,
@@ -19,9 +20,7 @@ textarea {
 }
 
 body {
-  // font-family: 'Open Sans', sans-serif;
-  font-family: 'museo-sans-rounded',sans-serif;
-  // font-family: "proxima-soft",sans-serif;
+  font-family: 'proxima-nova',sans-serif;
   &.fixed-nav {
     padding-top: 100px;
     header {
@@ -36,15 +35,21 @@ h2,
 h3,
 h4,
 h5 {
-  // font-family: 'rooney-sans',sans-serif;
-  // font-family: 'museo-sans-display',sans-serif;
-  // font-family: 'proxima-soft',sans-serif;
   font-weight: 700;
+}
+
+.content-inner {
+  padding-top: 0 !important;
+  max-width: 1200px !important;
+}
+
+#content-wrapper {
+  display: block !important
 }
 
 .wrapper {
   width: 100%;
-  max-width: 1200px;
+  //max-width: 1200px;
   margin: 0 auto;
   padding: 0;
 }
@@ -91,6 +96,9 @@ section {
   padding: 100px 20px 20px 20px;
   height: 100vh;
   position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   &.active {
     display: block;
   }
@@ -102,6 +110,12 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  background: url('/img/intro_bg.png') no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #FFFFFF;
   .read-more {
     color: $red;
     // display: block;
@@ -113,7 +127,10 @@ section {
 .intro__wrapper {
   display: flex;
   flex-direction: column;
-  &.hidden {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  &.hidden_text {
     p {
       opacity: 0;
     }
@@ -139,8 +156,8 @@ section {
     top: -400px;
   }
   input {
-    height: 100px;
-    font-size: 3rem;
+    height: 80px;
+    font-size: 2.5rem;
     transition: all 0.4s ease;
     &[type='text'] {
       padding-left: 20px;
@@ -184,6 +201,7 @@ section {
     font-size: 1rem;
     padding-left: 25px;
     transition: all 0.2s ease;
+    text-transform: capitalize;
     &:hover {
       background-color: $red;
       color: #FFFFFF;
@@ -191,8 +209,11 @@ section {
   }
 }
 
-.response__yes,
-.response__no {
+.response__gsk,
+.response__pfe,
+.response__both,
+.response__no,
+.response__unknown {
   display: none;
   padding: 40px 20px 0 20px;
   &.active {
@@ -203,10 +224,10 @@ section {
     margin: 0 auto;
   }
   & h2 {
-    font-size: 10rem;
+    font-size: 3rem;
     padding: 0;
     margin: 0 auto 20px auto;
-    color: #FFFFFF;
+    // color: #FFFFFF;
     width: 80%;
     position: relative;
     &:after {
@@ -220,7 +241,8 @@ section {
     }
   }
   & h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: normal;
     padding: 0;
     margin: 0;
     color: #000000;
@@ -229,6 +251,7 @@ section {
     cursor: pointer;
     font-weight: bold;
     max-width: 600px;
+    text-decoration: underline;
     &.checked {
       cursor: initial;
     }
@@ -236,44 +259,47 @@ section {
 }
 
 .response__yes__info {
-  background: $red;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  // @extend .boxshadow-3;
-  border-radius: 8px;
+  border: 3px solid $red;
+  // border: 3px solid #000000;
+  padding: 40px;
+  border-radius: 0px;
 }
 button.end {
   border: 0;
   color: #FFFFFF;
   background: $red;
   padding: 15px 40px;
-  margin: 0 auto;
+  margin: 0 auto 2em;
   font-size: 1.5rem;
   display: block;
   transform: translateY(30px);
   clear: both;
 }
 .response__yes__steps {
-  width: 850px;
+  max-width: 800px;
   margin: 40px auto 0 auto;
+
   & p {
-    width: 50%;
-    float: left;
+    // width: 50%;
+    // float: left;
   }
 }
 
-.response__no__info {
-  background: $yellow;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  // @extend .boxshadow-3;
-  border-radius: 8px;
+.response__no__info, .response__unknown__info {
+  border: 3px solid $yellow;
+  padding: 2em;
+  border-radius: 0px;
 }
 
 .steps {
   margin-top: 40px;
-  font-family: 'proxima-soft',sans-serif;
-  font-weight: 700;
+  font-family: 'proxima-nova',sans-serif;
+  font-weight: bold;
+  & h3 {
+    font-weight: bold;
+    color: $red;
+    margin-bottom: 1em;
+  }
   & p:last-of-type {
     margin-bottom: 0;
   }
@@ -290,7 +316,7 @@ button.end {
 }
 
 .checked {
-  text-decoration: line-through;
+  //text-decoration: line-through;
   & .box {
     &:before {
       content: '\2713';
@@ -307,6 +333,9 @@ button.end {
 
 .conclusion {
   padding-top: 150px;
+  img {
+    max-width: 100%;
+  }
   button {
     border: 0;
     color: #FFFFFF;
@@ -320,8 +349,11 @@ button.end {
   p.with-button {
     width: 800px;
     height: 100px;
+    padding-right: 260px;
+    font-weight: bold;
     position: relative;
     & button {
+      font-weight: normal;
       position: absolute;
       top: 0;
       right: 0;
@@ -373,6 +405,9 @@ button.end {
   &.hidden {
     opacity: 0;
   }
+  a {
+    text-decoration: underline;
+  }
 }
 .success {
   position: absolute;
@@ -388,10 +423,10 @@ button.end {
 
 
 .modal-b {
-  height: 850px;
+  height: 800px;
   h4 {
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
   }
   h5 {
     margin-bottom: 10px;
@@ -409,10 +444,11 @@ button.end {
   .name-wrapper,
   .email-wrapper {
     width: 293px;
-    display: inline-block;
+    display: none;
   }
   .name-wrapper {
     margin-right: 10px;
+    float: left;
   }
   input {
     width: 100%;
@@ -448,8 +484,8 @@ button.end {
 .modal-c {
   height: 470px;
   h4 {
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 20px !important;
+    margin-top: 20px !important ;
   }
   h5 {
     margin-bottom: 10px;
@@ -562,4 +598,30 @@ button.end {
       margin-top: 40px;
     }
   }
+}
+
+
+// read more link style (this can be done differently)
+.intro__wrapper.hidden h2 {
+  // opacity: 0;
+}
+.read-more-text {
+  display: inline-block;
+  // height: 0;
+  overflow: hidden;
+  // transition: opacity 2s;
+  // opacity: 0;
+  a {
+    color: $red;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-decoration: none;
+  }
+}
+
+.read-more-text.fade-in {
+  height: auto;
+  opacity: 1;
+}
+
 }
