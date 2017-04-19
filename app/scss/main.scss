@@ -336,6 +336,7 @@ body #content-wrapper {
     & p:last-of-type {
       margin-bottom: 0;
     }
+    
   }
 
   .box {
@@ -346,6 +347,7 @@ body #content-wrapper {
     margin-right: 10px;
     border-radius: 5px;
     position: relative;
+    transform: translateY(5px);
   }
 
   .checked {
@@ -360,12 +362,17 @@ body #content-wrapper {
         position: absolute;
         left: -12px;
         top: -36px;
+        @media all and (max-width: 768px) {
+          left: -5px;
+          top: -18px;
+        }
       }
     }
   }
 
   .conclusion {
     padding-top: 150px;
+    max-width: 85%;
     img {
       max-width: 100%;
     }
@@ -440,6 +447,10 @@ body #content-wrapper {
     }
     a {
       text-decoration: underline;
+    }
+    @media all and (max-width: 768px) {
+      max-width: 85%;
+      padding: 60px 10px
     }
   }
   .success {
@@ -544,6 +555,10 @@ body #content-wrapper {
       display: block;
       font-size: 1.5rem;
       width: 295px;
+      @media all and (max-width: 768px) {
+        font-size: 1rem;
+        text-align: center;
+      }
       & img {
         width: 25px;
         height: 25px;
@@ -590,11 +605,17 @@ body #content-wrapper {
       justify-content: center;
       text-align: center;
       padding-top: 20px;
+      @media all and (max-width: 768px) {
+        flex: 0 0 100%;
+      }
     }
     .bottom {
       flex: 0 0 100%;
       text-align: center;
       padding-top: 60px;
+      @media all and (max-width: 768px) {
+        padding-top: 20px;
+      }
       button {
         border: 0;
         color: #FFFFFF;

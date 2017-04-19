@@ -51,13 +51,17 @@
 
   }
   .content .steps p {
-      border: 3px solid #16161d;
+      border: 1px solid #16161d;
       height: 60px;
       margin-bottom: 0;
       line-height: 60px;
       padding-left: 1em;
       max-width: 800px;
       border-top: 0;
+      @media all and (max-width: 768px) {
+        height: auto;
+        line-height: 40px;
+      }
   }
   .content .steps p:first-of-type {
       border-top: 3px solid #16161d;
@@ -266,10 +270,6 @@
       <a href="https://twitter.com/?status=I want to ensure all kids have access to the pneumonia vaccine. Check to see if your money is invested $PFE $GSK afairshot.org." target="_blank" class="tweet-link">
         <img src="https://pfff-ff5dd.firebaseapp.com/img/twitter_logo.svg" alt="">
         Tweet this
-      </a>
-      <a href="#" class="facebook-share">
-        <img src="https://pfff-ff5dd.firebaseapp.com/img/facebook_logo.svg" alt="">
-        Share on facebook
       </a>
       <button class="modal-close">Go back</button>
     </div>

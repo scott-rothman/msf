@@ -887,6 +887,8 @@ p {
   margin-right: 10px;
   border-radius: 5px;
   position: relative;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
 }
 
 .content .checked .box:before {
@@ -899,9 +901,16 @@ p {
   left: -12px;
   top: -36px;
 }
+@media all and (max-width: 768px) {
+  .content .checked .box:before {
+    left: -5px;
+    top: -18px;
+  }
+}
 
 .content .conclusion {
   padding-top: 150px;
+  max-width: 85%;
 }
 .content .conclusion img {
   max-width: 100%;
@@ -982,6 +991,12 @@ p {
 }
 .content .modal a {
   text-decoration: underline;
+}
+@media all and (max-width: 768px) {
+  .content .modal {
+    max-width: 85%;
+    padding: 60px 10px;
+  }
 }
 
 .content .success {
@@ -1089,6 +1104,15 @@ p {
   font-size: 1.5rem;
   width: 295px;
 }
+@media all and (max-width: 768px) {
+  .content .modal-c a,
+  .content .modal-c a:visited,
+  .content .modal-c a:active,
+  .content .modal-c a:hover {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
 .content .modal-c a img,
 .content .modal-c a:visited img,
 .content .modal-c a:active img,
@@ -1157,6 +1181,15 @@ p {
   text-align: center;
   padding-top: 20px;
 }
+@media all and (max-width: 768px) {
+  .content .modal__content .left,
+  .content .modal__content .right {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
 .content .modal__content .bottom {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 100%;
@@ -1164,6 +1197,11 @@ p {
           flex: 0 0 100%;
   text-align: center;
   padding-top: 60px;
+}
+@media all and (max-width: 768px) {
+  .content .modal__content .bottom {
+    padding-top: 20px;
+  }
 }
 .content .modal__content .bottom button {
   border: 0;
