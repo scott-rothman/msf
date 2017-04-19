@@ -500,9 +500,20 @@ p {
   font-weight: 700;
 }
 
+@media all and (max-width: 768px) {
+  .content .content {
+    padding-top: 0;
+  }
+}
+
 .content .content-inner {
   padding-top: 0 !important;
   max-width: 1200px !important;
+  padding: 0;
+}
+
+.content .sqs-block {
+  padding: 0;
 }
 
 .content #content-wrapper {
@@ -577,6 +588,12 @@ p {
 .content section.active {
   display: block;
 }
+@media all and (max-width: 768px) {
+  .content section {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 
 .content .intro {
   padding-top: 50px;
@@ -628,6 +645,11 @@ p {
           transition: opacity 0.5s;
   opacity: 1;
 }
+@media all and (max-width: 768px) {
+  .content .intro__wrapper {
+    width: 85%;
+  }
+}
 
 .content .form-label {
   display: block;
@@ -662,6 +684,11 @@ p {
           appearance: none;
   background: #FFFFFF;
 }
+@media all and (max-width: 768px) {
+  .content .intro__form input[type='text'] {
+    width: 100%;
+  }
+}
 .content .intro__form input[type='text']:focus {
   outline: none;
 }
@@ -678,11 +705,17 @@ p {
 .content .intro__form input[type='submit']:focus {
   outline: none;
 }
+@media all and (max-width: 768px) {
+  .content .intro__form input[type='submit'] {
+    width: 100%;
+  }
+}
 
 .content .intro__form__results {
   width: 80%;
   position: absolute;
   left: 4px;
+  top: 205px;
   max-height: 350px;
   overflow-y: scroll;
   overflow-x: hidden;

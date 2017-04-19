@@ -37,10 +37,21 @@ $grey: #9C9C9C;
   h5 {
     font-weight: 700;
   }
+  
+  .content {
+    @media all and (max-width: 768px) {
+      padding-top: 0;
+    }
+  }
 
   .content-inner {
     padding-top: 0 !important;
     max-width: 1200px !important;
+    padding: 0;
+  }
+
+  .sqs-block {
+    padding: 0;
   }
 
   #content-wrapper {
@@ -102,6 +113,10 @@ $grey: #9C9C9C;
     &.active {
       display: block;
     }
+    @media all and (max-width: 768px) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
 
   .intro {
@@ -139,6 +154,9 @@ $grey: #9C9C9C;
       transition: opacity 0.5s;
       opacity: 1;
     }
+    @media all and (max-width: 768px) {
+      width: 85%;
+    }
   }
   .form-label {
     display: block;
@@ -165,7 +183,9 @@ $grey: #9C9C9C;
         border: 3px solid $red;
         appearance: none;
         background: $white;
-
+        @media all and (max-width: 768px) {
+          width: 100%;
+        }
 
         &:focus {
           outline: none;
@@ -180,6 +200,9 @@ $grey: #9C9C9C;
         color: $white;
         &:focus {
           outline: none;
+        }
+        @media all and (max-width: 768px) {
+          width: 100%;
         }
       }
     }

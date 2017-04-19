@@ -168,11 +168,9 @@ var init = function() {
         //document.querySelector('.success').classList.add('active');
         window.setTimeout(function() {
           document.querySelector('.modal.active').classList.remove('active');
-        },500)
-        window.setTimeout(function() {
-          //document.querySelector('.success').classList.remove('active');
           document.querySelector('.modal-wrapper').classList.remove('active');
-        },2000)
+        },500)
+        
       } else {
         document.querySelector('.modal.active').classList.remove('active');
         document.querySelector('.modal-wrapper').classList.remove('active');

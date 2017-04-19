@@ -11,13 +11,6 @@ var search_holders = function(share_name) {
 			}
 		}
 	}
-	for inst in GSK_inst_holders {
-		if (inst.hasOwnProperty("name")) {
-			if (share_name == inst.name) {
-				return true;
-			}
-		}
-	}
 	for inst in GSK_mfund_holders {
 		if (inst.hasOwnProperty("name")) {
 			if (share_name == inst.name) {
@@ -26,13 +19,6 @@ var search_holders = function(share_name) {
 		}
 	}
 	for inst in PFE_etf_holders {
-		if (inst.hasOwnProperty("name")) {
-			if (share_name == inst.name) {
-				return true;
-			}
-		}
-	}
-	for inst in PFE_inst_holders {
 		if (inst.hasOwnProperty("name")) {
 			if (share_name == inst.name) {
 				return true;
