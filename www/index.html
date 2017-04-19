@@ -58,13 +58,9 @@
       padding-left: 1em;
       max-width: 800px;
       border-top: 0;
-      @media all and (max-width: 768px) {
-        height: auto;
-        line-height: 40px;
-      }
   }
   .content .steps p:first-of-type {
-      border-top: 3px solid #16161d;
+      border-top: 1px solid #16161d;
   }
   .steps p.checked {
       color: #c0c0c0;
@@ -107,14 +103,6 @@
     <section class="intro active">
       <div class="intro__wrapper">
         <h1 style="color:#ffffff;">DO YOU HAVE INVESTMENTS IN PFIZER OR GSK?</h1>
-        <p>
-          We’re calling on Pfizer and GSK to drop the price of the lifesaving pneumonia vaccine to $5 per child (for all three doses) in all developing countries.
-        </p>
-        <p>
-          Most people don’t know that through their (401K) retirement savings plan or through direct investment in mutual funds that they likely have money and influence in these pharmaceutical companies.
-          <a href="#"  class="read-more modal-open" id="read-more" data-modal="d">(Read More)</a>
-        </p>
-
         <form action="#" class="intro__form">
           <input type="text" class="intro__form__term" placeholder="Ex: Vanguard 500 Index Inv">
           <input type="submit" value="Search">
@@ -126,6 +114,15 @@
           <div class="action-count">
             <h3 class="count count--emails"></h3><span class="count--title">E-mails</span></div>
         </div>
+        <p>
+          We’re calling on Pfizer and GSK to drop the price of the lifesaving pneumonia vaccine to $5 per child (for all three doses) in all developing countries.
+        </p>
+        <p>
+          Most people don’t know that through their (401K) retirement savings plan or through direct investment in mutual funds that they likely have money and influence in these pharmaceutical companies.
+          <a href="#"  class="read-more modal-open" id="read-more" data-modal="d">(Read More)</a>
+        </p>
+
+        
       </div>
     </section>
     <section class="response">
@@ -138,7 +135,7 @@
         <div class="response__pfe__steps steps">
           <h3 class="response__header">Take Action!</h3>
           <p class="modal-open" data-modal="a"><i class="box"></i>Tell the companies to drop the price.</p>
-          <p class="modal-open" data-modal="b"><i class="box"></i>Tell your fund managers to represent your interests</p>
+          <p class="modal-open hide-mobile" data-modal="b"><i class="box"></i>Tell your fund managers to represent your interests</p>
           <p class="modal-open" data-modal="c"><i class="box"></i>Tell your friends!</p>
         </div>
       </div>

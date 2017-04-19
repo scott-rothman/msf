@@ -1,31 +1,31 @@
 window.onload = function() {
 	init();
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '419745495028974',
-      xfbml      : true,
-      version    : 'v2.8'
-    });
-    FB.AppEvents.logPageView();
-  };
+  // window.fbAsyncInit = function() {
+  //   FB.init({
+  //     appId      : '419745495028974',
+  //     xfbml      : true,
+  //     version    : 'v2.8'
+  //   });
+  //   FB.AppEvents.logPageView();
+  // };
 
-  (function(d, s, id){
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) {return;}
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-    function sendMessage(msg) {
-      FB.login(function(){
-      // Note: The call will only work if you accept the permission request
-      FB.api('/me/feed', 'post', {message: msg});
-    }, {scope: 'publish_actions'});
-  }
-  var facebook_share = document.querySelector('.facebook-share');
-  facebook_share.addEventListener('click', function() {
-    sendMessage('I want to ensure orgs like MSF can afford lifesaving drugs for children. Check to see if your money is in Big Pharma at AFAIRSHOT.ORG');
-  })
+  // (function(d, s, id){
+  //   var js, fjs = d.getElementsByTagName(s)[0];
+  //   if (d.getElementById(id)) {return;}
+  //     js = d.createElement(s); js.id = id;
+  //     js.src = "//connect.facebook.net/en_US/sdk.js";
+  //     fjs.parentNode.insertBefore(js, fjs);
+  //   }(document, 'script', 'facebook-jssdk'));
+  //   function sendMessage(msg) {
+  //     FB.login(function(){
+  //     // Note: The call will only work if you accept the permission request
+  //     FB.api('/me/feed', 'post', {message: msg});
+  //   }, {scope: 'publish_actions'});
+  // }
+  // var facebook_share = document.querySelector('.facebook-share');
+  // facebook_share.addEventListener('click', function() {
+  //   sendMessage('I want to ensure orgs like MSF can afford lifesaving drugs for children. Check to see if your money is in Big Pharma at AFAIRSHOT.ORG');
+  // })
 }
 
 

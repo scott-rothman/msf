@@ -490,15 +490,6 @@ p {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-@media all and (max-width: 768px) {
-  body #content-wrapper div.content {
-    padding-top: 0 !important;
-  }
-  body #content-wrapper .sqs-block {
-    padding: 0 !important;
-  }
-}
-
 .content body,
 .content div,
 .content section,
@@ -757,6 +748,12 @@ p {
   background-color: #EC0928;
   color: #FFFFFF;
 }
+@media all and (max-width: 768px) {
+  .content .intro__form__results {
+    top: 80px;
+    max-height: 250px;
+  }
+}
 
 .content .response__gsk,
 .content .response__pfe,
@@ -878,6 +875,13 @@ p {
 .content .steps p:last-of-type {
   margin-bottom: 0;
 }
+@media all and (max-width: 768px) {
+  .content .steps p {
+    height: auto !important;
+    line-height: 25px !important;
+    padding: 10px 1em !important;
+  }
+}
 
 .content .box {
   display: inline-block;
@@ -932,6 +936,7 @@ p {
   padding-right: 260px;
   font-weight: bold;
   position: relative;
+  max-width: 100%;
 }
 .content .conclusion p.with-button button {
   font-weight: normal;
@@ -1252,4 +1257,54 @@ p {
 .content .read-more-text.fade-in {
   height: auto;
   opacity: 1;
+}
+
+@media all and (max-width: 768px) {
+  body #content-wrapper div.content {
+    padding-top: 0 !important;
+  }
+}
+
+@media all and (max-width: 768px) {
+  body #content-wrapper .sqs-block {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}
+
+@media all and (max-width: 768px) {
+  body #content-wrapper .hide-mobile {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+  }
+}
+
+@media all and (max-width: 768px) {
+  body #content-wrapper h3.text-align-left,
+  body #content-wrapper p.text-align-center {
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+}
+
+@media all and (max-width: 768px) {
+  body #content-wrapper #block-yui_-7_17_2_13_1492177131126_17888,
+  body #content-wrapper #block-yui_3_17_2_13_1492177131126_40698 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  body #content-wrapper .sqs-col-4 > div {
+    height: 200px;
+    margin-bottom: 20px;
+    height: auto;
+    padding: 20px 0 !important;
+  }
+  body #content-wrapper .sqs-col-4 h1 {
+    margin-bottom: 0;
+  }
 }

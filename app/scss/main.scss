@@ -7,18 +7,7 @@ $yellow: #E6AA46;
 $white: #FFFFFF;
 $grey: #9C9C9C;
 
-//Squarespace overwrites
-body #content-wrapper {
-  @media all and (max-width: 768px) {
-    div.content {
-      padding-top: 0 !important;
-    }
-    .sqs-block {
-      padding: 0 !important;
-    }
-  }
-}
-//End squarespace overwrites
+
 
 
 .content {
@@ -239,6 +228,10 @@ body #content-wrapper {
         color: #FFFFFF;
       }
     }
+    @media all and (max-width: 768px) {
+      top: 80px;
+      max-height: 250px;
+    }
   }
 
   .response__gsk,
@@ -336,6 +329,13 @@ body #content-wrapper {
     & p:last-of-type {
       margin-bottom: 0;
     }
+    & p {
+      @media all and (max-width: 768px) {
+        height: auto !important;
+        line-height: 25px !important;
+        padding: 10px 1em !important;
+      }
+    }
     
   }
 
@@ -392,6 +392,7 @@ body #content-wrapper {
       padding-right: 260px;
       font-weight: bold;
       position: relative;
+      max-width: 100%;
       & button {
         font-weight: normal;
         position: absolute;
@@ -678,3 +679,59 @@ body #content-wrapper {
     opacity: 1;
   }
 }
+
+
+//Squarespace overwrites
+body #content-wrapper {
+  div.content {
+    @media all and (max-width: 768px) {
+      padding-top: 0 !important;
+    }
+  }
+  .sqs-block {
+    @media all and (max-width: 768px) {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+  }
+
+  & .hide-mobile {
+    @media all and (max-width: 768px) {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+      }
+  }
+
+  & h3.text-align-left, p.text-align-center {
+    @media all and (max-width: 768px) {
+      max-width: 85%;
+      margin: 0 auto;
+      padding: 20px 0;
+    }
+  }
+
+
+  & #block-yui_-7_17_2_13_1492177131126_17888, #block-yui_3_17_2_13_1492177131126_40698 {
+    @media all and (max-width: 768px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  & .sqs-col-4 {
+    @media all and (max-width: 768px) {
+      
+      & > div {
+        height: 200px;
+      margin-bottom: 20px;
+        height: auto;
+        padding: 20px 0 !important;
+      }
+      h1 {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+//End squarespace overwrites
