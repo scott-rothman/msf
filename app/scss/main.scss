@@ -41,14 +41,14 @@ $grey: #9C9C9C;
   h5 {
     font-weight: 700;
   }
-  
+
   .content-inner {
     padding-top: 0 !important;
     max-width: 1200px !important;
     padding: 0;
   }
 
-  
+
 
   #content-wrapper {
     display: block !important;
@@ -210,7 +210,7 @@ $grey: #9C9C9C;
     width: 80%;
     position: absolute;
     left: 4px;
-    top: 205px;
+    top: 0;
     max-height: 350px;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -336,7 +336,6 @@ $grey: #9C9C9C;
         padding: 10px 1em !important;
       }
     }
-    
   }
 
   .box {
@@ -451,7 +450,7 @@ $grey: #9C9C9C;
     }
     @media all and (max-width: 768px) {
       max-width: 85%;
-      padding: 60px 10px
+      padding: 60px 10px;
     }
   }
   .success {
@@ -697,13 +696,14 @@ body #content-wrapper {
 
   & .hide-mobile {
     @media all and (max-width: 768px) {
-        display: none !important;
-        visibility: hidden !important;
-        opacity: 0 !important;
-      }
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0 !important;
+    }
   }
 
-  & h3.text-align-left, p.text-align-center {
+  & h3.text-align-left,
+  p.text-align-center {
     @media all and (max-width: 768px) {
       max-width: 85%;
       margin: 0 auto;
@@ -712,7 +712,8 @@ body #content-wrapper {
   }
 
 
-  & #block-yui_-7_17_2_13_1492177131126_17888, #block-yui_3_17_2_13_1492177131126_40698 {
+  & #block-yui_-7_17_2_13_1492177131126_17888,
+  #block-yui_3_17_2_13_1492177131126_40698 {
     @media all and (max-width: 768px) {
       padding-left: 20px;
       padding-right: 20px;
@@ -721,10 +722,9 @@ body #content-wrapper {
 
   & .sqs-col-4 {
     @media all and (max-width: 768px) {
-      
       & > div {
         height: 200px;
-      margin-bottom: 20px;
+        margin-bottom: 20px;
         height: auto;
         padding: 20px 0 !important;
       }
