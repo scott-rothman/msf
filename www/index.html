@@ -47,6 +47,7 @@
     width: auto;
     /*same size as h1 in header */
     font-size: 3rem; 
+    padding-bottom: 1rem;
 
   }
   .content .steps p {
@@ -64,6 +65,31 @@
   .steps p.checked {
       color: #c0c0c0;
       text-decoration: none;
+  }
+  /*
+  ACTION COUNTER 
+  */
+  .action-counter__wrapper {
+    display: flex;
+    font-family: 'proxima-nova',sans-serif;
+  }
+  .action-count {
+    /*border: 1px solid blue;*/
+    /*width: 200px;*/
+    display: flex;
+    align-items: center;
+    margin-right: 3rem;
+    flex-direction: column;
+  }
+  .action-count .count {
+    color: #ec0928;    
+    font-size: 3rem;
+    margin: 1em 0 0;
+  }
+  .action-count .count--title {
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
   }
 </style>
   <script src="https://use.typekit.net/ymo8kbt.js"></script>
@@ -90,6 +116,12 @@
           <input type="submit" value="Search">
           <div class="intro__form__results"></div>
         </form>
+        <div class="action-counter__wrapper">
+          <div class="action-count">
+            <h3 class="count count--tweets"></h3><span class="count--title">Tweets</span></div>
+          <div class="action-count">
+            <h3 class="count count--emails"></h3><span class="count--title">E-mails</span></div>
+        </div>
       </div>
     </section>
     <section class="response">
@@ -176,7 +208,7 @@
             <img src="https://pfff-ff5dd.firebaseapp.com/img/facebook_logo.svg" alt="">
             Message Pfizer
           </a>
-          <a href="https://twitter.com/?status=Mr. Read, I have money invested in @Pfizer and I want you to drop the price of PCV13 to $5/child as defined by AFAIRSHOT.ORG #askpharma" target="_blank">
+          <a href="https://twitter.com/?status=Mr. Read, I have money invested in @Pfizer and I want you to drop the price of PCV13 to $5/child as defined by AFAIRSHOT.ORG #askpharma" target="_blank" class="tweet-link">
             <img src="https://pfff-ff5dd.firebaseapp.com/img/twitter_logo.svg" alt="">
             Tweet Pfizer
           </a>
@@ -187,7 +219,7 @@
             <img src="https://pfff-ff5dd.firebaseapp.com/img/facebook_logo.svg" alt="">
             Message GSK
           </a>
-          <a href="https://twitter.com/?status=Ms. Walmsley, I have money invested in @GSK and I want you to drop the price of PCV13 to $5/child as defined by AFAIRSHOT.ORG #askpharma" target="_blank">
+          <a href="https://twitter.com/?status=Ms. Walmsley, I have money invested in @GSK and I want you to drop the price of PCV13 to $5/child as defined by AFAIRSHOT.ORG #askpharma" target="_blank" class="tweet-link">
             <img src="https://pfff-ff5dd.firebaseapp.com/img/twitter_logo.svg" alt="">
             Tweet GSK
           </a>
@@ -231,6 +263,7 @@
           Sincerely,
           [Your Name]
         </textarea>
+        <a class="email-fm-link" href="mailto:[Fund Manager Email Address]?subject=&body=Dear%20%5BFund%20Manager%20Name%5D%2C%0A%0AI%20am%20invested%20in%20%5BFund%20Name%5D%20and%20it%20has%20come%20to%20my%20attention%20that%20GlaxoSmithKline%20and%20Pfizer%20are%20included%20in%20the%20investment%20portfolio.%20%0A%0ALike%20hundreds%20of%20thousands%20of%20people%20from%20around%20the%20world%2C%20I%20believe%20that%20Pfizer%20and%20GSK%20should%20reduce%20the%20price%20of%20the%20pneumonia%20vaccine%20to%205%20dollars%20per%20child%20(for%20all%20three%20doses)%20in%20all%20developing%20countries.%20With%20almost%20one%20million%20deaths%20of%20children%20under%20five%20every%20year%2C%20Pneumonia%20is%20the%20main%20childhood%20killer%20diseases.%20Pfizer%20and%20GSK%20should%20keep%20the%20price%20of%20the%20vaccine%20out%20of%20reach%20of%20vulnerable%20children.%20%0A%0AAs%20you%20hold%20my%20voting%20authority%20(or%20voice)%20for%20these%20companies%20through%20my%20investment%20in%20your%20fund%2C%20I%20want%20you%20to%20represent%20my%20interests%20at%20the%20upcoming%20annual%20shareholder%20meetings%20for%20both%20companies.%0A%0APlease%20confirm%20you%E2%80%99ve%20received%20this%20email%20and%20the%20steps%20you%20will%20take%20to%20have%20our%20voices%20heard%20at%20the%20shareholder%20meetings.%0A%0ASincerely%2C%0A%5BYour%20Name%5D" target="_blank">Email Your Fund Manager</a>
         <input type="submit" value="Send" class="modal-close">
       </form>
     </div>
@@ -238,7 +271,7 @@
       <div class="modal__header">Take Action! <i class="close-x modal-close"></i></div> 
       <h4>Tell your friends!</h4>
       <p>This campaign counts on people like you, your friends, family, and colleagues. Let them know that you’ve taken the time to #askpharma.</p>
-      <a href="https://twitter.com/?status=I want to ensure all kids have access to the pneumonia vaccine. Check to see if your money is invested $PFE $GSK afairshot.org." target="_blank">
+      <a href="https://twitter.com/?status=I want to ensure all kids have access to the pneumonia vaccine. Check to see if your money is invested $PFE $GSK afairshot.org." target="_blank" class="tweet-link">
         <img src="https://pfff-ff5dd.firebaseapp.com/img/twitter_logo.svg" alt="">
         Tweet this
       </a>
@@ -278,20 +311,12 @@
  
 
   <script src="https://pfff-ff5dd.firebaseapp.com/js/jquery.min.js"></script>
-  <!-- <script>
-      var read_more_text = document.querySelector('#read-more-text');
-      var read_more = document.querySelector('#read-more');
-      
-      read_more.addEventListener('click', function(event) {
-        event.preventDefault();
-        read_more.style.visibility = 'hidden';
-        read_more_text.classList.add("fade-in");
-      });
-  </script> -->
+  <script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
   <!-- <button onclick="sendMessage('Scott Rothman can you read me?')">Login with Facebook</button> -->
   </div>
   <script src="https://pfff-ff5dd.firebaseapp.com/js/lodash.min.js"></script>
   <script src="https://pfff-ff5dd.firebaseapp.com/js/data.js"></script>
   <script src="https://pfff-ff5dd.firebaseapp.com/js/data2.js"></script>
   <script src="https://pfff-ff5dd.firebaseapp.com/js/search.js"></script>
-  <script src="https://pfff-ff5dd.firebaseapp.com/js/main.js"></script>
+  <!-- <script src="https://pfff-ff5dd.firebaseapp.com/js/main.js"></script> -->
+  <script src="js/main.js"></script>

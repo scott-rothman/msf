@@ -52,7 +52,7 @@ var init = function() {
   var possible_matches = '';
   var $possible_matches;
   window.msf = [];
-  intro.style.height = intro_height+'px';
+  // intro.style.height = intro_height+'px'; // stopped intro height from being set in absolute pixels
 
   match_holder.addEventListener('click', function(e) {
     if (e.target.classList.contains('match')) {
@@ -256,3 +256,48 @@ var navToEnd = function() {
   var scrollPoint = conclusionRect.top - bodyRect.top;
   $('html,body').animate({scrollTop: scrollPoint}, 1000); 
 }
+
+/*
+  Firebase Counter 
+*/
+
+var fb_config = {
+  apiKey: "AIzaSyBJnXVLoPPAUij3-BVdaQ6nKpUFJBWrlYQ",
+  authDomain: "pfff-ff5dd.firebaseapp.com",
+  databaseURL: "https://pfff-ff5dd.firebaseio.com",
+  projectId: "pfff-ff5dd",
+  storageBucket: "pfff-ff5dd.appspot.com",
+  messagingSenderId: "707383012898"
+};
+firebase.initializeApp(fb_config);
+
+// Get a reference to the database service
+var database = firebase.database();
+// 
+var emailCount = database.ref('count-emails');
+var tweetCount = database.ref('count-tweets');
+
+// bind html value to firebase value 
+emailCount.on('value', function(snapshot) {
+  $('.count--emails').html(snapshot.val())
+});
+tweetCount.on('value', function(snapshot){
+  $('.count--tweets').html(snapshot.val())
+})
+
+// counter increment functions
+var updateEmailCount = function(){
+  emailCount.transaction(function(count){
+    if (count){count = count + 1;}
+  return count;
+  })
+}
+var updateTweetCount = function(){
+  tweetCount.transaction(function(count){
+    if (count){ count = count + 1;}
+  return count
+  })
+}
+// bind action to update function
+$('.tweet-link').on('click', updateTweetCount);
+$('.email-fm-link').on('click', updateEmailCount);
