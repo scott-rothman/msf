@@ -1056,6 +1056,11 @@ p {
 .content .modal-b {
   height: 800px;
 }
+@media all and (max-width: 768px) {
+  .content .modal-b {
+    height: 390px;
+  }
+}
 .content .modal-b h4 {
   margin-bottom: 10px !important;
   margin-top: 10px !important;
@@ -1111,6 +1116,9 @@ p {
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
+}
+.content .modal-b .bottom {
+  padding: 0;
 }
 
 .content .modal-c {
