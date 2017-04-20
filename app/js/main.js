@@ -77,10 +77,10 @@ var init = function() {
       window.msf.match = match;
       var message = 'To Whom it May Concern,\r\rI am invested in '+ window.msf.match + ' and it has come to my attention that GlaxoSmithKline and Pfizer are included in the investment portfolio. I am aligned with the goals of AFAIRSHOT.ORG and want to see both companies reduce the price of the life-saving pneumonia vaccine to $5 per child in crisis-affected populations and for all developing countries.\r\rAs you hold my voting authority for these companies through my investment in your fund, I want you to represent my interests at the upcoming annual shareholder meetings for both companies.\r\rPlease confirm you’ve received this email and the steps you will take to have our voices heard at the shareholder meetings.\r\rSincerely,';
       $('#message').html(message);
+      $('.intro__form__results').html(''); // close fund autocomplete sooner 
       window.setTimeout(function() {
         form.classList.remove('active');
-        intro_text.classList.remove('hidden_text');
-        $('.intro__form__results').html('');
+        intro_text.classList.remove('hidden_text');        
         search_field.value = '';  
       }, 1000);
       

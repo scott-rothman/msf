@@ -27,6 +27,7 @@
   }
   .content .intro__form__results {
     left: 0;
+    top: 80px;
     background: #16161d;
     color: #FFFFFF;
   }
@@ -42,6 +43,9 @@
       padding: 2em;
       max-width: 800px;
       margin: 0 auto;
+  }
+  .content .response__gsk__info, .content .response__pfe__info {
+    margin: 0 auto;
   }
   .content .response__gsk h2, .content .response__pfe h2, .content .response__both h2, .content .response__no h2, .content .response__unknown h2 {
     width: auto;
@@ -70,26 +74,52 @@
   ACTION COUNTER 
   */
   .action-counter__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-family: 'proxima-nova',sans-serif;
   }
+
   .action-count {
-    /*border: 1px solid blue;*/
-    /*width: 200px;*/
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-right: 3rem;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
+
   .action-count .count {
-    color: #ec0928;    
+    color: #ec0928;
     font-size: 3rem;
     margin: 1em 0 0;
   }
+ .email-fm-link {
+     border: 0;
+     color: #FFFFFF !important;
+     background: #EC0928;
+     padding: 15px 40px;
+     margin:  0 auto;
+     text-transform: none !important;
+     font-size: 1.5rem !important;
+     font-weight: normal !important;
+     width: 130px;
+     display: block;
+     text-decoration: none !important;
+ }
   .action-count .count--title {
     color: #fff;
     font-weight: bold;
     text-transform: uppercase;
+  }
+  #message {
+    white-space: pre-wrap;
+    line-height: 1.5;
   }
 </style>
   <script src="https://use.typekit.net/ymo8kbt.js"></script>
@@ -218,12 +248,15 @@
     <div class="modal modal-b">
       <div class="modal__header">Take Action! <i class="close-x"></i></div>
       <h4>Tell your fund managers to represent your interests</h4>
-      <h3>A really quick lesson the influence you have with the money you invest:</h3>
-      <p>When you invest your money through mutual funds or ETFs you delegate the voting authority on the shares of the underlying companies in the fund to the fund managers. 
-      </p>
-      <p>So tell your fund manager that you want Pfizer and GSK to drop the price of the vaccine.
-        BBoth Pfizer and GSK have their annual shareholder meetings coming up in Q2 (late April and May respectively). Let’s have our voices heard in this forum. Use the email template below to let your fund manager know how they can best represent your interests when it comes to your values and your money.
-      </p>
+      <!-- <h3>Send this email to your fund managers</h3> -->
+      <div class="modal__content">
+        <div id="message"></div>
+        <a class="email-fm-link" href="mailto:[Fund Manager Email Address]?subject=&body=Dear%20%5BFund%20Manager%20Name%5D%2C%0A%0AI%20am%20invested%20in%20%5BFund%20Name%5D%20and%20it%20has%20come%20to%20my%20attention%20that%20GlaxoSmithKline%20and%20Pfizer%20are%20included%20in%20the%20investment%20portfolio.%20%0A%0ALike%20hundreds%20of%20thousands%20of%20people%20from%20around%20the%20world%2C%20I%20believe%20that%20Pfizer%20and%20GSK%20should%20reduce%20the%20price%20of%20the%20pneumonia%20vaccine%20to%205%20dollars%20per%20child%20(for%20all%20three%20doses)%20in%20all%20developing%20countries.%20With%20almost%20one%20million%20deaths%20of%20children%20under%20five%20every%20year%2C%20Pneumonia%20is%20the%20main%20childhood%20killer%20diseases.%20Pfizer%20and%20GSK%20should%20keep%20the%20price%20of%20the%20vaccine%20out%20of%20reach%20of%20vulnerable%20children.%20%0A%0AAs%20you%20hold%20my%20voting%20authority%20(or%20voice)%20for%20these%20companies%20through%20my%20investment%20in%20your%20fund%2C%20I%20want%20you%20to%20represent%20my%20interests%20at%20the%20upcoming%20annual%20shareholder%20meetings%20for%20both%20companies.%0A%0APlease%20confirm%20you%E2%80%99ve%20received%20this%20email%20and%20the%20steps%20you%20will%20take%20to%20have%20our%20voices%20heard%20at%20the%20shareholder%20meetings.%0A%0ASincerely%2C%0A%5BYour%20Name%5D" target="_blank">Send Email</a>
+        <div class="bottom">
+          <button class="modal-close end">Go Back</button>
+        </div>
+      </div>
+      
       <form action="">
         <div class="name-wrapper">
           <label for="name">Name</label>
@@ -233,8 +266,9 @@
           <label for="email">E-Mail</label>
           <input type="email" id="email">
         </div>
-        <label for="message">Send this email to your fund managers</label>
-        <textarea type="text" id="message">
+        
+        <!-- <label for="message">Send this email to your fund managers</label> -->
+<!--         <textarea type="text" id="message">
           Dear [Fund Manager Name],
 
           I am invested in [Fund Name] and it has come to my attention that GlaxoSmithKline and Pfizer are included in the investment portfolio. 
@@ -247,9 +281,8 @@
 
           Sincerely,
           [Your Name]
-        </textarea>
-        <a class="email-fm-link" href="mailto:[Fund Manager Email Address]?subject=&body=Dear%20%5BFund%20Manager%20Name%5D%2C%0A%0AI%20am%20invested%20in%20%5BFund%20Name%5D%20and%20it%20has%20come%20to%20my%20attention%20that%20GlaxoSmithKline%20and%20Pfizer%20are%20included%20in%20the%20investment%20portfolio.%20%0A%0ALike%20hundreds%20of%20thousands%20of%20people%20from%20around%20the%20world%2C%20I%20believe%20that%20Pfizer%20and%20GSK%20should%20reduce%20the%20price%20of%20the%20pneumonia%20vaccine%20to%205%20dollars%20per%20child%20(for%20all%20three%20doses)%20in%20all%20developing%20countries.%20With%20almost%20one%20million%20deaths%20of%20children%20under%20five%20every%20year%2C%20Pneumonia%20is%20the%20main%20childhood%20killer%20diseases.%20Pfizer%20and%20GSK%20should%20keep%20the%20price%20of%20the%20vaccine%20out%20of%20reach%20of%20vulnerable%20children.%20%0A%0AAs%20you%20hold%20my%20voting%20authority%20(or%20voice)%20for%20these%20companies%20through%20my%20investment%20in%20your%20fund%2C%20I%20want%20you%20to%20represent%20my%20interests%20at%20the%20upcoming%20annual%20shareholder%20meetings%20for%20both%20companies.%0A%0APlease%20confirm%20you%E2%80%99ve%20received%20this%20email%20and%20the%20steps%20you%20will%20take%20to%20have%20our%20voices%20heard%20at%20the%20shareholder%20meetings.%0A%0ASincerely%2C%0A%5BYour%20Name%5D" target="_blank">Email Your Fund Manager</a>
-        <input type="submit" value="Send" class="modal-close">
+        </textarea> -->
+        <!-- <input type="submit" value="Send" class="modal-close"> -->
       </form>
     </div>
     <div class="modal modal-c">
@@ -260,6 +293,7 @@
         <img src="https://pfff-ff5dd.firebaseapp.com/img/twitter_logo.svg" alt="">
         Tweet this
       </a>
+      
       <button class="modal-close">Go back</button>
     </div>
     <div class="modal modal-d">
