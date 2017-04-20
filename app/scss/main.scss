@@ -207,10 +207,10 @@ $grey: #9C9C9C;
   }
 
   .intro__form__results {
-    width: 80%;
+    width: 75%;
     position: absolute;
     left: 4px;
-    top: 0;
+    top: 80px;
     max-height: 350px;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -283,11 +283,13 @@ $grey: #9C9C9C;
     }
   }
 
-  .response__yes__info {
+  .response__gsk__info,
+  .response__pfe__info {
     border: 3px solid $red;
     // border: 3px solid #000000;
     padding: 40px;
     border-radius: 0;
+    max-width: 800px;
   }
   button.end {
     border: 0;
@@ -300,7 +302,8 @@ $grey: #9C9C9C;
     transform: translateY(30px);
     clear: both;
   }
-  .response__yes__steps {
+  .response__gsk__steps,
+  .response__pfe__steps {
     max-width: 800px;
     margin: 40px auto 0 auto;
 
@@ -347,6 +350,7 @@ $grey: #9C9C9C;
     border-radius: 5px;
     position: relative;
     transform: translateY(5px);
+    pointer-events: none;
   }
 
   .checked {
@@ -650,8 +654,23 @@ $grey: #9C9C9C;
     .bottom {
       button {
         margin-top: 40px;
+        @media all and (max-width: 320px) {
+          margin: 0;
+        }
       }
     }
+    img {
+      @media all and (max-width: 320px) {
+        width: 25%;
+        margin: 0 auto;  
+      }
+    }
+    a {
+      @media all and (max-width: 320px) {
+        margin-top: 0;
+      }
+    }
+
   }
 
 

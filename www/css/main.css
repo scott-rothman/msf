@@ -725,10 +725,10 @@ p {
 }
 
 .content .intro__form__results {
-  width: 80%;
+  width: 75%;
   position: absolute;
   left: 4px;
-  top: 205px;
+  top: 80px;
   max-height: 350px;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -831,10 +831,12 @@ p {
   cursor: initial;
 }
 
-.content .response__yes__info {
+.content .response__gsk__info,
+.content .response__pfe__info {
   border: 3px solid #EC0928;
   padding: 40px;
   border-radius: 0;
+  max-width: 800px;
 }
 
 .content button.end {
@@ -850,7 +852,8 @@ p {
   clear: both;
 }
 
-.content .response__yes__steps {
+.content .response__gsk__steps,
+.content .response__pfe__steps {
   max-width: 800px;
   margin: 40px auto 0 auto;
 }
@@ -893,6 +896,7 @@ p {
   position: relative;
   -webkit-transform: translateY(5px);
           transform: translateY(5px);
+  pointer-events: none;
 }
 
 .content .checked .box:before {
@@ -1241,6 +1245,24 @@ p {
 
 .content .modal-a .bottom button {
   margin-top: 40px;
+}
+@media all and (max-width: 320px) {
+  .content .modal-a .bottom button {
+    margin: 0;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .content .modal-a img {
+    width: 25%;
+    margin: 0 auto;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .content .modal-a a {
+    margin-top: 0;
+  }
 }
 
 .content .read-more-text {
