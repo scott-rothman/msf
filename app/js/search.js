@@ -12,6 +12,12 @@ var search_match_gsk = function(share_name) {
 				arr.push(ofst.name.toLowerCase());
 			}
 		}
+		if (ofst.hasOwnProperty("ticker")) {
+			if (ofst.ticker.toLowerCase() === share_name) {
+				arr.push(ofst.ticker.toLowerCase());
+			}
+		}
+		
 	}
 	
 	for (ofst of GSK_mfund_holders) {
@@ -20,6 +26,12 @@ var search_match_gsk = function(share_name) {
 				arr.push(ofst.name);
 			}
 		}
+		if (ofst.hasOwnProperty("ticker")) {
+			if (ofst.ticker.toLowerCase() === share_name) {
+				arr.push(ofst.ticker.toLowerCase());
+			}
+		}
+
 	}
 	
 	return arr;
@@ -35,6 +47,12 @@ var search_match_pfe = function(share_name) {
 				arr.push(ofst.name);
 			}
 		}
+		if (ofst.hasOwnProperty("ticker")) {
+			if (ofst.ticker.toLowerCase() === share_name) {
+				arr.push(ofst.ticker.toLowerCase());
+			}
+		}
+
 	}
 	
 	for (ofst of PFE_mfund_holders) {
@@ -43,6 +61,12 @@ var search_match_pfe = function(share_name) {
 				arr.push(ofst.name);
 			}
 		}
+		if (ofst.hasOwnProperty("ticker")) {
+			if (ofst.ticker.toLowerCase() === share_name) {
+				arr.push(ofst.ticker.toLowerCase());
+			}
+		}
+
 	}
 
 	
@@ -58,6 +82,7 @@ var search_match_all = function(share_name) {
 				arr.push(ofst.name.toLowerCase());
 			}
 		}
+
 	}
 	for (ofst of GSK_etf_holders) {
 		if (ofst.hasOwnProperty("name")) {
@@ -65,6 +90,7 @@ var search_match_all = function(share_name) {
 				arr.push(ofst.name.toLowerCase());
 			}
 		}
+
 	}
 	
 	for (ofst of GSK_mfund_holders) {
@@ -73,6 +99,7 @@ var search_match_all = function(share_name) {
 				arr.push(ofst.name);
 			}
 		}
+
 	}
 	for (ofst of PFE_etf_holders) {
 		if (ofst.hasOwnProperty("name")) {
@@ -80,6 +107,7 @@ var search_match_all = function(share_name) {
 				arr.push(ofst.name);
 			}
 		}
+
 	}
 	
 	for (ofst of PFE_mfund_holders) {
@@ -88,6 +116,7 @@ var search_match_all = function(share_name) {
 				arr.push(ofst.name);
 			}
 		}
+
 	}
 	return arr;
 }
@@ -101,6 +130,7 @@ var search_holders = function(share_name) {
 				arr.push(ofst.name.toLowerCase());
 			}
 		}
+
 	}
 	for (ofst of GSK_etf_holders) {
 		if (ofst.hasOwnProperty("name")) {
@@ -108,6 +138,7 @@ var search_holders = function(share_name) {
 				arr.push(ofst.name.toLowerCase());
 			}
 		}
+
 	}
 	
 	for (ofst of GSK_mfund_holders) {
@@ -116,6 +147,7 @@ var search_holders = function(share_name) {
 				arr.push(ofst.name);
 			}
 		}
+
 	}
 	for (ofst of PFE_etf_holders) {
 		if (ofst.hasOwnProperty("name")) {
@@ -123,6 +155,7 @@ var search_holders = function(share_name) {
 				arr.push(ofst.name);
 			}
 		}
+
 	}
 	
 	for (ofst of PFE_mfund_holders) {
@@ -131,6 +164,7 @@ var search_holders = function(share_name) {
 				arr.push(ofst.name);
 			}
 		}
+
 	}
 	for (ofst of all_funds) {
 		if (ofst.hasOwnProperty("name")) {
@@ -138,6 +172,7 @@ var search_holders = function(share_name) {
 				arr.push(ofst.name);
 			}
 		}
+
 	}
 	return arr;
 }

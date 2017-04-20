@@ -127,7 +127,7 @@ var init = function() {
 		search_term = search_field.value.toLowerCase();
     matches = search_holders(search_term);
     matches = _.uniqBy(matches);
-    if (search_term.length > 3) {
+    if (search_term.length >= 3) {
       _.each(matches, function(value) {
         possible_matches += '<div class="match">'+value+'</div>';
       })
