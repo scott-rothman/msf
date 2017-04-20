@@ -126,6 +126,10 @@ $grey: #9C9C9C;
     background-position: center center;
     background-size: cover;
     color: #FFFFFF;
+    margin-top: 40px;
+    @media all and (max-width: 768px) {
+      margin-top: 0;
+    }
     .read-more {
       color: $red;
       // display: block;

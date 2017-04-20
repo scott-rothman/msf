@@ -625,6 +625,12 @@ p {
   background-position: center center;
   background-size: cover;
   color: #FFFFFF;
+  margin-top: 40px;
+}
+@media all and (max-width: 768px) {
+  .content .intro {
+    margin-top: 0;
+  }
 }
 .content .intro .read-more {
   color: #EC0928;
