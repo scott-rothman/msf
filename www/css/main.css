@@ -1055,10 +1055,12 @@ p {
 
 .content .modal-b {
   height: 800px;
+  padding-top: 100px;
 }
 @media all and (max-width: 768px) {
   .content .modal-b {
     height: 390px;
+    padding-top: 60px;
   }
 }
 .content .modal-b h4 {
@@ -1118,7 +1120,7 @@ p {
   margin-bottom: 5px;
 }
 .content .modal-b .bottom {
-  padding: 0;
+  padding: 0 !important;
 }
 
 .content .modal-c {
