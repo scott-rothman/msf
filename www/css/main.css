@@ -725,10 +725,10 @@ p {
 }
 
 .content .intro__form__results {
-  width: 80%;
+  width: 75%;
   position: absolute;
   left: 4px;
-  top: 0;
+  top: 80px;
   max-height: 350px;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -744,6 +744,14 @@ p {
           transition: all 0.2s ease;
   text-transform: capitalize;
 }
+@media all and (max-width: 768px) {
+  .content .intro__form__results > div {
+    padding-top: 20px;
+    line-height: 15px;
+    font-size: 0.7rem;
+    padding-right: 25px;
+  }
+}
 .content .intro__form__results > div:hover {
   background-color: #EC0928;
   color: #FFFFFF;
@@ -752,6 +760,7 @@ p {
   .content .intro__form__results {
     top: 80px;
     max-height: 250px;
+    width: 98%;
   }
 }
 
@@ -831,10 +840,13 @@ p {
   cursor: initial;
 }
 
-.content .response__yes__info {
+.content .response__gsk__info,
+.content .response__pfe__info {
   border: 3px solid #EC0928;
   padding: 40px;
   border-radius: 0;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .content button.end {
@@ -850,7 +862,8 @@ p {
   clear: both;
 }
 
-.content .response__yes__steps {
+.content .response__gsk__steps,
+.content .response__pfe__steps {
   max-width: 800px;
   margin: 40px auto 0 auto;
 }
@@ -893,6 +906,7 @@ p {
   position: relative;
   -webkit-transform: translateY(5px);
           transform: translateY(5px);
+  pointer-events: none;
 }
 
 .content .checked .box:before {
@@ -930,6 +944,12 @@ p {
   clear: both;
   width: 225px;
 }
+@media all and (max-width: 320px) {
+  .content .conclusion button {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+}
 .content .conclusion p.with-button {
   width: 800px;
   height: 100px;
@@ -943,6 +963,17 @@ p {
   position: absolute;
   top: 0;
   right: 0;
+}
+@media all and (max-width: 320px) {
+  .content .conclusion p.with-button button {
+    position: relative;
+  }
+}
+@media all and (max-width: 320px) {
+  .content .conclusion p.with-button {
+    padding-right: 0;
+    text-align: center;
+  }
 }
 .content .conclusion p.extra-space {
   margin-bottom: 60px;
@@ -1001,6 +1032,11 @@ p {
   .content .modal {
     max-width: 85%;
     padding: 60px 10px;
+  }
+}
+@media all and (max-width: 320px) {
+  .content .modal {
+    height: 550px;
   }
 }
 
@@ -1108,6 +1144,7 @@ p {
   display: block;
   font-size: 1.5rem;
   width: 295px;
+  text-align: center;
 }
 @media all and (max-width: 768px) {
   .content .modal-c a,
@@ -1239,8 +1276,34 @@ p {
   margin-right: 10px;
 }
 
+.content .modal-a {
+  padding-top: 100px;
+  height: auto;
+}
+@media all and (max-width: 768px) {
+  .content .modal-a {
+    padding-top: 50px;
+    height: 550px;
+  }
+}
 .content .modal-a .bottom button {
   margin-top: 40px;
+}
+@media all and (max-width: 320px) {
+  .content .modal-a .bottom button {
+    margin: 0;
+  }
+}
+@media all and (max-width: 320px) {
+  .content .modal-a img {
+    width: 25%;
+    margin: 0 auto;
+  }
+}
+@media all and (max-width: 320px) {
+  .content .modal-a a {
+    margin-top: 0;
+  }
 }
 
 .content .read-more-text {
@@ -1259,9 +1322,23 @@ p {
   opacity: 1;
 }
 
+.show-mobile {
+  display: none !important;
+}
+
+@media all and (max-width: 768px) {
+  .show-mobile {
+    display: block !important;
+  }
+  .show-desktop {
+    display: none !important;
+  }
+}
+
 @media all and (max-width: 768px) {
   body #content-wrapper div.content {
     padding-top: 0 !important;
+    margin-bottom: 20px;
   }
 }
 
