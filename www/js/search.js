@@ -82,6 +82,11 @@ var search_match_all = function(share_name) {
 				arr.push(ofst.name.toLowerCase());
 			}
 		}
+		if (ofst.hasOwnProperty("ticker")) {
+			if (ofst.ticker.toLowerCase() === share_name) {
+				arr.push(ofst.ticker.toLowerCase());
+			}
+		}
 
 	}
 	for (ofst of GSK_etf_holders) {
