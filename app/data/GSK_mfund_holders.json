@@ -1,97 +1,154 @@
 [
   {
+    "ticker": "TRIGX",
     "name": "T. Rowe Price International Value Equity Fund",
     "shares": 5566772,
-    "ticker": "TRIGX"
+    "twitter": "@TRowePrice",
+    "email": "contact_the_board@troweprice.com",
+    "contact_url": ""
   },
   {
+    "ticker": "FGLGX",
     "name": "Fidelity® Series Growth & Income",
     "shares": 3507600,
-    "ticker": "FGLGX"
+    "twitter": "@Fidelity",
+    "email": "Fidelity.Investments@mail.fidelity.com",
+    "contact_url": ""
   },
   {
+    "ticker": "VWNFX",
     "name": "Vanguard Windsor™ II Inv",
     "shares": 2591100,
-    "ticker": "VWNFX"
+    "twitter": "@Vanguard_FA",
+    "email": "advisor_services@vanguard.com",
+    "contact_url": ""
   },
   {
+    "ticker": "FGRIX",
     "name": "Fidelity® Growth & Income",
     "shares": 2425922,
-    "ticker": "FGRIX"
+    "twitter": "@Fidelity",
+    "email": "Fidelity.Investments@mail.fidelity.com",
+    "contact_url": ""
   },
   {
+    "ticker": "FBALX",
     "name": "Fidelity® Balanced",
     "shares": 1905600,
-    "ticker": "FBALX"
+    "twitter": "@Fidelity",
+    "email": "Fidelity.Investments@mail.fidelity.com",
+    "contact_url": ""
   },
   {
+    "ticker": "TROSX",
     "name": "T. Rowe Price Overseas Stock",
     "shares": 2117513,
-    "ticker": "TROSX"
+    "twitter": "@TRowePrice",
+    "email": "contact_the_board@troweprice.com",
+    "contact_url": ""
   },
   {
+    "ticker": "FPHAX",
     "name": "Fidelity® Select Pharmaceuticals Port",
     "shares": 2289900,
-    "ticker": "FPHAX"
+    "twitter": "@Fidelity",
+    "email": "Fidelity.Investments@mail.fidelity.com",
+    "contact_url": ""
   },
   {
+    "ticker": "FGRTX",
     "name": "Fidelity® Mega Cap Stock",
     "shares": 1311900,
-    "ticker": "FGRTX"
+    "twitter": "@Fidelity",
+    "email": "Fidelity.Investments@mail.fidelity.com",
+    "contact_url": ""
   },
   {
+    "ticker": "FPURX",
     "name": "Fidelity® Puritan®",
     "shares": 1160400,
-    "ticker": "FPURX"
+    "twitter": "@Fidelity",
+    "email": "Fidelity.Investments@mail.fidelity.com",
+    "contact_url": ""
   },
   {
+    "ticker": "FDETX",
     "name": "Fidelity Advisor® Capital Development O",
     "shares": 1000100,
-    "ticker": "FDETX"
+    "twitter": "@Fidelity",
+    "email": "Fidelity.Investments@mail.fidelity.com",
+    "contact_url": ""
   },
   {
+    "ticker": "AADEX",
     "name": "American Beacon Lg Cap Value Inst",
     "shares": 847134,
-    "ticker": "AADEX"
+    "twitter": "@AmBeacon",
+    "email": "client.services@ambeacon.com",
+    "contact_url": ""
   },
   {
+    "ticker": "FLCSX",
     "name": "Fidelity® Large Cap Stock",
     "shares": 931711,
-    "ticker": "FLCSX"
+    "twitter": "@Fidelity",
+    "email": "Fidelity.Investments@mail.fidelity.com",
+    "contact_url": ""
   },
   {
+    "ticker": "FPCIX",
     "name": "Strategic Advisers® Core",
     "shares": 1500000,
-    "ticker": "FPCIX"
+    "twitter": "",
+    "email": "",
+    "contact_url": ""
   },
   {
+    "ticker": "GMOIX",
     "name": "GMO International Equity III",
     "shares": 7371419,
-    "ticker": "GMOIX"
+    "twitter": "",
+    "email": "",
+    "contact_url": ""
   },
   {
+    "ticker": "AST_LARG_C",
     "name": "AST Hotchkis & Wiley Large-Cap Value",
     "shares": 577300,
-    "ticker": "AST_LARG_C"
+    "twitter": "",
+    "email": "",
+    "contact_url": ""
   },
   {
+    "ticker": "VPMCX",
     "name": "Vanguard PRIMECAP Inv",
     "shares": 575000,
-    "ticker": "VPMCX"
+    "twitter": "@Vanguard_FA",
+    "email": "advisor_services@vanguard.com",
+    "contact_url": ""
   },
   {
+    "ticker": "DFIEX",
     "name": "DFA International Core Equity I",
     "shares": 560985,
-    "ticker": "DFIEX"
+    "twitter": "",
+    "email": "",
+    "contact_url": ""
   },
   {
+    "ticker": "BUFBX",
     "name": "Buffalo Flexible Income",
     "shares": 19255000,
-    "ticker": "BUFBX"
+    "twitter": "",
+    "email": "info@buffalofunds.com",
+    "contact_url": ""
   },
   {
+    "ticker": "PEQIX",
     "name": "Pioneer Equity Income A",
     "shares": 18124465,
-    "ticker": "PEQIX"
+    "twitter": "",
+    "email": "",
+    "contact_url": ""
   }
 ]

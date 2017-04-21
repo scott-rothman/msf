@@ -3,140 +3,221 @@ const GSK_etf_holders =
   {
     "ticker": "FVD",
     "name": "First Trust Value Line Dividend Index Fund",
-    "shares": 12
+    "shares": 12,
+    "twitter": 886,
+    "email": 597,
+    "contact_url": "@ftportfolios"
   },
   {
     "ticker": "FVL",
     "name": "First Trust Value Line 100 Exchange-Traded Fund",
-    "shares": 557
+    "shares": 557,
+    "twitter": 628,
+    "email": "@ftportfolios",
+    "contact_url": "feedback@ftportfolios.com"
   },
   {
     "ticker": "ESGG",
     "name": "FlexShares STOXX® Global ESG Impact Index Fund",
-    "shares": 1
+    "shares": 1,
+    "twitter": 610,
+    "email": "@FlexSharesETFs",
+    "contact_url": ""
   },
   {
     "ticker": "IXJ",
     "name": "iShares Global Healthcare ETF",
-    "shares": 1729544
+    "shares": 1729544,
+    "twitter": "@iShares",
+    "email": "isharesetfs@blackrock.com",
+    "contact_url": ""
   },
   {
     "ticker": "JHMD",
     "name": "John Hancock Multifactor Developed International ETF",
-    "shares": 12788
+    "shares": 12788,
+    "twitter": "@JH_Investments",
+    "email": "",
+    "contact_url": "https://advisor.jhinvestments.com/ContactUs.aspx"
   },
   {
     "ticker": "OEUR",
     "name": "O'Shares FTSE Europe Quality Dividend ETF",
-    "shares": 42012
+    "shares": 42012,
+    "twitter": "@O_Shares",
+    "email": "info@oshares.com",
+    "contact_url": ""
   },
   {
     "ticker": "SCHF",
     "name": "Schwab International Equity ETF",
-    "shares": 2265793
+    "shares": 2265793,
+    "twitter": "@Schwab4RIAs",
+    "email": "",
+    "contact_url": "https://www.schwab.com/public/schwab/client_home/contact_us"
   },
   {
     "ticker": "PPH",
     "name": "VanEck Vectors Pharmaceutical ETF",
-    "shares": 343820
+    "shares": 343820,
+    "twitter": "@vaneck_us",
+    "email": "info@vaneck.com",
+    "contact_url": ""
   }
 ];
 
 const GSK_mfund_holders = [
   {
+    "ticker": "TRIGX",
     "name": "T. Rowe Price International Value Equity Fund",
     "shares": 5566772,
-    "ticker": "TRIGX"
+    "twitter": "@TRowePrice",
+    "email": "contact_the_board@troweprice.com",
+    "contact_url": ""
   },
   {
+    "ticker": "FGLGX",
     "name": "Fidelity® Series Growth & Income",
     "shares": 3507600,
-    "ticker": "FGLGX"
+    "twitter": "@Fidelity",
+    "email": "Fidelity.Investments@mail.fidelity.com",
+    "contact_url": ""
   },
   {
+    "ticker": "VWNFX",
     "name": "Vanguard Windsor™ II Inv",
     "shares": 2591100,
-    "ticker": "VWNFX"
+    "twitter": "@Vanguard_FA",
+    "email": "advisor_services@vanguard.com",
+    "contact_url": ""
   },
   {
+    "ticker": "FGRIX",
     "name": "Fidelity® Growth & Income",
     "shares": 2425922,
-    "ticker": "FGRIX"
+    "twitter": "@Fidelity",
+    "email": "Fidelity.Investments@mail.fidelity.com",
+    "contact_url": ""
   },
   {
+    "ticker": "FBALX",
     "name": "Fidelity® Balanced",
     "shares": 1905600,
-    "ticker": "FBALX"
+    "twitter": "@Fidelity",
+    "email": "Fidelity.Investments@mail.fidelity.com",
+    "contact_url": ""
   },
   {
+    "ticker": "TROSX",
     "name": "T. Rowe Price Overseas Stock",
     "shares": 2117513,
-    "ticker": "TROSX"
+    "twitter": "@TRowePrice",
+    "email": "contact_the_board@troweprice.com",
+    "contact_url": ""
   },
   {
+    "ticker": "FPHAX",
     "name": "Fidelity® Select Pharmaceuticals Port",
     "shares": 2289900,
-    "ticker": "FPHAX"
+    "twitter": "@Fidelity",
+    "email": "Fidelity.Investments@mail.fidelity.com",
+    "contact_url": ""
   },
   {
+    "ticker": "FGRTX",
     "name": "Fidelity® Mega Cap Stock",
     "shares": 1311900,
-    "ticker": "FGRTX"
+    "twitter": "@Fidelity",
+    "email": "Fidelity.Investments@mail.fidelity.com",
+    "contact_url": ""
   },
   {
+    "ticker": "FPURX",
     "name": "Fidelity® Puritan®",
     "shares": 1160400,
-    "ticker": "FPURX"
+    "twitter": "@Fidelity",
+    "email": "Fidelity.Investments@mail.fidelity.com",
+    "contact_url": ""
   },
   {
+    "ticker": "FDETX",
     "name": "Fidelity Advisor® Capital Development O",
     "shares": 1000100,
-    "ticker": "FDETX"
+    "twitter": "@Fidelity",
+    "email": "Fidelity.Investments@mail.fidelity.com",
+    "contact_url": ""
   },
   {
+    "ticker": "AADEX",
     "name": "American Beacon Lg Cap Value Inst",
     "shares": 847134,
-    "ticker": "AADEX"
+    "twitter": "@AmBeacon",
+    "email": "client.services@ambeacon.com",
+    "contact_url": ""
   },
   {
+    "ticker": "FLCSX",
     "name": "Fidelity® Large Cap Stock",
     "shares": 931711,
-    "ticker": "FLCSX"
+    "twitter": "@Fidelity",
+    "email": "Fidelity.Investments@mail.fidelity.com",
+    "contact_url": ""
   },
   {
+    "ticker": "FPCIX",
     "name": "Strategic Advisers® Core",
     "shares": 1500000,
-    "ticker": "FPCIX"
+    "twitter": "",
+    "email": "",
+    "contact_url": ""
   },
   {
+    "ticker": "GMOIX",
     "name": "GMO International Equity III",
     "shares": 7371419,
-    "ticker": "GMOIX"
+    "twitter": "",
+    "email": "",
+    "contact_url": ""
   },
   {
+    "ticker": "AST_LARG_C",
     "name": "AST Hotchkis & Wiley Large-Cap Value",
     "shares": 577300,
-    "ticker": "AST_LARG_C"
+    "twitter": "",
+    "email": "",
+    "contact_url": ""
   },
   {
+    "ticker": "VPMCX",
     "name": "Vanguard PRIMECAP Inv",
     "shares": 575000,
-    "ticker": "VPMCX"
+    "twitter": "@Vanguard_FA",
+    "email": "advisor_services@vanguard.com",
+    "contact_url": ""
   },
   {
+    "ticker": "DFIEX",
     "name": "DFA International Core Equity I",
     "shares": 560985,
-    "ticker": "DFIEX"
+    "twitter": "",
+    "email": "",
+    "contact_url": ""
   },
   {
+    "ticker": "BUFBX",
     "name": "Buffalo Flexible Income",
     "shares": 19255000,
-    "ticker": "BUFBX"
+    "twitter": "",
+    "email": "info@buffalofunds.com",
+    "contact_url": ""
   },
   {
+    "ticker": "PEQIX",
     "name": "Pioneer Equity Income A",
     "shares": 18124465,
-    "ticker": "PEQIX"
+    "twitter": "",
+    "email": "",
+    "contact_url": ""
   }
 ];
 
@@ -145,466 +226,742 @@ const PFE_etf_holders =
   {
     "ticker": "ELKU",
     "name": "Elkhorn FTSE RAFI U.S. Equity Income ETF",
-    "shares": 1036
+    "shares": 1036,
+    "twitter": "",
+    "email": "",
+    "contact_url": ""
   },
   {
     "ticker": "FDRR",
     "name": "Fidelity Dividend ETF for Rising Rates",
-    "shares": 12896
+    "shares": 12896,
+    "twitter": "@Fidelity",
+    "email": "Fidelity.Investments@mail.fidelity.com",
+    "contact_url": ""
   },
   {
     "ticker": "FDMO",
     "name": "Fidelity Momentum Factor ETF",
-    "shares": 3474
+    "shares": 3474,
+    "twitter": "@Fidelity",
+    "email": "Fidelity.Investments@mail.fidelity.com",
+    "contact_url": ""
   },
   {
     "ticker": "FHLC",
     "name": "Fidelity MSCI Health Care Index ETF",
-    "shares": 1105924
+    "shares": 1105924,
+    "twitter": "@Fidelity",
+    "email": "Fidelity.Investments@mail.fidelity.com",
+    "contact_url": ""
   },
   {
     "ticker": "FDVV",
     "name": "Fidelity Core Dividend ETF",
-    "shares": 5619
+    "shares": 5619,
+    "twitter": "@Fidelity",
+    "email": "Fidelity.Investments@mail.fidelity.com",
+    "contact_url": ""
   },
   {
     "ticker": "FDLO",
     "name": "Fidelity Low Volatility Factor ETF",
-    "shares": 2608
+    "shares": 2608,
+    "twitter": "@Fidelity",
+    "email": "Fidelity.Investments@mail.fidelity.com",
+    "contact_url": ""
   },
   {
     "ticker": "FQAL",
     "name": "Fidelity Quality Factor ETF",
-    "shares": 2611
+    "shares": 2611,
+    "twitter": "@Fidelity",
+    "email": "Fidelity.Investments@mail.fidelity.com",
+    "contact_url": ""
   },
   {
     "ticker": "FVAL",
     "name": "Fidelity Value Factor ETF",
-    "shares": 3344
+    "shares": 3344,
+    "twitter": "@Fidelity",
+    "email": "Fidelity.Investments@mail.fidelity.com",
+    "contact_url": ""
   },
   {
     "ticker": "FDL",
     "name": "First Trust Morningstar Dividend Leaders Index Fund",
-    "shares": 3372392
+    "shares": 3372392,
+    "twitter": "@ftportfolios",
+    "email": "feedback@ftportfolios.com",
+    "contact_url": ""
   },
   {
     "ticker": "FVD",
     "name": "First Trust Value Line Dividend Index Fund",
-    "shares": 12923708
+    "shares": 12923708,
+    "twitter": "@ftportfolios",
+    "email": "feedback@ftportfolios.com",
+    "contact_url": ""
   },
   {
     "ticker": "FVL",
     "name": "First Trust Value Line 100 Exchange-Traded Fund",
-    "shares": 510692
+    "shares": 510692,
+    "twitter": "@ftportfolios",
+    "email": "feedback@ftportfolios.com",
+    "contact_url": ""
   },
   {
     "ticker": "VIXH",
     "name": "First Trust CBOE® S&P 500® VIX® Tail Hedge Fund",
-    "shares": 4837
+    "shares": 4837,
+    "twitter": "@ftportfolios",
+    "email": "feedback@ftportfolios.com",
+    "contact_url": ""
   },
   {
     "ticker": "TILT",
     "name": "FlexShares Morningstar U.S. Market Factor Tilt Index Fund",
-    "shares": 263192
+    "shares": 263192,
+    "twitter": "@FlexSharesETFs",
+    "email": "",
+    "contact_url": "info@flexshares.com"
   },
   {
     "ticker": "QLC",
     "name": "FlexShares US Quality Large Cap Index Fund",
-    "shares": 3475
+    "shares": 3475,
+    "twitter": "@FlexSharesETFs",
+    "email": "",
+    "contact_url": "info@flexshares.com"
   },
   {
     "ticker": "QLC",
     "name": "FlexShares STOXX® US ESG Impact Index Fund",
-    "shares": 2744
+    "shares": 2744,
+    "twitter": "@FlexSharesETFs",
+    "email": "",
+    "contact_url": "info@flexshares.com"
   },
   {
     "ticker": "ESGG",
     "name": "FlexShares STOXX® Global ESG Impact Index Fund",
-    "shares": 2966
+    "shares": 2966,
+    "twitter": "@FlexSharesETFs",
+    "email": "",
+    "contact_url": "info@flexshares.com"
   },
   {
     "ticker": "QDEF",
     "name": "FlexShares Quality Dividend Defensive Index Fund",
-    "shares": 231378
+    "shares": 231378,
+    "twitter": "@FlexSharesETFs",
+    "email": "",
+    "contact_url": "info@flexshares.com"
   },
   {
     "ticker": "QDYN",
     "name": "FlexShares Quality Dividend Dynamic Index Fund",
-    "shares": 68880
+    "shares": 68880,
+    "twitter": "@FlexSharesETFs",
+    "email": "",
+    "contact_url": "info@flexshares.com"
   },
   {
     "ticker": "QDF",
     "name": "FlexShares Quality Dividend Index Fund",
-    "shares": 1494000
+    "shares": 1494000,
+    "twitter": "@FlexSharesETFs",
+    "email": "",
+    "contact_url": "info@flexshares.com"
   },
   {
     "ticker": "DJD",
     "name": "Guggenheim Dow Jones Industrial Average Dividend ETF",
-    "shares": 5087
+    "shares": 5087,
+    "twitter": "@GuggenheimPtnrs",
+    "email": "",
+    "contact_url": "ETFInfo@guggenheiminvestments.com"
   },
   {
     "ticker": "OVLC",
     "name": "Guggenheim U.S. Large Cap Optimized Volatility ETF",
-    "shares": 86
+    "shares": 86,
+    "twitter": "@GuggenheimPtnrs",
+    "email": "",
+    "contact_url": "ETFInfo@guggenheiminvestments.com"
   },
   {
     "ticker": "XLV",
     "name": "Health Care Select Sector SPDR Fund",
-    "shares": 30997152
+    "shares": 30997152,
+    "twitter": "",
+    "email": "",
+    "contact_url": ""
   },
   {
     "ticker": "DGRO",
     "name": "iShares Core Dividend Growth ETF",
-    "shares": 1038130
+    "shares": 1038130,
+    "twitter": "@iShares",
+    "email": "isharesetfs@blackrock.com",
+    "contact_url": ""
   },
   {
     "ticker": "HDV",
     "name": "iShares Core High Dividend ETF",
-    "shares": 9801599
+    "shares": 9801599,
+    "twitter": "@iShares",
+    "email": "isharesetfs@blackrock.com",
+    "contact_url": ""
   },
   {
     "ticker": "IYY",
     "name": "iShares Dow Jones US ETF",
-    "shares": 277097
+    "shares": 277097,
+    "twitter": "@iShares",
+    "email": "isharesetfs@blackrock.com",
+    "contact_url": ""
   },
   {
     "ticker": "HCRF",
     "name": "iShares Edge MSCI Multifactor Healthcare ETF",
-    "shares": 4150
+    "shares": 4150,
+    "twitter": "@iShares",
+    "email": "isharesetfs@blackrock.com",
+    "contact_url": ""
   },
   {
     "ticker": "IXJ",
     "name": "iShares Global Healthcare ETF",
-    "shares": 28454750
+    "shares": 28454750,
+    "twitter": "@iShares",
+    "email": "isharesetfs@blackrock.com",
+    "contact_url": ""
   },
   {
     "ticker": "JKF",
     "name": "iShares Morningstar Large-Cap Value ETF",
-    "shares": 381886
+    "shares": 381886,
+    "twitter": "@iShares",
+    "email": "isharesetfs@blackrock.com",
+    "contact_url": ""
   },
   {
     "ticker": "VLUE",
     "name": "iShares MSCI USA Value Factor ETF",
-    "shares": 877396
+    "shares": 877396,
+    "twitter": "@iShares",
+    "email": "isharesetfs@blackrock.com",
+    "contact_url": ""
   },
   {
     "ticker": "DVY",
     "name": "iShares Select Dividend ETF",
-    "shares": 3517064
+    "shares": 3517064,
+    "twitter": "@iShares",
+    "email": "isharesetfs@blackrock.com",
+    "contact_url": ""
   },
   {
     "ticker": "IYH",
     "name": "iShares U.S. Healthcare ETF",
-    "shares": 85976
+    "shares": 85976,
+    "twitter": "@iShares",
+    "email": "isharesetfs@blackrock.com",
+    "contact_url": ""
   },
   {
     "ticker": "IHE",
     "name": "iShares U.S. Pharmaceuticals ETF",
-    "shares": 1527049
+    "shares": 1527049,
+    "twitter": "@iShares",
+    "email": "isharesetfs@blackrock.com",
+    "contact_url": ""
   },
   {
     "ticker": "JHMH",
     "name": "John Hancock Multifactor Healthcare ETF",
-    "shares": 41358
+    "shares": 41358,
+    "twitter": "@JH_Investments",
+    "email": "",
+    "contact_url": "https://advisor.jhinvestments.com/ContactUs.aspx"
   },
   {
     "ticker": "JHML",
     "name": "John Hancock Multifactor Large Cap ETF",
-    "shares": 64108
+    "shares": 64108,
+    "twitter": "@JH_Investments",
+    "email": "",
+    "contact_url": "https://advisor.jhinvestments.com/ContactUs.aspx"
   },
   {
     "ticker": "OUSA",
     "name": "O'Shares FTSE US Quality Dividend ETF",
-    "shares": 274104
+    "shares": 274104,
+    "twitter": "@JH_Investments",
+    "email": "",
+    "contact_url": "https://advisor.jhinvestments.com/ContactUs.aspx"
   },
   {
     "ticker": "PWV",
     "name": "PowerShares Dynamic Large Cap Value Portfolio ETF",
-    "shares": 37686007
+    "shares": 37686007,
+    "twitter": "@PowerShares",
+    "email": "info@powershares.com",
+    "contact_url": ""
   },
   {
     "ticker": "PJP",
     "name": "PowerShares Dynamic Pharmaceuticals Portfolio ETF",
-    "shares": 1272357
+    "shares": 1272357,
+    "twitter": "@PowerShares",
+    "email": "info@powershares.com",
+    "contact_url": ""
   },
   {
     "ticker": "EQWL",
     "name": "PowerShares Russell Top 200 Equal Weight Portfolio",
-    "shares": 5240
+    "shares": 5240,
+    "twitter": "@PowerShares",
+    "email": "info@powershares.com",
+    "contact_url": ""
   },
   {
     "ticker": "PWV",
     "name": "PowerShares Dynamic Large Cap Value Portfolio",
-    "shares": 1187709
+    "shares": 1187709,
+    "twitter": "@PowerShares",
+    "email": "info@powershares.com",
+    "contact_url": ""
   },
   {
     "ticker": "PRF",
     "name": "PowerShares FTSE RAFI US 1000 Portfolio",
-    "shares": 1506000
+    "shares": 1506000,
+    "twitter": "@PowerShares",
+    "email": "info@powershares.com",
+    "contact_url": ""
   },
   {
     "ticker": "PBP",
     "name": "PowerShares S&P 500 BuyWrite Portfolio",
-    "shares": 90195
+    "shares": 90195,
+    "twitter": "@PowerShares",
+    "email": "info@powershares.com",
+    "contact_url": ""
   },
   {
     "ticker": "RFDA",
     "name": "RiverFront Dynamic US Dividend Advantage ETF",
-    "shares": 4162
+    "shares": 4162,
+    "twitter": "",
+    "email": "",
+    "contact_url": ""
   },
   {
     "ticker": "SDOG",
     "name": "ALPS Sector Dividend Dogs ETF",
-    "shares": 817986
+    "shares": 817986,
+    "twitter": "",
+    "email": "",
+    "contact_url": ""
   },
   {
     "ticker": "RFFC",
     "name": "RiverFront Dynamic US Flex-Cap ETF",
-    "shares": 1901
+    "shares": 1901,
+    "twitter": "",
+    "email": "",
+    "contact_url": ""
   },
   {
     "ticker": "BUZ",
     "name": "Sprott Buzz Social Media Insights ETF",
-    "shares": 1318
+    "shares": 1318,
+    "twitter": "",
+    "email": "",
+    "contact_url": "sprott@alpsinc.com"
   },
   {
     "ticker": "EQLT",
     "name": "Workplace Equality Portfolio",
-    "shares": 1344
+    "shares": 1344,
+    "twitter": "",
+    "email": "",
+    "contact_url": ""
   },
   {
     "ticker": "SCHD",
     "name": "Schwab US Dividend Equity ETF",
-    "shares": 6057019
+    "shares": 6057019,
+    "twitter": "@Schwab4RIAs",
+    "email": "",
+    "contact_url": "https://www.schwab.com/public/schwab/client_home/contact_us"
   },
   {
     "ticker": "SCHV",
     "name": "Schwab U.S. Large-Cap Value ETF",
-    "shares": 1497086
+    "shares": 1497086,
+    "twitter": "@Schwab4RIAs",
+    "email": "",
+    "contact_url": "https://www.schwab.com/public/schwab/client_home/contact_us"
   },
   {
     "ticker": "SCHX",
     "name": "Schwab U.S. Large-Cap ETF",
-    "shares": 1968763
+    "shares": 1968763,
+    "twitter": "@Schwab4RIAs",
+    "email": "",
+    "contact_url": "https://www.schwab.com/public/schwab/client_home/contact_us"
   },
   {
     "ticker": "SCHB",
     "name": "Schwab U.S. Broad Market ETF",
-    "shares": 1921441
+    "shares": 1921441,
+    "twitter": "@Schwab4RIAs",
+    "email": "",
+    "contact_url": "https://www.schwab.com/public/schwab/client_home/contact_us"
   },
   {
     "ticker": "THRK",
     "name": "SPDR Dow Jones Total Market ETF",
-    "shares": 78111
+    "shares": 78111,
+    "twitter": "",
+    "email": "",
+    "contact_url": ""
   },
   {
     "ticker": "XPH",
     "name": "SPDR S&P Pharmaceuticals ETF",
-    "shares": 666192
+    "shares": 666192,
+    "twitter": "",
+    "email": "",
+    "contact_url": ""
   },
   {
     "ticker": "SHE",
     "name": "SPDR SSGA Gender Diversity Index ETF",
-    "shares": 562451
+    "shares": 562451,
+    "twitter": "",
+    "email": "",
+    "contact_url": ""
   },
   {
     "ticker": "PPH",
     "name": "VanEck Vectors Pharmaceutical ETF",
-    "shares": 18526430
+    "shares": 18526430,
+    "twitter": "@vaneck_us",
+    "email": "info@vaneck.com",
+    "contact_url": ""
   },
   {
     "ticker": "MOAT",
     "name": "VanEck Vectors Morningstar Wide Moat ETF",
-    "shares": 11191828
+    "shares": 11191828,
+    "twitter": "@vaneck_us",
+    "email": "info@vaneck.com",
+    "contact_url": ""
   },
   {
     "ticker": "VHT",
     "name": "Vanguard Health Care ETF",
-    "shares": 12246281
+    "shares": 12246281,
+    "twitter": "@Vanguard_FA",
+    "email": "advisor_services@vanguard.com",
+    "contact_url": ""
   },
   {
     "ticker": "VFTSX",
     "name": "Vanguard FTSE Social Index Fund",
-    "shares": 1118424
+    "shares": 1118424,
+    "twitter": "@Vanguard_FA",
+    "email": "advisor_services@vanguard.com",
+    "contact_url": ""
   },
   {
     "ticker": "VMCTX",
     "name": "Vanguard Mega Cap Index Fund",
-    "shares": 441036
+    "shares": 441036,
+    "twitter": "@Vanguard_FA",
+    "email": "advisor_services@vanguard.com",
+    "contact_url": ""
   },
   {
     "ticker": "VMVLX",
     "name": "Vanguard Mega Cap Value Index Fund",
-    "shares": 1091544
+    "shares": 1091544,
+    "twitter": "@Vanguard_FA",
+    "email": "advisor_services@vanguard.com",
+    "contact_url": ""
   },
   {
     "ticker": "DEW",
     "name": "WisdomTree Global High Dividend Fund",
-    "shares": 3991
+    "shares": 3991,
+    "twitter": "@WisdomTreeETFs",
+    "email": "",
+    "contact_url": "https://www.wisdomtree.com/about/contact-us"
   },
   {
     "ticker": "DHS",
     "name": "WisdomTree High Dividend Fund",
-    "shares": 1100027
+    "shares": 1100027,
+    "twitter": "@WisdomTreeETFs",
+    "email": "",
+    "contact_url": "https://www.wisdomtree.com/about/contact-us"
   },
   {
     "ticker": "DTN",
     "name": "WisdomTree Dividend ex-Financials Fund",
-    "shares": 376654
+    "shares": 376654,
+    "twitter": "@WisdomTreeETFs",
+    "email": "",
+    "contact_url": "https://www.wisdomtree.com/about/contact-us"
   },
   {
     "ticker": "EPS",
     "name": "WisdomTree Earnings 500 Fund",
-    "shares": 27082
+    "shares": 27082,
+    "twitter": "@WisdomTreeETFs",
+    "email": "",
+    "contact_url": "https://www.wisdomtree.com/about/contact-us"
   },
   {
     "ticker": "DEW",
     "name": "WisdomTree Global High Dividend Fund",
-    "shares": 41984
+    "shares": 41984,
+    "twitter": "@WisdomTreeETFs",
+    "email": "",
+    "contact_url": "https://www.wisdomtree.com/about/contact-us"
   },
   {
     "ticker": "EPI",
     "name": "WisdomTree India Earnings Fund",
-    "shares": 21748
+    "shares": 21748,
+    "twitter": "@WisdomTreeETFs",
+    "email": "",
+    "contact_url": "https://www.wisdomtree.com/about/contact-us"
   },
   {
     "ticker": "DLN",
     "name": "WisdomTree LargeCap Dividend Fund",
-    "shares": 1170703
+    "shares": 1170703,
+    "twitter": "@WisdomTreeETFs",
+    "email": "",
+    "contact_url": "https://www.wisdomtree.com/about/contact-us"
   },
   {
     "ticker": "DTD",
     "name": "WisdomTree Total Dividend Fund",
-    "shares": 277921
+    "shares": 277921,
+    "twitter": "@WisdomTreeETFs",
+    "email": "",
+    "contact_url": "https://www.wisdomtree.com/about/contact-us"
   },
   {
     "ticker": "EXT",
     "name": "WisdomTree Total Earnings Fund",
-    "shares": 12868
+    "shares": 12868,
+    "twitter": "@WisdomTreeETFs",
+    "email": "",
+    "contact_url": "https://www.wisdomtree.com/about/contact-us"
   }
 ];
 
 const PFE_mfund_holders =
 [
   {
+    "ticker": "VTSMX",
     "name": "Vanguard Total Stock Mkt Idx",
     "shares": 124631591,
-    "ticker": "VTSMX"
+    "twitter": "@Vanguard_FA",
+    "email": "advisor_services@vanguard.com",
+    "contact_url": ""
   },
   {
+    "ticker": "VFINX",
     "name": "Vanguard 500 Index Inv",
     "shares": 83955077,
-    "ticker": "VFINX"
+    "twitter": "@Vanguard_FA",
+    "email": "advisor_services@vanguard.com",
+    "contact_url": ""
   },
   {
+    "ticker": "SPY",
     "name": "SPDR® S&P 500 ETF",
     "shares": 63588106,
-    "ticker": "SPY"
+    "twitter": "",
+    "email": "fund_inquiry@ssga.com",
+    "contact_url": ""
   },
   {
+    "ticker": "VINIX",
     "name": "Vanguard Institutional Index I",
     "shares": 67298960,
-    "ticker": "VINIX"
+    "twitter": "@Vanguard_FA",
+    "email": "advisor_services@vanguard.com",
+    "contact_url": ""
   },
   {
+    "ticker": "VWNFX",
     "name": "Vanguard Windsor™ II Inv",
     "shares": 13803613,
-    "ticker": "VWNFX"
+    "twitter": "@Vanguard_FA",
+    "email": "advisor_services@vanguard.com",
+    "contact_url": ""
   },
   {
+    "ticker": "XLV",
     "name": "Health Care Select Sector SPDR® ETF",
     "shares": 30997152,
-    "ticker": "XLV"
+    "twitter": "",
+    "email": "fund_inquiry@ssga.com",
+    "contact_url": ""
   },
   {
+    "ticker": "FUSEX",
     "name": "Fidelity Spartan® 500 Index Inv",
     "shares": 33483965,
-    "ticker": "FUSEX"
+    "twitter": "@Fidelity",
+    "email": "Fidelity.Investments@mail.fidelity.com",
+    "contact_url": ""
   },
   {
+    "ticker": "VIVAX",
     "name": "Vanguard Value Index Inv",
     "shares": 26676056,
-    "ticker": "VIVAX"
+    "twitter": "@Vanguard_FA",
+    "email": "advisor_services@vanguard.com",
+    "contact_url": ""
   },
   {
+    "ticker": "MEIAX",
     "name": "MFS Value A",
     "shares": 25333570,
-    "ticker": "MEIAX"
+    "twitter": "@followMFS",
+    "email": "",
+    "contact_url": ""
   },
   {
+    "ticker": "FKINX",
     "name": "Franklin Income A",
     "shares": 23000000,
-    "ticker": "FKINX"
+    "twitter": "@FTI_US",
+    "email": "",
+    "contact_url": ""
   },
   {
+    "ticker": "MBDVX",
     "name": "BlackRock Equity Dividend Inv B",
     "shares": 21052907,
-    "ticker": "MBDVX"
+    "twitter": "@blackrock",
+    "email": "contact.us@blackrock.com",
+    "contact_url": ""
   },
   {
+    "ticker": "VWELX",
     "name": "Vanguard Wellington™ Inv",
     "shares": 30749316,
-    "ticker": "VWELX"
+    "twitter": "@Vanguard_FA",
+    "email": "advisor_services@vanguard.com",
+    "contact_url": ""
   },
   {
+    "ticker": "IWD",
     "name": "iShares Russell 1000 Value",
     "shares": 17636202,
-    "ticker": "IWD"
+    "twitter": "@iShares",
+    "email": "isharesetfs@blackrock.com",
+    "contact_url": ""
   },
   {
+    "ticker": "QCSTRX",
     "name": "CREF Stock R1",
     "shares": 19853251,
-    "ticker": "QCSTRX"
+    "twitter": "",
+    "email": "",
+    "contact_url": ""
   },
   {
+    "ticker": "CMLEX",
     "name": "VA CollegeAmerica Inc Fund of Amer 529E",
     "shares": 9150100,
-    "ticker": "CMLEX"
+    "twitter": "",
+    "email": "",
+    "contact_url": ""
   },
   {
+    "ticker": "VWINX",
     "name": "Vanguard Wellesley Income",
     "shares": 17670247,
-    "ticker": "VWINX"
+    "twitter": "@Vanguard_FA",
+    "email": "advisor_services@vanguard.com",
+    "contact_url": ""
   },
   {
+    "ticker": "VYM",
     "name": "Vanguard High Dividend Yield ETF",
     "shares": 15906455,
-    "ticker": "VYM"
+    "twitter": "@Vanguard_FA",
+    "email": "advisor_services@vanguard.com",
+    "contact_url": ""
   },
   {
+    "ticker": "VEIPX",
     "name": "Vanguard Equity-Income Inv",
     "shares": 15498502,
-    "ticker": "VEIPX"
+    "twitter": "@Vanguard_FA",
+    "email": "advisor_services@vanguard.com",
+    "contact_url": ""
   },
   {
+    "ticker": "CWMBX",
     "name": "VA CollegeAmerica WA Mutual 529B",
     "shares": 15264000,
-    "ticker": "CWMBX"
+    "twitter": "",
+    "email": "",
+    "contact_url": ""
   },
   {
+    "ticker": "TRVLX",
     "name": "T. Rowe Price Value",
     "shares": 18330865,
-    "ticker": "TRVLX"
+    "twitter": "@TRowePrice",
+    "email": "contact_the_board@troweprice.com",
+    "contact_url": ""
   },
   {
+    "ticker": "VPCAX",
     "name": "Fidelity VIP Contrafund Inv",
     "shares": 1596100,
-    "ticker": "VPCAX"
+    "twitter": "",
+    "email": "Fidelity.Investments@mail.fidelity.com",
+    "contact_url": ""
   },
   {
+    "ticker": "AADEX",
     "name": "American Beacon Lg Cap Value Inst",
     "shares": 3542612,
-    "ticker": "AADEX"
+    "twitter": "",
+    "email": "client.services@ambeacon.com",
+    "contact_url": ""
   },
   {
+    "ticker": "FPCIX",
     "name": "Strategic Advisers® Core",
     "shares": 1695000,
-    "ticker": "FPCIX"
+    "twitter": "",
+    "email": "",
+    "contact_url": ""
   },
   {
+    "ticker": "BUFBX",
     "name": "Buffalo Flexible Income",
     "shares": 8769600,
-    "ticker": "BUFBX"
+    "twitter": "",
+    "email": "info@buffalofunds.com",
+    "contact_url": ""
   }
 ];
 

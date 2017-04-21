@@ -2,41 +2,65 @@
   {
     "ticker": "FVD",
     "name": "First Trust Value Line Dividend Index Fund",
-    "shares": 12
+    "shares": 12,
+    "twitter": 886,
+    "email": 597,
+    "contact_url": "@ftportfolios"
   },
   {
     "ticker": "FVL",
     "name": "First Trust Value Line 100 Exchange-Traded Fund",
-    "shares": 557
+    "shares": 557,
+    "twitter": 628,
+    "email": "@ftportfolios",
+    "contact_url": "feedback@ftportfolios.com"
   },
   {
     "ticker": "ESGG",
     "name": "FlexShares STOXX® Global ESG Impact Index Fund",
-    "shares": 1
+    "shares": 1,
+    "twitter": 610,
+    "email": "@FlexSharesETFs",
+    "contact_url": ""
   },
   {
     "ticker": "IXJ",
     "name": "iShares Global Healthcare ETF",
-    "shares": 1729544
+    "shares": 1729544,
+    "twitter": "@iShares",
+    "email": "isharesetfs@blackrock.com",
+    "contact_url": ""
   },
   {
     "ticker": "JHMD",
     "name": "John Hancock Multifactor Developed International ETF",
-    "shares": 12788
+    "shares": 12788,
+    "twitter": "@JH_Investments",
+    "email": "",
+    "contact_url": "https://advisor.jhinvestments.com/ContactUs.aspx"
   },
   {
     "ticker": "OEUR",
     "name": "O'Shares FTSE Europe Quality Dividend ETF",
-    "shares": 42012
+    "shares": 42012,
+    "twitter": "@O_Shares",
+    "email": "info@oshares.com",
+    "contact_url": ""
   },
   {
     "ticker": "SCHF",
     "name": "Schwab International Equity ETF",
-    "shares": 2265793
+    "shares": 2265793,
+    "twitter": "@Schwab4RIAs",
+    "email": "",
+    "contact_url": "https://www.schwab.com/public/schwab/client_home/contact_us"
   },
   {
     "ticker": "PPH",
     "name": "VanEck Vectors Pharmaceutical ETF",
-    "shares": 343820
+    "shares": 343820,
+    "twitter": "@vaneck_us",
+    "email": "info@vaneck.com",
+    "contact_url": ""
   }
 ]
