@@ -1,122 +1,194 @@
 [
   {
+    "ticker": "VTSMX",
     "name": "Vanguard Total Stock Mkt Idx",
     "shares": 124631591,
-    "ticker": "VTSMX"
+    "twitter": "@Vanguard_FA",
+    "email": "advisor_services@vanguard.com",
+    "contact_url": ""
   },
   {
+    "ticker": "VFINX",
     "name": "Vanguard 500 Index Inv",
     "shares": 83955077,
-    "ticker": "VFINX"
+    "twitter": "@Vanguard_FA",
+    "email": "advisor_services@vanguard.com",
+    "contact_url": ""
   },
   {
+    "ticker": "SPY",
     "name": "SPDR® S&P 500 ETF",
     "shares": 63588106,
-    "ticker": "SPY"
+    "twitter": "",
+    "email": "fund_inquiry@ssga.com",
+    "contact_url": ""
   },
   {
+    "ticker": "VINIX",
     "name": "Vanguard Institutional Index I",
     "shares": 67298960,
-    "ticker": "VINIX"
+    "twitter": "@Vanguard_FA",
+    "email": "advisor_services@vanguard.com",
+    "contact_url": ""
   },
   {
+    "ticker": "VWNFX",
     "name": "Vanguard Windsor™ II Inv",
     "shares": 13803613,
-    "ticker": "VWNFX"
+    "twitter": "@Vanguard_FA",
+    "email": "advisor_services@vanguard.com",
+    "contact_url": ""
   },
   {
+    "ticker": "XLV",
     "name": "Health Care Select Sector SPDR® ETF",
     "shares": 30997152,
-    "ticker": "XLV"
+    "twitter": "",
+    "email": "fund_inquiry@ssga.com",
+    "contact_url": ""
   },
   {
+    "ticker": "FUSEX",
     "name": "Fidelity Spartan® 500 Index Inv",
     "shares": 33483965,
-    "ticker": "FUSEX"
+    "twitter": "@Fidelity",
+    "email": "Fidelity.Investments@mail.fidelity.com",
+    "contact_url": ""
   },
   {
+    "ticker": "VIVAX",
     "name": "Vanguard Value Index Inv",
     "shares": 26676056,
-    "ticker": "VIVAX"
+    "twitter": "@Vanguard_FA",
+    "email": "advisor_services@vanguard.com",
+    "contact_url": ""
   },
   {
+    "ticker": "MEIAX",
     "name": "MFS Value A",
     "shares": 25333570,
-    "ticker": "MEIAX"
+    "twitter": "@followMFS",
+    "email": "",
+    "contact_url": ""
   },
   {
+    "ticker": "FKINX",
     "name": "Franklin Income A",
     "shares": 23000000,
-    "ticker": "FKINX"
+    "twitter": "@FTI_US",
+    "email": "",
+    "contact_url": ""
   },
   {
+    "ticker": "MBDVX",
     "name": "BlackRock Equity Dividend Inv B",
     "shares": 21052907,
-    "ticker": "MBDVX"
+    "twitter": "@blackrock",
+    "email": "contact.us@blackrock.com",
+    "contact_url": ""
   },
   {
+    "ticker": "VWELX",
     "name": "Vanguard Wellington™ Inv",
     "shares": 30749316,
-    "ticker": "VWELX"
+    "twitter": "@Vanguard_FA",
+    "email": "advisor_services@vanguard.com",
+    "contact_url": ""
   },
   {
+    "ticker": "IWD",
     "name": "iShares Russell 1000 Value",
     "shares": 17636202,
-    "ticker": "IWD"
+    "twitter": "@iShares",
+    "email": "isharesetfs@blackrock.com",
+    "contact_url": ""
   },
   {
+    "ticker": "QCSTRX",
     "name": "CREF Stock R1",
     "shares": 19853251,
-    "ticker": "QCSTRX"
+    "twitter": "",
+    "email": "",
+    "contact_url": ""
   },
   {
+    "ticker": "CMLEX",
     "name": "VA CollegeAmerica Inc Fund of Amer 529E",
     "shares": 9150100,
-    "ticker": "CMLEX"
+    "twitter": "",
+    "email": "",
+    "contact_url": ""
   },
   {
+    "ticker": "VWINX",
     "name": "Vanguard Wellesley Income",
     "shares": 17670247,
-    "ticker": "VWINX"
+    "twitter": "@Vanguard_FA",
+    "email": "advisor_services@vanguard.com",
+    "contact_url": ""
   },
   {
+    "ticker": "VYM",
     "name": "Vanguard High Dividend Yield ETF",
     "shares": 15906455,
-    "ticker": "VYM"
+    "twitter": "@Vanguard_FA",
+    "email": "advisor_services@vanguard.com",
+    "contact_url": ""
   },
   {
+    "ticker": "VEIPX",
     "name": "Vanguard Equity-Income Inv",
     "shares": 15498502,
-    "ticker": "VEIPX"
+    "twitter": "@Vanguard_FA",
+    "email": "advisor_services@vanguard.com",
+    "contact_url": ""
   },
   {
+    "ticker": "CWMBX",
     "name": "VA CollegeAmerica WA Mutual 529B",
     "shares": 15264000,
-    "ticker": "CWMBX"
+    "twitter": "",
+    "email": "",
+    "contact_url": ""
   },
   {
+    "ticker": "TRVLX",
     "name": "T. Rowe Price Value",
     "shares": 18330865,
-    "ticker": "TRVLX"
+    "twitter": "@TRowePrice",
+    "email": "contact_the_board@troweprice.com",
+    "contact_url": ""
   },
   {
+    "ticker": "VPCAX",
     "name": "Fidelity VIP Contrafund Inv",
     "shares": 1596100,
-    "ticker": "VPCAX"
+    "twitter": "",
+    "email": "Fidelity.Investments@mail.fidelity.com",
+    "contact_url": ""
   },
   {
+    "ticker": "AADEX",
     "name": "American Beacon Lg Cap Value Inst",
     "shares": 3542612,
-    "ticker": "AADEX"
+    "twitter": "",
+    "email": "client.services@ambeacon.com",
+    "contact_url": ""
   },
   {
+    "ticker": "FPCIX",
     "name": "Strategic Advisers® Core",
     "shares": 1695000,
-    "ticker": "FPCIX"
+    "twitter": "",
+    "email": "",
+    "contact_url": ""
   },
   {
+    "ticker": "BUFBX",
     "name": "Buffalo Flexible Income",
     "shares": 8769600,
-    "ticker": "BUFBX"
+    "twitter": "",
+    "email": "info@buffalofunds.com",
+    "contact_url": ""
   }
 ]
