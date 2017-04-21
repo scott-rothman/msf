@@ -2,26 +2,26 @@
   {
     "ticker": "FVD",
     "name": "First Trust Value Line Dividend Index Fund",
-    "shares": 12,
-    "twitter": 886,
-    "email": 597,
-    "contact_url": "@ftportfolios"
+    "shares": 12886597,
+    "twitter": "@ftportfolios",
+    "email": "feedback@ftportfolios.com",
+    "contact_url": ""
   },
   {
     "ticker": "FVL",
     "name": "First Trust Value Line 100 Exchange-Traded Fund",
-    "shares": 557,
-    "twitter": 628,
-    "email": "@ftportfolios",
-    "contact_url": "feedback@ftportfolios.com"
+    "shares": 557628,
+    "twitter": "@ftportfolios",
+    "email": "feedback@ftportfolios.com",
+    "contact_url": ""
   },
   {
     "ticker": "ESGG",
     "name": "FlexShares STOXX® Global ESG Impact Index Fund",
-    "shares": 1,
-    "twitter": 610,
-    "email": "@FlexSharesETFs",
-    "contact_url": ""
+    "shares": 1610,
+    "twitter": "@FlexSharesETFs",
+    "email": "",
+    "contact_url": "info@flexshares.com"
   },
   {
     "ticker": "IXJ",
