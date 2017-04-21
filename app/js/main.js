@@ -122,7 +122,7 @@ var init = function() {
   //   form.classList.add('active');
   //   intro_text.classList.add('hidden_text');
   // });
-	search_field.addEventListener('keypress', function(e) {
+	search_field.addEventListener('keyup', function(e) {
     possible_matches = '';
 		search_term = search_field.value.toLowerCase();
     matches = search_holders(search_term);
