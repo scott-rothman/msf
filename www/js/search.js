@@ -171,13 +171,51 @@ var search_holders = function(share_name) {
 		}
 
 	}
-	for (ofst of all_funds) {
+	return arr;
+}
+
+var search_contact = function(share_name) {
+	let data = {};
+	for (ofst of GSK_etf_holders) {
 		if (ofst.hasOwnProperty("name")) {
 			if (ofst.name.toLowerCase().includes(share_name.substring(0,40))) {
-				arr.push(ofst.name);
+				data.twitter = ofst.twitter;
+				data.email = ofst.email;
+				data.url = ofst.contact_url;
 			}
 		}
 
 	}
-	return arr;
+	
+	for (ofst of GSK_mfund_holders) {
+		if (ofst.hasOwnProperty("name")) {
+			if (ofst.name.toLowerCase().includes(share_name.substring(0,40))) {
+				data.twitter = ofst.twitter;
+				data.email = ofst.email;
+				data.url = ofst.contact_url;
+			}
+		}
+
+	}
+	for (ofst of PFE_etf_holders) {
+		if (ofst.hasOwnProperty("name")) {
+			if (ofst.name.toLowerCase().includes(share_name.substring(0,40))) {
+				data.twitter = ofst.twitter;
+				data.email = ofst.email;
+				data.url = ofst.contact_url;
+			}
+		}
+
+	}
+	
+	for (ofst of PFE_mfund_holders) {
+		if (ofst.hasOwnProperty("name")) {
+			if (ofst.name.toLowerCase().includes(share_name.substring(0,40))) {
+				data.twitter = ofst.twitter;
+				data.email = ofst.email;
+				data.url = ofst.contact_url;
+			}
+		}
+	}
+	return data;
 }
