@@ -73,9 +73,17 @@ var init = function() {
       } else {
         navToResponse(false, match); 
       }
+      let mailInfo = search_contact(match);
+      let displayMatch = match.split(' ').map(w => w[0].toUpperCase() + w.substr(1).toLowerCase()).join(' ');
+      let message = 'To Whom it May Concern,<br><br>I am invested in '+ displayMatch + ' and it has come to my attention that GlaxoSmithKline and Pfizer are included in the investment portfolio. I am aligned with the goals of AFAIRSHOT.ORG and want to see both companies reduce the price of the life-saving pneumonia vaccine to $5 per child in crisis-affected populations and for all developing countries.<br><br>As you hold my voting authority for these companies through my investment in your fund, I want you to represent my interests at the upcoming annual shareholder meetings for both companies.<br><br>Please confirm you’ve received this email and the steps you will take to have our voices heard at the shareholder meetings.<br><br>Sincerely,';
+      let nonHTMLmessage = message.replace('<br>', '\r');
+      let managerEmailLink =  'mailto:'+mailInfo.email+'?subject=My Investments RE: GSK and PFE&body='+nonHTMLmessage;
+      if (mailInfo.url.length > 0) {
+        managerEmailLink = mailInfo.url;
+      } 
       
-      window.msf.match = match;
-      var message = 'To Whom it May Concern,\r\rI am invested in '+ window.msf.match + ' and it has come to my attention that GlaxoSmithKline and Pfizer are included in the investment portfolio. I am aligned with the goals of AFAIRSHOT.ORG and want to see both companies reduce the price of the life-saving pneumonia vaccine to $5 per child in crisis-affected populations and for all developing countries.\r\rAs you hold my voting authority for these companies through my investment in your fund, I want you to represent my interests at the upcoming annual shareholder meetings for both companies.\r\rPlease confirm you’ve received this email and the steps you will take to have our voices heard at the shareholder meetings.\r\rSincerely,';
+      $('.email-fund').attr('href', managerEmailLink);
+      $('#message').html(message);
       // $('#message').html(message);
       $('.intro__form__results').html(''); // close fund autocomplete sooner 
       window.setTimeout(function() {
@@ -107,9 +115,8 @@ var init = function() {
       } else {
         navToResponse(false, match); 
       }
+      search_data = search_contact(match);
       
-      window.msf.match = match;
-      var message = 'To Whom it May Concern,\r\rI am invested in '+ window.msf.match + ' and it has come to my attention that GlaxoSmithKline and Pfizer are included in the investment portfolio. I am aligned with the goals of AFAIRSHOT.ORG and want to see both companies reduce the price of the life-saving pneumonia vaccine to $5 per child in crisis-affected populations and for all developing countries.\r\rAs you hold my voting authority for these companies through my investment in your fund, I want you to represent my interests at the upcoming annual shareholder meetings for both companies.\r\rPlease confirm you’ve received this email and the steps you will take to have our voices heard at the shareholder meetings.\r\rSincerely,';
       // $('#message').html(message);
       window.setTimeout(function() {
         form.classList.remove('active');
@@ -147,11 +154,6 @@ var init = function() {
     e.preventDefault();
     navToStart();
   })
-  name_holder.addEventListener('blur', function() {
-    var name = document.querySelector('#name').value;
-    var message = 'To Whom it May Concern,\r\rI am invested in '+ window.msf.match + ' and it has come to my attention that GlaxoSmithKline and Pfizer are included in the investment portfolio. I am aligned with the goals of AFAIRSHOT.ORG and want to see both companies reduce the price of the life-saving pneumonia vaccine to $5 per child in crisis-affected populations and for all developing countries.\r\rAs you hold my voting authority for these companies through my investment in your fund, I want you to represent my interests at the upcoming annual shareholder meetings for both companies.\r\rPlease confirm you’ve received this email and the steps you will take to have our voices heard at the shareholder meetings.\r\rSincerely, \r'+name;
-    // $('#message').html(message);
-  });
   _.each(modal_openers, function(modal_opener) {
     modal_opener.addEventListener('click', function(e) {
       e.target.classList.add('checked')
