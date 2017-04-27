@@ -1,206 +1,546 @@
 [
   {
-    "ticker": "IHE",
-    "name": "iShares U.S. Pharmaceuticals ETF",
-    "category": "Health & Biotech Equities",
-    "expense_ratio": 0.43
-  },
-  {
-    "ticker": "XLV",
-    "name": "Health Care Select Sector SPDR Fund",
-    "category": "Health & Biotech Equities",
-    "expense_ratio": 0.15
-  },
-  {
-    "ticker": "IYH",
-    "name": "iShares U.S. Healthcare ETF",
-    "category": "Health & Biotech Equities",
-    "expense_ratio": 0.43
-  },
-  {
-    "ticker": "PPH",
-    "name": "VanEck Vectors Pharmaceutical ETF",
-    "category": "Health & Biotech Equities",
-    "expense_ratio": 0.35
-  },
-  {
-    "ticker": "FDL",
-    "name": "First Trust Morningstar Dividend Leaders Index Fund",
-    "category": "Large Cap Value Equities",
-    "expense_ratio": 0.45
-  },
-  {
-    "ticker": "VHT",
-    "name": "Vanguard Health Care ETF",
-    "category": "Health & Biotech Equities",
-    "expense_ratio": 0.1
-  },
-  {
-    "ticker": "SHE",
-    "name": "SPDR SSGA Gender Diversity Index ETF",
-    "category": "Large Cap Blend Equities",
-    "expense_ratio": 0.2
-  },
-  {
-    "ticker": "FHLC",
-    "name": "FIDELITY MSCI HEALTH CARE INDEX ETF",
-    "category": "Health & Biotech Equities",
-    "expense_ratio": 0.08
-  },
-  {
-    "ticker": "PJP",
-    "name": "PowerShares Dynamic Pharmaceuticals Portfolio ETF",
-    "category": "Health & Biotech Equities",
-    "expense_ratio": 0.58
-  },
-  {
-    "ticker": "JHMH",
-    "name": "John Hancock Multifactor Healthcare ETF",
-    "category": "Health & Biotech Equities",
-    "expense_ratio": 0.5
-  },
-  {
-    "ticker": "IXJ",
-    "name": "iShares Global Healthcare ETF",
-    "category": "Health & Biotech Equities",
-    "expense_ratio": 0.47
-  },
-  {
-    "ticker": "HDV",
-    "name": "iShares Core High Dividend ETF",
-    "category": "Large Cap Value Equities",
-    "expense_ratio": 0.08
-  },
-  {
-    "ticker": "HCRF",
-    "name": "iShares Edge MSCI Multifactor Healthcare ETF",
-    "category": "Health & Biotech Equities",
-    "expense_ratio": 0.35
-  },
-  {
-    "ticker": "SCHD",
-    "name": "Schwab US Dividend Equity ETF",
-    "category": "All Cap Equities",
-    "expense_ratio": 0.07
-  },
-  {
-    "ticker": "XPH",
-    "name": "SPDR S&P Pharmaceuticals ETF",
-    "category": "Health & Biotech Equities",
-    "expense_ratio": 0.35
-  },
-  {
-    "ticker": "DJD",
-    "name": "Guggenheim Dow Jones Industrial Average Dividend ETF",
-    "category": "Large Cap Blend Equities",
-    "expense_ratio": 0.3
-  },
-  {
-    "ticker": "VLUE",
-    "name": "iShares MSCI USA Value Factor ETF",
-    "category": "Large Cap Value Equities",
-    "expense_ratio": 0.15
-  },
-  {
-    "ticker": "JKF",
-    "name": "iShares Morningstar Large-Cap Value ETF",
-    "category": "Large Cap Value Equities",
-    "expense_ratio": 0.25
-  },
-  {
-    "ticker": "PWV",
-    "name": "PowerShares Dynamic Large Cap Value Portfolio ETF",
-    "category": "Large Cap Value Equities",
-    "expense_ratio": 0.57
-  },
-  {
-    "ticker": "QDYN",
-    "name": "FlexShares Quality Dividend Dynamic Index Fund",
-    "category": "Large Cap Blend Equities",
-    "expense_ratio": 0.37
-  },
-  {
-    "ticker": "DGRO",
-    "name": "iShares Core Dividend Growth ETF",
-    "category": "Large Cap Value Equities",
-    "expense_ratio": 0.08
-  },
-  {
     "ticker": "ELKU",
     "name": "Elkhorn FTSE RAFI U.S. Equity Income ETF",
-    "category": "Large Cap Blend Equities",
-    "expense_ratio": 0.39
-  },
-  {
-    "ticker": "OUSA",
-    "name": "O'Shares FTSE US Quality Dividend ETF",
-    "category": "Large Cap Value Equities",
-    "expense_ratio": 0.48
-  },
-  {
-    "ticker": "QDF",
-    "name": "FlexShares Quality Dividend Index Fund",
-    "category": "Large Cap Blend Equities",
-    "expense_ratio": 0.37
-  },
-  {
-    "ticker": "DHS",
-    "name": "WisdomTree High Dividend Fund",
-    "category": "Large Cap Value Equities",
-    "expense_ratio": 0.38
-  },
-  {
-    "ticker": "QDEF",
-    "name": "FlexShares Quality Dividend Defensive Index Fund",
-    "category": "Large Cap Blend Equities",
-    "expense_ratio": 0.37
-  },
-  {
-    "ticker": "OVLC",
-    "name": "Guggenheim U.S. Large Cap Optimized Volatility ETF",
-    "category": "Volatility Hedged Equity",
-    "expense_ratio": 0.3
-  },
-  {
-    "ticker": "RFDA",
-    "name": "RiverFront Dynamic US Dividend Advantage ETF",
-    "category": "Large Cap Blend Equities",
-    "expense_ratio": 0.52
+    "shares": 1036,
+    "twitter": "",
+    "email": "",
+    "contact_url": ""
   },
   {
     "ticker": "FDRR",
     "name": "Fidelity Dividend ETF for Rising Rates",
-    "category": "Large Cap Blend Equities",
-    "expense_ratio": 0.29
+    "shares": 12896,
+    "twitter": "@Fidelity",
+    "email": "Fidelity.Investments@mail.fidelity.com",
+    "contact_url": ""
   },
   {
     "ticker": "FDMO",
     "name": "Fidelity Momentum Factor ETF",
-    "category": "Large Cap Growth Equities",
-    "expense_ratio": 0.29
+    "shares": 3474,
+    "twitter": "@Fidelity",
+    "email": "Fidelity.Investments@mail.fidelity.com",
+    "contact_url": ""
   },
   {
-    "ticker": "DEW",
-    "name": "WisdomTree Global High Dividend Fund",
-    "category": "Global Equities",
-    "expense_ratio": 0.58
+    "ticker": "FHLC",
+    "name": "Fidelity MSCI Health Care Index ETF",
+    "shares": 1105924,
+    "twitter": "@Fidelity",
+    "email": "Fidelity.Investments@mail.fidelity.com",
+    "contact_url": ""
+  },
+  {
+    "ticker": "FDVV",
+    "name": "Fidelity Core Dividend ETF",
+    "shares": 5619,
+    "twitter": "@Fidelity",
+    "email": "Fidelity.Investments@mail.fidelity.com",
+    "contact_url": ""
+  },
+  {
+    "ticker": "FDLO",
+    "name": "Fidelity Low Volatility Factor ETF",
+    "shares": 2608,
+    "twitter": "@Fidelity",
+    "email": "Fidelity.Investments@mail.fidelity.com",
+    "contact_url": ""
   },
   {
     "ticker": "FQAL",
     "name": "Fidelity Quality Factor ETF",
-    "category": "Large Cap Blend Equities",
-    "expense_ratio": 0.29
+    "shares": 2611,
+    "twitter": "@Fidelity",
+    "email": "Fidelity.Investments@mail.fidelity.com",
+    "contact_url": ""
   },
   {
-    "ticker": "ESGG",
-    "name": "FlexShares STOXX Global ESG Impact Index Fund",
-    "category": "Global Equities",
-    "expense_ratio": 0.42
+    "ticker": "FVAL",
+    "name": "Fidelity Value Factor ETF",
+    "shares": 3344,
+    "twitter": "@Fidelity",
+    "email": "Fidelity.Investments@mail.fidelity.com",
+    "contact_url": ""
+  },
+  {
+    "ticker": "FDL",
+    "name": "First Trust Morningstar Dividend Leaders Index Fund",
+    "shares": 3372392,
+    "twitter": "@ftportfolios",
+    "email": "feedback@ftportfolios.com",
+    "contact_url": ""
+  },
+  {
+    "ticker": "FVD",
+    "name": "First Trust Value Line Dividend Index Fund",
+    "shares": 12923708,
+    "twitter": "@ftportfolios",
+    "email": "feedback@ftportfolios.com",
+    "contact_url": ""
+  },
+  {
+    "ticker": "FVL",
+    "name": "First Trust Value Line 100 Exchange-Traded Fund",
+    "shares": 510692,
+    "twitter": "@ftportfolios",
+    "email": "feedback@ftportfolios.com",
+    "contact_url": ""
+  },
+  {
+    "ticker": "VIXH",
+    "name": "First Trust CBOE® S&P 500® VIX® Tail Hedge Fund",
+    "shares": 4837,
+    "twitter": "@ftportfolios",
+    "email": "feedback@ftportfolios.com",
+    "contact_url": ""
   },
   {
     "ticker": "TILT",
     "name": "FlexShares Morningstar U.S. Market Factor Tilt Index Fund",
-    "category": "All Cap Equities",
-    "expense_ratio": 0.27
+    "shares": 263192,
+    "twitter": "@FlexSharesETFs",
+    "email": "",
+    "contact_url": "info@flexshares.com"
+  },
+  {
+    "ticker": "QLC",
+    "name": "FlexShares US Quality Large Cap Index Fund",
+    "shares": 3475,
+    "twitter": "@FlexSharesETFs",
+    "email": "",
+    "contact_url": "info@flexshares.com"
+  },
+  {
+    "ticker": "QLC",
+    "name": "FlexShares STOXX® US ESG Impact Index Fund",
+    "shares": 2744,
+    "twitter": "@FlexSharesETFs",
+    "email": "",
+    "contact_url": "info@flexshares.com"
+  },
+  {
+    "ticker": "ESGG",
+    "name": "FlexShares STOXX® Global ESG Impact Index Fund",
+    "shares": 2966,
+    "twitter": "@FlexSharesETFs",
+    "email": "",
+    "contact_url": "info@flexshares.com"
+  },
+  {
+    "ticker": "QDEF",
+    "name": "FlexShares Quality Dividend Defensive Index Fund",
+    "shares": 231378,
+    "twitter": "@FlexSharesETFs",
+    "email": "",
+    "contact_url": "info@flexshares.com"
+  },
+  {
+    "ticker": "QDYN",
+    "name": "FlexShares Quality Dividend Dynamic Index Fund",
+    "shares": 68880,
+    "twitter": "@FlexSharesETFs",
+    "email": "",
+    "contact_url": "info@flexshares.com"
+  },
+  {
+    "ticker": "QDF",
+    "name": "FlexShares Quality Dividend Index Fund",
+    "shares": 1494000,
+    "twitter": "@FlexSharesETFs",
+    "email": "",
+    "contact_url": "info@flexshares.com"
+  },
+  {
+    "ticker": "DJD",
+    "name": "Guggenheim Dow Jones Industrial Average Dividend ETF",
+    "shares": 5087,
+    "twitter": "@GuggenheimPtnrs",
+    "email": "",
+    "contact_url": "ETFInfo@guggenheiminvestments.com"
+  },
+  {
+    "ticker": "OVLC",
+    "name": "Guggenheim U.S. Large Cap Optimized Volatility ETF",
+    "shares": 86,
+    "twitter": "@GuggenheimPtnrs",
+    "email": "",
+    "contact_url": "ETFInfo@guggenheiminvestments.com"
+  },
+  {
+    "ticker": "XLV",
+    "name": "Health Care Select Sector SPDR Fund",
+    "shares": 30997152,
+    "twitter": "",
+    "email": "",
+    "contact_url": ""
+  },
+  {
+    "ticker": "DGRO",
+    "name": "iShares Core Dividend Growth ETF",
+    "shares": 1038130,
+    "twitter": "@iShares",
+    "email": "isharesetfs@blackrock.com",
+    "contact_url": ""
+  },
+  {
+    "ticker": "HDV",
+    "name": "iShares Core High Dividend ETF",
+    "shares": 9801599,
+    "twitter": "@iShares",
+    "email": "isharesetfs@blackrock.com",
+    "contact_url": ""
+  },
+  {
+    "ticker": "IYY",
+    "name": "iShares Dow Jones US ETF",
+    "shares": 277097,
+    "twitter": "@iShares",
+    "email": "isharesetfs@blackrock.com",
+    "contact_url": ""
+  },
+  {
+    "ticker": "HCRF",
+    "name": "iShares Edge MSCI Multifactor Healthcare ETF",
+    "shares": 4150,
+    "twitter": "@iShares",
+    "email": "isharesetfs@blackrock.com",
+    "contact_url": ""
+  },
+  {
+    "ticker": "IXJ",
+    "name": "iShares Global Healthcare ETF",
+    "shares": 28454750,
+    "twitter": "@iShares",
+    "email": "isharesetfs@blackrock.com",
+    "contact_url": ""
+  },
+  {
+    "ticker": "JKF",
+    "name": "iShares Morningstar Large-Cap Value ETF",
+    "shares": 381886,
+    "twitter": "@iShares",
+    "email": "isharesetfs@blackrock.com",
+    "contact_url": ""
+  },
+  {
+    "ticker": "VLUE",
+    "name": "iShares MSCI USA Value Factor ETF",
+    "shares": 877396,
+    "twitter": "@iShares",
+    "email": "isharesetfs@blackrock.com",
+    "contact_url": ""
+  },
+  {
+    "ticker": "DVY",
+    "name": "iShares Select Dividend ETF",
+    "shares": 3517064,
+    "twitter": "@iShares",
+    "email": "isharesetfs@blackrock.com",
+    "contact_url": ""
+  },
+  {
+    "ticker": "IYH",
+    "name": "iShares U.S. Healthcare ETF",
+    "shares": 85976,
+    "twitter": "@iShares",
+    "email": "isharesetfs@blackrock.com",
+    "contact_url": ""
+  },
+  {
+    "ticker": "IHE",
+    "name": "iShares U.S. Pharmaceuticals ETF",
+    "shares": 1527049,
+    "twitter": "@iShares",
+    "email": "isharesetfs@blackrock.com",
+    "contact_url": ""
+  },
+  {
+    "ticker": "JHMH",
+    "name": "John Hancock Multifactor Healthcare ETF",
+    "shares": 41358,
+    "twitter": "@JH_Investments",
+    "email": "",
+    "contact_url": "https://advisor.jhinvestments.com/ContactUs.aspx"
+  },
+  {
+    "ticker": "JHML",
+    "name": "John Hancock Multifactor Large Cap ETF",
+    "shares": 64108,
+    "twitter": "@JH_Investments",
+    "email": "",
+    "contact_url": "https://advisor.jhinvestments.com/ContactUs.aspx"
+  },
+  {
+    "ticker": "OUSA",
+    "name": "O'Shares FTSE US Quality Dividend ETF",
+    "shares": 274104,
+    "twitter": "@JH_Investments",
+    "email": "",
+    "contact_url": "https://advisor.jhinvestments.com/ContactUs.aspx"
+  },
+  {
+    "ticker": "PWV",
+    "name": "PowerShares Dynamic Large Cap Value Portfolio ETF",
+    "shares": 37686007,
+    "twitter": "@PowerShares",
+    "email": "info@powershares.com",
+    "contact_url": ""
+  },
+  {
+    "ticker": "PJP",
+    "name": "PowerShares Dynamic Pharmaceuticals Portfolio ETF",
+    "shares": 1272357,
+    "twitter": "@PowerShares",
+    "email": "info@powershares.com",
+    "contact_url": ""
+  },
+  {
+    "ticker": "EQWL",
+    "name": "PowerShares Russell Top 200 Equal Weight Portfolio",
+    "shares": 5240,
+    "twitter": "@PowerShares",
+    "email": "info@powershares.com",
+    "contact_url": ""
+  },
+  {
+    "ticker": "PWV",
+    "name": "PowerShares Dynamic Large Cap Value Portfolio",
+    "shares": 1187709,
+    "twitter": "@PowerShares",
+    "email": "info@powershares.com",
+    "contact_url": ""
+  },
+  {
+    "ticker": "PRF",
+    "name": "PowerShares FTSE RAFI US 1000 Portfolio",
+    "shares": 1506000,
+    "twitter": "@PowerShares",
+    "email": "info@powershares.com",
+    "contact_url": ""
+  },
+  {
+    "ticker": "PBP",
+    "name": "PowerShares S&P 500 BuyWrite Portfolio",
+    "shares": 90195,
+    "twitter": "@PowerShares",
+    "email": "info@powershares.com",
+    "contact_url": ""
+  },
+  {
+    "ticker": "RFDA",
+    "name": "RiverFront Dynamic US Dividend Advantage ETF",
+    "shares": 4162,
+    "twitter": "",
+    "email": "",
+    "contact_url": ""
+  },
+  {
+    "ticker": "SDOG",
+    "name": "ALPS Sector Dividend Dogs ETF",
+    "shares": 817986,
+    "twitter": "",
+    "email": "",
+    "contact_url": ""
+  },
+  {
+    "ticker": "RFFC",
+    "name": "RiverFront Dynamic US Flex-Cap ETF",
+    "shares": 1901,
+    "twitter": "",
+    "email": "",
+    "contact_url": ""
+  },
+  {
+    "ticker": "BUZ",
+    "name": "Sprott Buzz Social Media Insights ETF",
+    "shares": 1318,
+    "twitter": "",
+    "email": "",
+    "contact_url": "sprott@alpsinc.com"
+  },
+  {
+    "ticker": "EQLT",
+    "name": "Workplace Equality Portfolio",
+    "shares": 1344,
+    "twitter": "",
+    "email": "",
+    "contact_url": ""
+  },
+  {
+    "ticker": "SCHD",
+    "name": "Schwab US Dividend Equity ETF",
+    "shares": 6057019,
+    "twitter": "@Schwab4RIAs",
+    "email": "",
+    "contact_url": "https://www.schwab.com/public/schwab/client_home/contact_us"
+  },
+  {
+    "ticker": "SCHV",
+    "name": "Schwab U.S. Large-Cap Value ETF",
+    "shares": 1497086,
+    "twitter": "@Schwab4RIAs",
+    "email": "",
+    "contact_url": "https://www.schwab.com/public/schwab/client_home/contact_us"
+  },
+  {
+    "ticker": "SCHX",
+    "name": "Schwab U.S. Large-Cap ETF",
+    "shares": 1968763,
+    "twitter": "@Schwab4RIAs",
+    "email": "",
+    "contact_url": "https://www.schwab.com/public/schwab/client_home/contact_us"
+  },
+  {
+    "ticker": "SCHB",
+    "name": "Schwab U.S. Broad Market ETF",
+    "shares": 1921441,
+    "twitter": "@Schwab4RIAs",
+    "email": "",
+    "contact_url": "https://www.schwab.com/public/schwab/client_home/contact_us"
+  },
+  {
+    "ticker": "THRK",
+    "name": "SPDR Dow Jones Total Market ETF",
+    "shares": 78111,
+    "twitter": "",
+    "email": "",
+    "contact_url": ""
+  },
+  {
+    "ticker": "XPH",
+    "name": "SPDR S&P Pharmaceuticals ETF",
+    "shares": 666192,
+    "twitter": "",
+    "email": "",
+    "contact_url": ""
+  },
+  {
+    "ticker": "SHE",
+    "name": "SPDR SSGA Gender Diversity Index ETF",
+    "shares": 562451,
+    "twitter": "",
+    "email": "",
+    "contact_url": ""
+  },
+  {
+    "ticker": "PPH",
+    "name": "VanEck Vectors Pharmaceutical ETF",
+    "shares": 18526430,
+    "twitter": "@vaneck_us",
+    "email": "info@vaneck.com",
+    "contact_url": ""
+  },
+  {
+    "ticker": "MOAT",
+    "name": "VanEck Vectors Morningstar Wide Moat ETF",
+    "shares": 11191828,
+    "twitter": "@vaneck_us",
+    "email": "info@vaneck.com",
+    "contact_url": ""
+  },
+  {
+    "ticker": "VHT",
+    "name": "Vanguard Health Care ETF",
+    "shares": 12246281,
+    "twitter": "@Vanguard_FA",
+    "email": "advisor_services@vanguard.com",
+    "contact_url": ""
+  },
+  {
+    "ticker": "VFTSX",
+    "name": "Vanguard FTSE Social Index Fund",
+    "shares": 1118424,
+    "twitter": "@Vanguard_FA",
+    "email": "advisor_services@vanguard.com",
+    "contact_url": ""
+  },
+  {
+    "ticker": "VMCTX",
+    "name": "Vanguard Mega Cap Index Fund",
+    "shares": 441036,
+    "twitter": "@Vanguard_FA",
+    "email": "advisor_services@vanguard.com",
+    "contact_url": ""
+  },
+  {
+    "ticker": "VMVLX",
+    "name": "Vanguard Mega Cap Value Index Fund",
+    "shares": 1091544,
+    "twitter": "@Vanguard_FA",
+    "email": "advisor_services@vanguard.com",
+    "contact_url": ""
+  },
+  {
+    "ticker": "DEW",
+    "name": "WisdomTree Global High Dividend Fund",
+    "shares": 3991,
+    "twitter": "@WisdomTreeETFs",
+    "email": "",
+    "contact_url": "https://www.wisdomtree.com/about/contact-us"
+  },
+  {
+    "ticker": "DHS",
+    "name": "WisdomTree High Dividend Fund",
+    "shares": 1100027,
+    "twitter": "@WisdomTreeETFs",
+    "email": "",
+    "contact_url": "https://www.wisdomtree.com/about/contact-us"
+  },
+  {
+    "ticker": "DTN",
+    "name": "WisdomTree Dividend ex-Financials Fund",
+    "shares": 376654,
+    "twitter": "@WisdomTreeETFs",
+    "email": "",
+    "contact_url": "https://www.wisdomtree.com/about/contact-us"
+  },
+  {
+    "ticker": "EPS",
+    "name": "WisdomTree Earnings 500 Fund",
+    "shares": 27082,
+    "twitter": "@WisdomTreeETFs",
+    "email": "",
+    "contact_url": "https://www.wisdomtree.com/about/contact-us"
+  },
+  {
+    "ticker": "DEW",
+    "name": "WisdomTree Global High Dividend Fund",
+    "shares": 41984,
+    "twitter": "@WisdomTreeETFs",
+    "email": "",
+    "contact_url": "https://www.wisdomtree.com/about/contact-us"
+  },
+  {
+    "ticker": "EPI",
+    "name": "WisdomTree India Earnings Fund",
+    "shares": 21748,
+    "twitter": "@WisdomTreeETFs",
+    "email": "",
+    "contact_url": "https://www.wisdomtree.com/about/contact-us"
+  },
+  {
+    "ticker": "DLN",
+    "name": "WisdomTree LargeCap Dividend Fund",
+    "shares": 1170703,
+    "twitter": "@WisdomTreeETFs",
+    "email": "",
+    "contact_url": "https://www.wisdomtree.com/about/contact-us"
+  },
+  {
+    "ticker": "DTD",
+    "name": "WisdomTree Total Dividend Fund",
+    "shares": 277921,
+    "twitter": "@WisdomTreeETFs",
+    "email": "",
+    "contact_url": "https://www.wisdomtree.com/about/contact-us"
+  },
+  {
+    "ticker": "EXT",
+    "name": "WisdomTree Total Earnings Fund",
+    "shares": 12868,
+    "twitter": "@WisdomTreeETFs",
+    "email": "",
+    "contact_url": "https://www.wisdomtree.com/about/contact-us"
   }
 ]

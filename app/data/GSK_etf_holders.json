@@ -1,20 +1,66 @@
 [
   {
+    "ticker": "FVD",
+    "name": "First Trust Value Line Dividend Index Fund",
+    "shares": 12886597,
+    "twitter": "@ftportfolios",
+    "email": "feedback@ftportfolios.com",
+    "contact_url": ""
+  },
+  {
+    "ticker": "FVL",
+    "name": "First Trust Value Line 100 Exchange-Traded Fund",
+    "shares": 557628,
+    "twitter": "@ftportfolios",
+    "email": "feedback@ftportfolios.com",
+    "contact_url": ""
+  },
+  {
+    "ticker": "ESGG",
+    "name": "FlexShares STOXX® Global ESG Impact Index Fund",
+    "shares": 1610,
+    "twitter": "@FlexSharesETFs",
+    "email": "",
+    "contact_url": "info@flexshares.com"
+  },
+  {
+    "ticker": "IXJ",
+    "name": "iShares Global Healthcare ETF",
+    "shares": 1729544,
+    "twitter": "@iShares",
+    "email": "isharesetfs@blackrock.com",
+    "contact_url": ""
+  },
+  {
+    "ticker": "JHMD",
+    "name": "John Hancock Multifactor Developed International ETF",
+    "shares": 12788,
+    "twitter": "@JH_Investments",
+    "email": "",
+    "contact_url": "https://advisor.jhinvestments.com/ContactUs.aspx"
+  },
+  {
+    "ticker": "OEUR",
+    "name": "O'Shares FTSE Europe Quality Dividend ETF",
+    "shares": 42012,
+    "twitter": "@O_Shares",
+    "email": "info@oshares.com",
+    "contact_url": ""
+  },
+  {
+    "ticker": "SCHF",
+    "name": "Schwab International Equity ETF",
+    "shares": 2265793,
+    "twitter": "@Schwab4RIAs",
+    "email": "",
+    "contact_url": "https://www.schwab.com/public/schwab/client_home/contact_us"
+  },
+  {
     "ticker": "PPH",
     "name": "VanEck Vectors Pharmaceutical ETF",
-    "category": "Health & Biotech Equities",
-    "expense_ratio": 0.35
-  },
-  {
-    "ticker": "ADRU",
-    "name": "BLDRS Europe Select ADR Index Fund",
-    "category": "Europe Equities",
-    "expense_ratio": 0.3
-  },
-  {
-    "ticker": "ADRD",
-    "name": "BLDRS Developed Markets 100 ADR Index Fund",
-    "category": "Foreign Large Cap Equities",
-    "expense_ratio": 0.3
+    "shares": 343820,
+    "twitter": "@vaneck_us",
+    "email": "info@vaneck.com",
+    "contact_url": ""
   }
 ]

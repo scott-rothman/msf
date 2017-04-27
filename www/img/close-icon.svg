@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>close icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.807008605">
+        <g id="RESPONSE-SCREEN---YES---modal-open" transform="translate(-729.000000, -210.000000)" fill="#FFFFFF">
+            <g id="Modal" transform="translate(253.000000, 196.000000)">
+                <g id="Modal--header" transform="translate(-6.000000, 0.000000)">
+                    <polygon id="close-icon" points="496 15.4 494.6 14 489 19.6 483.4 14 482 15.4 487.6 21 482 26.6 483.4 28 489 22.4 494.6 28 496 26.6 490.4 21"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

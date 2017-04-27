@@ -33,5 +33,10 @@
   "bugs": {
     "url": "https://github.com/scott-rothman/ib-site/issues"
   },
-  "homepage": "https://github.com/scott-rothman/ib-site#readme"
+  "homepage": "https://github.com/scott-rothman/ib-site#readme",
+  "dependencies": {
+    "browser-sync": "^2.18.8",
+    "express": "^4.15.2",
+    "sendmail": "^1.1.1"
+  }
 }

@@ -1,33 +1,352 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-	<link rel="stylesheet" href="/css/main.css">
-</head>
-<body>
-	<header>
-		<img src="/img/logo.png" alt="">
-	</header>
-	<section class="intro active">
-		<h1>Intro statement</h1>
-		<p>Intro text copy will go here lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio nihil sed itaque enim neque eius beatae quia, ratione libero. Suscipit, modi, excepturi. Est minus cumque accusamus illum. Eius, eligendi minima.</p>
-		<form action="#" class="intro__form">
-			<input type="text" placeholder="fund" class="intro__form__term">
-			<input type="button" value="Search">
-		</form>
-	</section>
-	<section class="response">
-		<div class="reponse__yes"></div>
-		<div class="response__no"></div>
-	</section>
-	<section class="action">
-		<div class="action__social">
-			<a href="https://twitter.com/?status=Tweet Goes Here" target="_blank">
-				<img src="http://placehold.it/100x100">
-			</a>
-		</div>
-	</section>
-	<script src="/js/lodash.min.js"></script>
-	<script src="/js/main.js"></script>
-</body>
-</html>
+<link rel="stylesheet" href="https://pfff-ff5dd.firebaseapp.com/css/main.css">
+<style>
+  #content-wrapper {
+      display: block !important
+    }
+  .content-inner {
+    padding-top: 0 !important;
+    max-width: 1200px !important;
+  }
+</style>
+<!-- KYLE STYLE BLOCK -->
+<style>
+  /* stop MSF header from overlapping modal */
+  #header {
+    z-index: 1;
+  }
+  /* */
+  .content .modal {
+    max-width: 100%;
+  }
+  .content .intro__form input[type='text'] {
+    border: 3px solid #16161d;
+    color: #000000;
+  }
+  .content .intro__form input[type='submit'] {
+    background: #16161d;
+  }
+  .content .intro__form__results {
+    left: 0;
+    top: 80px;
+    background: #16161d;
+    color: #FFFFFF;
+  }
+  .content .response__no__info, .content .response__unknown__info {
+      border-radius: 0;
+      padding: 2em;
+      max-width: 800px;
+      margin: 0 auto;
+  }
+  
+  .response__gsk__info {
+      border: 3px solid #16161d;
+      padding: 2em;
+      max-width: 800px;
+      margin: 0 auto;
+  }
+  .content .response__gsk__info, .content .response__pfe__info {
+    margin: 0 auto;
+  }
+  .content .response__gsk h2, .content .response__pfe h2, .content .response__both h2, .content .response__no h2, .content .response__unknown h2 {
+    width: auto;
+    /*same size as h1 in header */
+    font-size: 3rem; 
+    padding-bottom: 1rem;
+
+  }
+  .content .steps p {
+      border: 1px solid #16161d;
+      height: 60px;
+      margin-bottom: 0;
+      line-height: 60px;
+      padding-left: 1em;
+      max-width: 800px;
+      border-top: 0;
+  }
+  .content .steps p:first-of-type {
+      border-top: 1px solid #16161d;
+  }
+  .steps p.checked {
+      color: #c0c0c0;
+      text-decoration: none;
+  }
+  /*
+  ACTION COUNTER 
+  */
+  .action-counter__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: 'proxima-nova',sans-serif;
+  }
+
+  .action-count {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 3rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .action-count .count {
+    color: #ec0928;
+    font-size: 3rem;
+    margin: 1em 0 0;
+  }
+ .content .modal-b .email-fm-link {
+     border: 0;
+     color: #FFFFFF !important;
+     background: #EC0928;
+     padding: 15px 40px;
+     margin:  0 auto;
+     text-transform: none !important;
+     font-size: 1.5rem !important;
+     font-weight: normal !important;
+     display: block;
+     text-decoration: none !important;
+ }
+ .content .conclusion button {
+     -webkit-transform: none;
+     transform: none;     
+     clear: both;
+     margin: 1.5rem auto;
+     width: 225px;
+     display: block;
+ }
+  .action-count .count--title {
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  #message {
+    white-space: pre-wrap;
+    line-height: 1.5;
+  }
+</style>
+  <script src="https://use.typekit.net/ymo8kbt.js"></script>
+  <!-- Animate.css -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" /> -->
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <!-- Google Font -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
+<div class="content">
+    <div class="wrapper">
+    <section class="intro active">
+      <div class="intro__wrapper">
+        <h1 style="color:#ffffff; padding-top:60px">DO YOU HAVE INVESTMENTS IN PFIZER OR GSK?</h1>
+        <p style="margin-left: 1rem">Enter the name or ticker symbol of your mutual fund or ETF.</p>
+        <form action="#" class="intro__form">
+          <input type="text" class="intro__form__term" placeholder="Ex: Vanguard 500 Index Inv">
+          <input type="submit" value="Search">
+          <div class="intro__form__results"></div>
+        </form>
+        <div class="action-counter__wrapper">
+          <div class="action-count">
+            <h3 class="count count--tweets"></h3><span class="count--title">Tweets Sent</span></div>
+          <div class="action-count">
+            <h3 class="count count--emails"></h3><span class="count--title" style="padding-bottom:80px">E-mails Sent</span></div>
+        </div>
+      </div>
+    </section>
+    <section class="response">
+      <div class="response__pfe">
+        <!-- <img src="https://pfff-ff5dd.firebaseapp.com/img/yes.png" alt=""> -->
+        <div class="response__pfe__info">
+          <h2>YES</h2>
+          <h3>You have money in Pfizer. So now what can you do to help bring the cost of pneumonia vaccines down to $5 per child?</h3>
+        </div>
+        <div class="response__pfe__steps steps">
+          <h3 class="response__header">Take Action!</h3>
+          <p class="modal-open" data-modal="a"><i class="box"></i>Tell the companies to drop the price.</p>
+          <p class="modal-open hide-mobile" data-modal="b"><i class="box"></i>Tell your fund managers to represent your interests</p>
+          <p class="modal-open" data-modal="c"><i class="box"></i>Tell your friends!</p>
+        </div>
+      </div>
+      <div class="response__gsk">
+        <!-- <img src="https://pfff-ff5dd.firebaseapp.com/img/yes.png" alt=""> -->
+        <div class="response__gsk__info">
+          <h2>YES</h2>
+          <h3>You have money in GSK. So now what can you do to help bring the cost of pneumonia vaccines down to $5 per child?</h3>
+        </div>
+        <div class="response__gsk__steps steps">
+          <h3 class="response__header">Take Action!</h3>
+          <p class="modal-open" data-modal="a"><i class="box"></i>Tell the companies to drop the price.</p>
+          <p class="modal-open" data-modal="b"><i class="box"></i>Tell your fund managers to represent your interests</p>
+          <p class="modal-open" data-modal="c"><i class="box"></i>Tell your friends!</p>
+        </div>
+      </div>
+      <div class="response__both">
+        <!-- <img src="https://pfff-ff5dd.firebaseapp.com/img/yes.png" alt=""> -->
+        <div class="response__gsk__info">
+          <h2>YES</h2>
+          <h3>You have money in Pfizer or GSK. So now what can you do to help bring the cost of pneumonia vaccines down to $5 per child?</h3>
+        </div>
+        <div class="response__gsk__steps steps">
+          <h3 class="response__header">Take Action!</h3>
+          <p class="modal-open" data-modal="a"><i class="box"></i>Tell the companies to drop the price.</p>
+          <p class="modal-open" data-modal="b"><i class="box"></i>Tell your fund managers to represent your interests</p>
+          <p class="modal-open" data-modal="c"><i class="box"></i>Tell your friends!</p>
+        </div>
+      </div>
+      <div class="response__no wow fadeInDown">
+        <!-- <img src="https://pfff-ff5dd.firebaseapp.com/img/no.png" alt=""> -->
+        <div class="response__no__info">          
+          <h2>NO</h2>
+          <h3>Looks like your fund is not one of the top funds investing in Pfizer or GSK, but it is possible that they still have money invested in these companies. You can check by asking your asset manager. And you can still get involved and let Pfizer and GSK know you want to bring the cost of pneumonia vaccines down to $5 per child.</h3>
+        </div>
+        <div class="response__no__steps steps">
+          <h3 class="response__header">Take Action!</h3>
+          <p class="modal-open" data-modal="a"><i class="box"></i>Tell the companies to drop the price.</p>
+          <p class="modal-open" data-modal="c"><i class="box"></i>Tell your friends</p>
+        </div>
+      </div>
+      <div class="response__unknown wow fadeInDown">
+        <!-- <img src="https://pfff-ff5dd.firebaseapp.com/img/no.png" alt=""> -->
+        <div class="response__unknown__info">         
+          <h2>WE’RE NOT SURE</h2>
+          <h3>We don’t recognize your search, so we can’t be sure whether you have money in Pfizer and GSK. But you can still get involved and let Pfizer and GSK know you want to bring the cost of pneumonia vaccines down to $5 per child.</h3>
+        </div>
+        <div class="response__unknown__steps steps">
+          <h3 class="response__header">Take Action!</h3>
+          <p class="modal-open" data-modal="a"><i class="box"></i>Tell the companies to drop the price.</p>
+          <p class="modal-open" data-modal="c"><i class="box"></i>Tell your friends</p>
+        </div>
+      </div>
+
+      <button class="end">Continue</button>
+    </section>
+    <section class="conclusion">
+      <img src="https://pfff-ff5dd.firebaseapp.com/img/thankyou.gif" alt="" class="thanks-img">
+      
+       <button class="btt">Start Over</button>
+    </section>
+  </div>
+  <div class="modal-wrapper">
+    <div class="modal modal-a">
+      <div class="modal__header">Take Action! <i class="close-x"></i></div>
+      <h4>Tell the companies to drop their price</h4>
+      <div class="modal__content">
+        <div class="left">
+          <img src="https://pfff-ff5dd.firebaseapp.com/img/pfizer_logo.png" alt="">
+          <a href="https://twitter.com/?status=Hey @Pfizer I have money invested in $PFE and I want the price of PCV13 lowered to $5/child afairshot.org %23askpharma" target="_blank" class="tweet-link">
+            <img src="https://pfff-ff5dd.firebaseapp.com/img/twitter_logo.svg" alt="">
+            Tweet Pfizer
+          </a>
+        </div>
+        <div class="right">
+          <img src="https://pfff-ff5dd.firebaseapp.com/img/gsk_logo.png" alt="">
+          <a href="https://twitter.com/?status=Hey @GSK I have money invested in $GSK and I want the price of PCV10 lowered to $5/child afairshot.org %23askpharma" target="_blank" class="tweet-link">
+            <img src="https://pfff-ff5dd.firebaseapp.com/img/twitter_logo.svg" alt="">
+            Tweet GSK
+          </a>
+        </div>
+        <div class="bottom">
+          <p>Let these companies know that you want them to drop the price of the life saving pneumonia vaccine to $5 per child in crisis-affected populations and for all developing countries</p>
+          <button class="modal-close">Go back</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal-b">
+      <div class="show-desktop">
+        <div class="modal__header">Take Action! <i class="close-x"></i></div>
+        <h4>Tell your fund managers to represent your interests</h4>
+        <!-- <h3>Send this email to your fund managers</h3> -->
+        <div class="modal__content">
+          <a href="" class="email-fm-link fm-twitter-link" target="_blank">Tweet Your Manager</a>
+          <a class="email-fm-link email-fund"  href="mailto:?subject=&body=Dear%20%5BFund%20Manager%20Name%5D%2C%0A%0AI%20am%20invested%20in%20%5BFund%20Name%5D%20and%20it%20has%20come%20to%20my%20attention%20that%20GlaxoSmithKline%20and%20Pfizer%20are%20included%20in%20the%20investment%20portfolio.%20%0A%0ALike%20hundreds%20of%20thousands%20of%20people%20from%20around%20the%20world%2C%20I%20believe%20that%20Pfizer%20and%20GSK%20should%20reduce%20the%20price%20of%20the%20pneumonia%20vaccine%20to%205%20dollars%20per%20child%20(for%20all%20three%20doses)%20in%20all%20developing%20countries.%20With%20almost%20one%20million%20deaths%20of%20children%20under%20five%20every%20year%2C%20Pneumonia%20is%20the%20main%20childhood%20killer%20diseases.%20%0A%0AAs%20you%20hold%20my%20voting%20authority%20(or%20voice)%20for%20these%20companies%20through%20my%20investment%20in%20your%20fund%2C%20I%20want%20you%20to%20represent%20my%20interests%20at%20the%20upcoming%20annual%20shareholder%20meetings%20for%20both%20companies.%0A%0APlease%20confirm%20you%E2%80%99ve%20received%20this%20email%20and%20the%20steps%20you%20will%20take%20to%20have%20our%20voices%20heard%20at%20the%20shareholder%20meetings.%0A%0ASincerely%2C%0A%5BYour%20Name%5D">Email Your Manager</a>
+          <div class="bottom">
+            <button class="modal-close end">Go Back</button>
+          </div>
+        </div>
+        
+        <form action="">
+          <div class="name-wrapper">
+            <label for="name">Name</label>
+            <input type="text" id="name">
+          </div>
+          <div class="email-wrapper">
+            <label for="email">E-Mail</label>
+            <input type="email" id="email">
+          </div>
+          
+          <!-- <label for="message">Send this email to your fund managers</label> -->
+  <!--         <textarea type="text" id="message">
+            Dear [Fund Manager Name],
+
+            I am invested in [Fund Name] and it has come to my attention that GlaxoSmithKline and Pfizer are included in the investment portfolio. 
+
+            Like hundreds of thousands of people from around the world, I believe that Pfizer and GSK should reduce the price of the pneumonia vaccine to 5 dollars per child (for all three doses) in all developing countries. With almost one million deaths of children under five every year, Pneumonia is the main childhood killer diseases. Pfizer and GSK should keep the price of the vaccine out of reach of vulnerable children. 
+
+            As you hold my voting authority (or voice) for these companies through my investment in your fund, I want you to represent my interests at the upcoming annual shareholder meetings for both companies.
+
+            Please confirm you’ve received this email and the steps you will take to have our voices heard at the shareholder meetings.
+
+            Sincerely,
+            [Your Name]
+          </textarea> -->
+          <!-- <input type="submit" value="Send" class="modal-close"> -->
+        </form>
+      </div>
+      <div class="show-mobile">
+        <div class="modal__header">Take Action! <i class="close-x"></i></div>
+        <h4>Tell your fund managers to represent your interests</h4>
+        <button class="modal-close end">Send An Email</button>
+        <button class="modal-close end">Go Back</button>
+      </div>
+    </div>
+    <div class="modal modal-c">
+      <div class="modal__header">Take Action! <i class="close-x modal-close"></i></div> 
+      <h4>Tell your friends!</h4>
+      <p>This campaign counts on people like you, your friends, family, and colleagues. Let them know that you’ve taken the time to #askpharma.</p>
+      <a href="https://twitter.com/?status=I want to ensure all kids have access to the pneumonia vaccine. Check to see if your money is invested $PFE $GSK afairshot.org." target="_blank" class="tweet-link">
+        <img src="https://pfff-ff5dd.firebaseapp.com/img/twitter_logo.svg" alt="">
+        Tweet this
+      </a>
+      <a href="mailto:?subject=I%27m%20helping%20Doctors%20Without%20Borders%20give%20all%20kids%20A%20Fair%20Shot&body=Hi%20friend%2C%0A%0AIt%20is%20an%20under-reported%20fact%20that%20pneumonia%20kills%20more%20children%20under%20five%20than%20any%20other%20disease.%20Nearly%20one%20million%20children%20die%20from%20it%20each%20year.%20For%20the%20past%20two%20years%2C%20Doctors%20Without%20Borders%20has%20been%20campaigning%2C%20gathering%20the%20support%20of%20hundreds%20of%20thousands%20of%20people%20from%20around%20the%20world%20to%20encourage%20Pfizer%20and%20GSK%20to%20reduce%20the%20price%20of%20the%20vaccine.%0A%0AYou%20might%20not%20know%20it%2C%20but%20through%20your%20retirement%20savings%20plan%20or%20your%20investment%20in%20mutual%20funds%20you%20might%20have%20money%20in%20Pfizer%20and%20GSK%20and%20can%20use%20this%20power%20to%20demand%20change.%20Doctors%20Without%20Borders%20just%20launched%20a%20new%20tool%20today%2C%20called%20%22Your%20Stock%20Your%20Voice%2C%22%20that%20makes%20it%20easy%20to%20verify%20this%20information.%20I%20just%20looked%20into%20my%20investments%20and%20took%20action%20to%20help%20this%20cause.%0A%0AWill%20you%20join%20in%20and%20take%20action%3F%20Check%20it%20out%20here%3A%20https%3A%2F%2Fafairshot.org%0A%0AThank%20you%2C" class="email-fm-link email-fr-link">Email Your Friends</a>
+      
+      <button class="modal-close">Go back</button>
+    </div>
+    <div class="modal modal-d">
+      <div id="read-more-text" class="read-more-text">
+          <h2>More Info</h2>
+          <p>
+            It is an under-reported fact that pneumococcal disease kills more children under five than any other disease. Nearly one million children die from it each year. <a href="http://www.who.int/mediacentre/factsheets/fs331/en" target="_blank" title="WHO | Pneumonia Fact Sheet">[1]</a>
+          </p>
+          <p>
+            For the past two years, Doctors Without Borders has been campaigning, gathering the support of hundreds of thousands of people from around the world to encourage Pfizer and GSK to reduce the price of the vaccine. Thanks to public pressure, at the end of last year Pfizer and GSK finally announced that they would reduce the price of the vaccine for humanitarian organisations like us. We now need your help to lower the price of the vaccine in all developing countries. We know we can be heard, and the fight is not over. 
+          </p>
+          <h2>
+            How can you help?
+          </h2>
+          <p>
+            You might not know it but through your retirement savings plan or your investment in mutual funds you might have money in Pfizer and GSK and can use this power to demand change.  
+          </p>
+        </div>
+        <!-- <button class="modal-close" data-block="1">Continue</button> -->
+        <div class="sqs-block button-block sqs-block-button">
+          <div class="sqs-block-button-container--center ">
+            <a href="#" data-block="1" class="sqs-block-button-element--medium sqs-block-button-element modal-close" target="_blank">Continue</a>
+          </div>
+        </div>
+      
+      
+    </div>
+    <div class="success"><img src="https://pfff-ff5dd.firebaseapp.com/img/nice.png" alt=""></div>
+  </div>
+ 
+
+  <script src="https://pfff-ff5dd.firebaseapp.com/js/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
+  <!-- <button onclick="sendMessage('Scott Rothman can you read me?')">Login with Facebook</button> -->
+  </div>
+  <script src="https://pfff-ff5dd.firebaseapp.com/js/lodash.min.js"></script>
+  <script src="https://pfff-ff5dd.firebaseapp.com/js/data.js"></script>
+  <script src="https://pfff-ff5dd.firebaseapp.com/js/search.js"></script>
+  <!-- <script src="/js/main.js"></script> -->
+  <script src="https://pfff-ff5dd.firebaseapp.com/js/main.js"></script>
