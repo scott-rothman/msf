@@ -93,9 +93,10 @@ var init = function() {
       let managerEmailLink =  'mailto:'+mailInfo.email+'?subject=My Investments RE: GSK and PFE&body='+linkMessage;
       if (typeof mailInfo.url !== 'undefined' && mailInfo.url.length > 0) {
         managerEmailLink = mailInfo.url;
+        $('.email-fund').attr('target', '_blank');
       } 
       if (typeof mailInfo.twitter !== 'undefined' && mailInfo.twitter.length > 0) {
-        twitterURL = 'https://twitter.com/?status=hey ' + mailInfo.twitter + ' TIL that ' + twitterCompanyString + ' in my fund. Can you help ask the companies to lower price of pneumonia vaccine? #askpharma'
+        twitterURL = 'https://twitter.com/?status=hey ' + mailInfo.twitter + ' TIL that ' + twitterCompanyString + ' in my fund. Can you help ask the companies to lower price of pneumonia vaccine? %23askpharma'
         $('.fm-twitter-link').attr('href', twitterURL);
       } else {
         $('.fm-twitter-link').css('display', 'none');
