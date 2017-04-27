@@ -1060,7 +1060,7 @@ p {
 }
 
 .content .modal-b {
-  height: 800px;
+  height: 420px;
   padding-top: 100px;
 }
 @media all and (max-width: 768px) {
